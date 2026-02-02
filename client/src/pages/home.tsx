@@ -10,17 +10,17 @@ const team = [
   {
     name: "Patrick MacCartee",
     role: "Partner Agent",
-    bio: "Strategic pricing, clean negotiation, and a calm process for high-stakes decisions.",
+    bio: "Strategic pricing, thoughtful strategy, and steady, relationship-driven guidance.",
   },
   {
     name: "Laura Ziedan",
     role: "Partner Agent",
-    bio: "Design-forward marketing and neighborhood-level insight that buyers can feel.",
+    bio: "Local insight and calm execution—helping clients navigate timing, prep, and pricing with clarity.",
   },
   {
     name: "Ilona Cample",
     role: "Partner Agent",
-    bio: "Detail-obsessed operations and client care that makes every step feel effortless.",
+    bio: "Detail-forward operations and client care that keeps the process polished and low-friction.",
   },
 ] as const;
 
@@ -404,8 +404,24 @@ export default function Home() {
                 Three specialists. One polished experience.
               </h2>
               <p className="mt-3 text-sm text-muted-foreground" data-testid="text-team-subtitle">
-                We’re a boutique team within The Grubb Company—high-touch, design-forward, and
-                deeply local.
+                The Crocker Team brings over 25 years of combined real estate experience to clients
+                in Crocker Highlands and across the greater East Bay.
+              </p>
+
+              <p className="mt-4 text-sm text-muted-foreground" data-testid="text-team-subtitle-2">
+                Deeply rooted in the community, we’re known for thoughtful strategy, local insight,
+                and steady, relationship-driven guidance.
+              </p>
+
+              <p className="mt-4 text-sm text-muted-foreground" data-testid="text-team-subtitle-3">
+                With backgrounds spanning real estate, education, finance, tech, and hospitality,
+                we blend analytical rigor with a clear understanding of people, place, and timing.
+              </p>
+
+              <p className="mt-4 text-sm text-muted-foreground" data-testid="text-team-subtitle-4">
+                A shared focus on long-term value and generational wealth through real estate—along
+                with active involvement in the local community—helps clients move forward with
+                confidence and clarity.
               </p>
             </div>
             <div className="md:col-span-7">
