@@ -341,55 +341,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="neighborhoods" className="border-t">
-        <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
-          <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
-            <div>
-              <div className="text-xs uppercase tracking-[0.18em] text-muted-foreground">
-                Where we work
-              </div>
-              <h2
-                className="mt-2 font-serif text-3xl tracking-tight"
-                data-testid="text-neighborhoods-title"
-              >
-                East Bay neighborhoods—by feel, not hype.
-              </h2>
-            </div>
-            <a
-              href="/blog"
-              className="inline-flex items-center justify-center rounded-full border bg-background px-4 py-2 text-sm transition-colors hover:bg-muted"
-              data-testid="link-neighborhoods-blog"
-            >
-              Read Q&A by neighborhood
-              <ArrowRight className="ml-2 size-4" aria-hidden="true" />
-            </a>
-          </div>
-
-          <div className="mt-8 grid gap-4 md:grid-cols-2">
-            {neighborhoods.map((n) => (
-              <Card
-                key={n.title}
-                className="hover-elevate rounded-3xl border bg-card p-6"
-                data-testid={`card-neighborhood-${n.title.replace(/\s+/g, "-").toLowerCase()}`}
-              >
-                <div className="font-serif text-2xl">{n.title}</div>
-                <div className="mt-2 max-w-prose text-sm text-muted-foreground">{n.desc}</div>
-                <div className="mt-5">
-                  <a
-                    href="/blog"
-                    className="inline-flex items-center justify-center rounded-full border bg-background px-4 py-2 text-sm transition-colors hover:bg-muted"
-                    data-testid={`link-neighborhood-${n.title.replace(/\s+/g, "-").toLowerCase()}`}
-                  >
-                    Explore Q&A
-                    <ArrowRight className="ml-2 size-4" aria-hidden="true" />
-                  </a>
-                </div>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section id="team" className="border-t">
         <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
           <div className="grid gap-8 md:grid-cols-12 md:items-end">
@@ -513,6 +464,55 @@ export default function Home() {
                 ))}
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="neighborhoods" className="border-t">
+        <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
+          <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
+            <div>
+              <div className="text-xs uppercase tracking-[0.18em] text-muted-foreground">
+                Where we work
+              </div>
+              <h2
+                className="mt-2 font-serif text-3xl tracking-tight"
+                data-testid="text-neighborhoods-title"
+              >
+                East Bay neighborhoods—by feel, not hype.
+              </h2>
+            </div>
+            <a
+              href="/blog"
+              className="inline-flex items-center justify-center rounded-full border bg-background px-4 py-2 text-sm transition-colors hover:bg-muted"
+              data-testid="link-neighborhoods-blog"
+            >
+              Read Q&A by neighborhood
+              <ArrowRight className="ml-2 size-4" aria-hidden="true" />
+            </a>
+          </div>
+
+          <div className="mt-8 grid gap-4 md:grid-cols-2">
+            {neighborhoods.map((n) => (
+              <Card
+                key={n.title}
+                className="hover-elevate rounded-3xl border bg-card p-6"
+                data-testid={`card-neighborhood-${n.title.replace(/\s+/g, "-").toLowerCase()}`}
+              >
+                <div className="font-serif text-2xl">{n.title}</div>
+                <div className="mt-2 max-w-prose text-sm text-muted-foreground">{n.desc}</div>
+                <div className="mt-5">
+                  <a
+                    href="/blog"
+                    className="inline-flex items-center justify-center rounded-full border bg-background px-4 py-2 text-sm transition-colors hover:bg-muted"
+                    data-testid={`link-neighborhood-${n.title.replace(/\s+/g, "-").toLowerCase()}`}
+                  >
+                    Explore Q&A
+                    <ArrowRight className="ml-2 size-4" aria-hidden="true" />
+                  </a>
+                </div>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
