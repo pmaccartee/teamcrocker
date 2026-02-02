@@ -68,43 +68,43 @@
 
   /* Art direction: "Bay Area Luxury Editorial" (warm, quiet, confident) */
   --background: 38 33% 97%;
-  --foreground: 224 26% 14%;
+  --foreground: 0 0% 15%;
 
   --card: 40 40% 99%;
-  --card-foreground: 224 26% 14%;
+  --card-foreground: 0 0% 15%;
   --popover: 40 40% 99%;
-  --popover-foreground: 224 26% 14%;
+  --popover-foreground: 0 0% 15%;
 
-  --border: 222 14% 86%;
-  --input: 222 16% 83%;
-  --ring: 222 48% 42%;
+  --border: 40 10% 86%;
+  --input: 40 10% 83%;
+  --ring: 350 75% 38%;
 
-  /* Deep navy + warm gold accent */
-  --primary: 222 54% 24%;
-  --primary-foreground: 40 60% 98%;
+  /* Grubb Company Red + warm gold accent */
+  --primary: 350 75% 38%;
+  --primary-foreground: 0 0% 98%;
 
-  --secondary: 222 18% 92%;
-  --secondary-foreground: 224 26% 14%;
+  --secondary: 40 10% 92%;
+  --secondary-foreground: 0 0% 15%;
 
-  --muted: 222 18% 94%;
-  --muted-foreground: 224 12% 40%;
+  --muted: 40 10% 94%;
+  --muted-foreground: 40 5% 40%;
 
   --accent: 40 72% 52%;
-  --accent-foreground: 224 26% 14%;
+  --accent-foreground: 0 0% 15%;
 
   --destructive: 0 76% 54%;
   --destructive-foreground: 0 0% 100%;
 
   --sidebar: 38 33% 97%;
-  --sidebar-foreground: 224 26% 14%;
-  --sidebar-border: 222 14% 86%;
-  --sidebar-primary: 222 54% 24%;
-  --sidebar-primary-foreground: 40 60% 98%;
-  --sidebar-accent: 222 18% 92%;
-  --sidebar-accent-foreground: 224 26% 14%;
-  --sidebar-ring: 222 48% 42%;
+  --sidebar-foreground: 0 0% 15%;
+  --sidebar-border: 40 10% 86%;
+  --sidebar-primary: 350 75% 38%;
+  --sidebar-primary-foreground: 0 0% 98%;
+  --sidebar-accent: 40 10% 92%;
+  --sidebar-accent-foreground: 0 0% 15%;
+  --sidebar-ring: 350 75% 38%;
 
-  --chart-1: 222 54% 24%;
+  --chart-1: 350 75% 38%;
   --chart-2: 40 72% 52%;
   --chart-3: 206 52% 40%;
   --chart-4: 156 34% 38%;
