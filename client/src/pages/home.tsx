@@ -313,7 +313,7 @@ export default function Home() {
                         className="text-sm text-muted-foreground"
                         data-testid="text-signal-body-3"
                       >
-                        Major sponsors of Crocker Highlands Elementary; active with the PTA.
+                        Major sponsors of Crocker Highlands Elementary School; active with the PTA.
                       </div>
                     </div>
                   </div>
