@@ -1,0 +1,246 @@
+import { useMemo, useState } from "react";
+import { Link } from "wouter";
+import { ArrowRight, Search } from "lucide-react";
+import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Separator } from "@/components/ui/separator";
+
+type Article = {
+  slug: string;
+  title: string;
+  excerpt: string;
+  neighborhood:
+    | "Crocker Highlands"
+    | "Trestle Glen"
+    | "Oakland"
+    | "Piedmont"
+    | "Berkeley";
+  intent: "Buyer" | "Seller" | "Market";
+  updated: string;
+};
+
+const articles: Article[] = [
+  {
+    slug: "best-blocks-crocker-highlands",
+    title: "What are the best blocks in Crocker Highlands?",
+    excerpt:
+      "A practical way to think about streets, walkability, views, and day-to-day feel—without oversimplifying it.",
+    neighborhood: "Crocker Highlands",
+    intent: "Buyer",
+    updated: "2026-02-02",
+  },
+  {
+    slug: "crocker-highlands-price-premium",
+    title: "Why do Crocker Highlands homes command a premium?",
+    excerpt:
+      "Architecture, school proximity, and buyer psychology—plus what actually moves the number up or down.",
+    neighborhood: "Crocker Highlands",
+    intent: "Market",
+    updated: "2026-02-02",
+  },
+  {
+    slug: "trestle-glen-vs-crocker-highlands",
+    title: "Trestle Glen vs. Crocker Highlands: which fits your lifestyle?",
+    excerpt: "Two beautiful Oakland neighborhoods—here’s how they live differently.",
+    neighborhood: "Trestle Glen",
+    intent: "Buyer",
+    updated: "2026-02-02",
+  },
+  {
+    slug: "selling-in-crocker-highlands-prep",
+    title: "Selling in Crocker Highlands: what prep is actually worth it?",
+    excerpt:
+      "Where to spend (and not spend) to maximize outcome—paint, staging, landscaping, and inspection strategy.",
+    neighborhood: "Crocker Highlands",
+    intent: "Seller",
+    updated: "2026-02-02",
+  },
+  {
+    slug: "piedmont-vs-oakland-hills",
+    title: "Piedmont vs. Oakland Hills: how do buyers decide?",
+    excerpt:
+      "A simple framework buyers use—schools, walkability, commute, architecture, and daily rhythm.",
+    neighborhood: "Piedmont",
+    intent: "Buyer",
+    updated: "2026-02-02",
+  },
+  {
+    slug: "berkeley-hills-buyer-mistakes",
+    title: "Berkeley Hills: the most common buyer mistakes (and how to avoid them)",
+    excerpt:
+      "Slope, drainage, microclimates, permits, and seismic—what to ask before you fall in love.",
+    neighborhood: "Berkeley",
+    intent: "Buyer",
+    updated: "2026-02-02",
+  },
+];
+
+function Pill({ children }: { children: React.ReactNode }) {
+  return (
+    <span className="inline-flex items-center rounded-full border bg-background px-2.5 py-1 text-xs text-muted-foreground">
+      {children}
+    </span>
+  );
+}
+
+export default function Blog() {
+  const [query, setQuery] = useState("");
+
+  const filtered = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    if (!q) return articles;
+    return articles.filter((a) =>
+      [a.title, a.excerpt, a.neighborhood, a.intent, a.slug]
+        .join(" ")
+        .toLowerCase()
+        .includes(q),
+    );
+  }, [query]);
+
+  return (
+    <div className="min-h-screen bg-background text-foreground">
+      <header className="border-b bg-background/75 backdrop-blur supports-[backdrop-filter]:bg-background/65">
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-5 sm:px-6">
+          <div>
+            <div className="text-xs uppercase tracking-[0.18em] text-muted-foreground">
+              Q&A Blog
+            </div>
+            <div className="mt-1 font-serif text-2xl" data-testid="text-blog-title">
+              Crocker Highlands answers—built for search.
+            </div>
+          </div>
+          <Link href="/">
+            <Button
+              asChild
+              variant="outline"
+              className="rounded-full"
+              data-testid="button-blog-home"
+            >
+              <a data-testid="link-blog-home">Back home</a>
+            </Button>
+          </Link>
+        </div>
+      </header>
+
+      <main className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+          className="grid gap-6 md:grid-cols-12"
+        >
+          <div className="md:col-span-5">
+            <Card className="rounded-3xl border bg-card p-6">
+              <div className="text-sm font-medium">Search the library</div>
+              <div className="mt-3 flex items-center gap-2">
+                <div className="grid size-10 place-items-center rounded-2xl border bg-background">
+                  <Search className="size-4 text-muted-foreground" aria-hidden="true" />
+                </div>
+                <Input
+                  value={query}
+                  onChange={(e) => setQuery(e.target.value)}
+                  placeholder="Try: 'Trestle Glen', 'pricing', 'PTA'…"
+                  className="h-10 rounded-2xl"
+                  data-testid="input-blog-search"
+                />
+              </div>
+              <p className="mt-3 text-sm text-muted-foreground" data-testid="text-blog-hint">
+                Each post is structured like a buyer/seller conversation: direct questions,
+                direct answers, and local nuance.
+              </p>
+
+              <Separator className="my-5" />
+
+              <div className="space-y-3">
+                <div className="text-xs uppercase tracking-[0.18em] text-muted-foreground">
+                  What you’ll find
+                </div>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li data-testid="text-blog-bullet-1">
+                    • Neighborhood feel, blocks, and micro-markets
+                  </li>
+                  <li data-testid="text-blog-bullet-2">
+                    • Pricing, prep, and negotiation strategy
+                  </li>
+                  <li data-testid="text-blog-bullet-3">
+                    • School proximity + lifestyle considerations
+                  </li>
+                  <li data-testid="text-blog-bullet-4">• Market explainers in plain English</li>
+                </ul>
+              </div>
+
+              <div className="mt-6">
+                <Button className="w-full rounded-2xl" data-testid="button-blog-contact">
+                  Ask us a question
+                  <ArrowRight className="ml-2 size-4" aria-hidden="true" />
+                </Button>
+              </div>
+            </Card>
+          </div>
+
+          <div className="md:col-span-7">
+            <div className="grid gap-4">
+              {filtered.map((a) => (
+                <Link key={a.slug} href={`/blog/${a.slug}`}>
+                  <a className="group" data-testid={`link-article-${a.slug}`}>
+                    <Card className="hover-elevate rounded-3xl border bg-card p-6">
+                      <div className="flex flex-wrap items-center gap-2">
+                        <Pill>{a.neighborhood}</Pill>
+                        <Pill>{a.intent}</Pill>
+                        <Pill>Updated {a.updated}</Pill>
+                      </div>
+                      <div
+                        className="mt-3 font-serif text-2xl leading-tight"
+                        data-testid={`text-article-title-${a.slug}`}
+                      >
+                        {a.title}
+                      </div>
+                      <div
+                        className="mt-2 text-sm text-muted-foreground"
+                        data-testid={`text-article-excerpt-${a.slug}`}
+                      >
+                        {a.excerpt}
+                      </div>
+                      <div className="mt-4 inline-flex items-center text-sm font-medium">
+                        Read answer
+                        <ArrowRight
+                          className="ml-2 size-4 transition-transform group-hover:translate-x-0.5"
+                          aria-hidden="true"
+                        />
+                      </div>
+                    </Card>
+                  </a>
+                </Link>
+              ))}
+
+              {filtered.length === 0 ? (
+                <Card className="rounded-3xl border bg-card p-10 text-center">
+                  <div className="font-serif text-2xl" data-testid="text-blog-empty-title">
+                    No matches.
+                  </div>
+                  <div
+                    className="mt-2 text-sm text-muted-foreground"
+                    data-testid="text-blog-empty-body"
+                  >
+                    Try searching a neighborhood name ("Crocker Highlands") or an intent
+                    ("Seller").
+                  </div>
+                </Card>
+              ) : null}
+            </div>
+          </div>
+        </motion.div>
+      </main>
+
+      <footer className="border-t">
+        <div className="mx-auto max-w-6xl px-4 py-10 text-sm text-muted-foreground sm:px-6">
+          <div data-testid="text-blog-footer">
+            Crocker Highlands Team · The Grubb Company — Q&A library (prototype)
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+}
