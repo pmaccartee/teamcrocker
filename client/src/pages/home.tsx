@@ -43,7 +43,7 @@ const neighborhoods = [
   {
     title: "Berkeley",
     desc: "A creative, architectural mix—north, hills, and beyond.",
-    image: null,
+    image: "/images/berkeley-uplands.webp",
   },
 ] as const;
 
