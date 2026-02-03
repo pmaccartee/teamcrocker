@@ -28,18 +28,22 @@ const neighborhoods = [
   {
     title: "Crocker Highlands",
     desc: "Tree-lined streets, iconic architecture, and an easy rhythm of neighborhood life.",
+    image: "/images/crocker-street.jpg",
   },
   {
     title: "Trestle Glen",
     desc: "A tucked-away pocket with storybook homes and a true community feel.",
+    image: null,
   },
   {
     title: "Piedmont",
     desc: "Classic East Bay prestige with walkability and top-tier schools.",
+    image: null,
   },
   {
     title: "Berkeley",
     desc: "A creative, architectural mix—north, hills, and beyond.",
+    image: null,
   },
 ] as const;
 
@@ -293,8 +297,16 @@ export default function Home() {
             {neighborhoods.map((n) => (
               <div key={n.title} className="group cursor-pointer space-y-4">
                 <div className="aspect-[4/3] w-full overflow-hidden bg-muted transition-colors group-hover:bg-muted/80">
-                   {/* Placeholder for neighborhood image */}
-                   <div className="h-full w-full bg-secondary/50"></div>
+                  {n.image ? (
+                    <img
+                      src={n.image}
+                      alt={n.title}
+                      className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      loading="lazy"
+                    />
+                  ) : (
+                    <div className="h-full w-full bg-secondary/50"></div>
+                  )}
                 </div>
                 <div className="space-y-2">
                   <div className="font-serif text-xl">{n.title}</div>
