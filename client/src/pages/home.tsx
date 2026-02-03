@@ -198,21 +198,15 @@ export default function Home() {
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-              className="md:col-span-5 md:pt-12"
+              className="md:col-span-5 relative"
             >
-              <div className="space-y-8 border-l border-primary/10 pl-8">
-                <div>
-                   <div className="font-serif text-xl mb-2 text-foreground">Trusted Guidance</div>
-                   <p className="text-sm text-muted-foreground">Strategic pricing and clean negotiation for high-stakes decisions.</p>
-                </div>
-                <div>
-                   <div className="font-serif text-xl mb-2 text-foreground">Luxury Presentation</div>
-                   <p className="text-sm text-muted-foreground">Editorial photography and design-forward marketing that elevates every listing.</p>
-                </div>
-                <div>
-                   <div className="font-serif text-xl mb-2 text-foreground">Neighborhood Depth</div>
-                   <p className="text-sm text-muted-foreground">Unmatched insight into Crocker Highlands, Trestle Glen, and Piedmont.</p>
-                </div>
+              <div className="relative aspect-[3/4] w-full overflow-hidden bg-muted">
+                <img
+                  src="/images/hero-gate.jpg"
+                  alt="Crocker Highlands Gate"
+                  className="h-full w-full object-cover"
+                  loading="eager"
+                />
               </div>
             </motion.div>
           </div>
