@@ -67,27 +67,27 @@
   --elevate-2: rgba(0,  0, 0, 0.08);
 
   /* Art direction: "Bay Area Luxury Editorial" (warm, quiet, confident) */
-  --background: 38 33% 97%;
+  --background: 0 0% 100%; /* Pure white for cleaner look */
   --foreground: 0 0% 15%;
 
-  --card: 40 40% 99%;
+  --card: 0 0% 100%;
   --card-foreground: 0 0% 15%;
-  --popover: 40 40% 99%;
+  --popover: 0 0% 100%;
   --popover-foreground: 0 0% 15%;
 
-  --border: 40 10% 86%;
-  --input: 40 10% 83%;
+  --border: 40 10% 90%; /* Lighter border */
+  --input: 40 10% 90%;
   --ring: 350 75% 38%;
 
   /* Grubb Company Red + warm gold accent */
-  --primary: 350 75% 38%;
-  --primary-foreground: 0 0% 98%;
+  --primary: 350 75% 33%; /* Slightly darker for elegance */
+  --primary-foreground: 0 0% 100%;
 
-  --secondary: 40 10% 92%;
+  --secondary: 40 5% 96%;
   --secondary-foreground: 0 0% 15%;
 
-  --muted: 40 10% 94%;
-  --muted-foreground: 40 5% 40%;
+  --muted: 40 5% 96%;
+  --muted-foreground: 0 0% 40%;
 
   --accent: 40 72% 52%;
   --accent-foreground: 0 0% 15%;

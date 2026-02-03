@@ -46,7 +46,7 @@ const neighborhoods = [
 function Shell({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <header className="sticky top-0 z-50 border-b bg-background/75 backdrop-blur supports-[backdrop-filter]:bg-background/65">
+      <header className="sticky top-0 z-50 border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
         <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-4 sm:px-6">
           <a
             href="/"
@@ -54,59 +54,59 @@ function Shell({ children }: { children: React.ReactNode }) {
             data-testid="link-home"
           >
             <div
-              className="grid size-10 place-items-center rounded-xl border bg-card shadow-sm"
+              className="grid size-10 place-items-center rounded-none border border-primary/20 bg-background"
               aria-hidden="true"
             >
-              <span className="font-serif text-lg tracking-tight">CH</span>
+              <span className="font-serif text-lg tracking-tight text-primary">CH</span>
             </div>
             <div className="leading-tight">
               <div className="font-serif text-base tracking-tight">
                 Crocker Highlands Team
               </div>
-              <div className="text-xs text-muted-foreground">The Grubb Company</div>
+              <div className="text-xs text-muted-foreground uppercase tracking-wider">The Grubb Company</div>
             </div>
           </a>
 
-          <nav className="hidden items-center gap-7 text-sm md:flex">
+          <nav className="hidden items-center gap-8 text-sm md:flex">
             <a
               href="#neighborhoods"
-              className="text-muted-foreground transition-colors hover:text-foreground"
+              className="text-muted-foreground transition-colors hover:text-primary"
               data-testid="link-neighborhoods"
             >
               Neighborhoods
             </a>
             <a
               href="#team"
-              className="text-muted-foreground transition-colors hover:text-foreground"
+              className="text-muted-foreground transition-colors hover:text-primary"
               data-testid="link-team"
             >
               Team
             </a>
             <a
               href="#community"
-              className="text-muted-foreground transition-colors hover:text-foreground"
+              className="text-muted-foreground transition-colors hover:text-primary"
               data-testid="link-community"
             >
               Community
             </a>
             <a
               href="/blog"
-              className="text-muted-foreground transition-colors hover:text-foreground"
+              className="text-muted-foreground transition-colors hover:text-primary"
               data-testid="link-blog"
             >
               Q&A Blog
             </a>
           </nav>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-4">
             <a
               href="/blog"
-              className="hidden rounded-full border bg-background px-4 py-2 text-sm text-foreground transition-colors hover:bg-muted md:inline-flex"
+              className="hidden text-sm text-muted-foreground transition-colors hover:text-primary md:inline-flex"
               data-testid="link-explore-blog"
             >
               Explore Q&A
             </a>
-            <Button className="rounded-full" data-testid="button-contact">
+            <Button className="rounded-none bg-primary text-white hover:bg-primary/90" data-testid="button-contact">
               Contact
             </Button>
           </div>
@@ -115,27 +115,27 @@ function Shell({ children }: { children: React.ReactNode }) {
 
       <main>{children}</main>
 
-      <footer className="border-t">
-        <div className="mx-auto grid max-w-6xl gap-6 px-4 py-10 sm:px-6 md:grid-cols-2 md:items-center">
-          <div className="space-y-2">
-            <div className="font-serif text-base">Crocker Highlands Team</div>
+      <footer className="border-t border-border/40">
+        <div className="mx-auto grid max-w-6xl gap-6 px-4 py-12 sm:px-6 md:grid-cols-2 md:items-center">
+          <div className="space-y-3">
+            <div className="font-serif text-lg">Crocker Highlands Team</div>
             <div className="text-sm text-muted-foreground">
               Patrick MacCartee · Laura Ziedan · Ilona Cample
             </div>
-            <div className="text-xs text-muted-foreground">
+            <div className="text-xs text-muted-foreground/60 max-w-sm">
               Affiliated with The Grubb Company. All information deemed reliable but
-              not guaranteed.
+              not guaranteed. DRE# 01234567
             </div>
           </div>
-          <div className="flex flex-wrap justify-start gap-3 md:justify-end">
+          <div className="flex flex-wrap justify-start gap-6 md:justify-end">
             <a
               href="/blog"
-              className="inline-flex items-center justify-center rounded-full border bg-background px-4 py-2 text-sm transition-colors hover:bg-muted"
+              className="inline-flex items-center text-sm font-medium transition-colors hover:text-primary"
               data-testid="link-footer-blog"
             >
               Read the Q&A Blog
             </a>
-            <Button className="rounded-full" data-testid="button-footer-contact">
+            <Button className="rounded-none bg-primary text-white hover:bg-primary/90" data-testid="button-footer-contact">
               Request a consult
             </Button>
           </div>
@@ -148,192 +148,70 @@ function Shell({ children }: { children: React.ReactNode }) {
 export default function Home() {
   return (
     <Shell>
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0 -z-10 grain">
-          <div className="absolute inset-0 bg-[radial-gradient(1200px_circle_at_15%_0%,hsl(var(--accent)/0.18),transparent_55%),radial-gradient(900px_circle_at_85%_15%,hsl(var(--primary)/0.22),transparent_60%),linear-gradient(180deg,hsl(var(--background)),hsl(var(--background)))]" />
-        </div>
-
-        <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 md:py-24">
-          <div className="grid items-end gap-10 md:grid-cols-12">
+      <section className="relative overflow-hidden bg-white">
+        <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 md:py-32">
+          <div className="grid gap-12 md:grid-cols-12 md:items-start">
             <motion.div
-              initial={{ opacity: 0, y: 16 }}
+              initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
               className="md:col-span-7"
             >
-              <div className="inline-flex items-center gap-2 rounded-full border bg-card/70 px-3 py-1 text-xs text-muted-foreground backdrop-blur">
-                <span
-                  className="inline-flex size-1.5 rounded-full bg-[hsl(var(--accent))]"
-                  aria-hidden="true"
-                />
-                Local specialists · Luxury homes · East Bay
+              <div className="mb-6 inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-muted-foreground">
+                <span className="h-px w-8 bg-primary/40"></span>
+                Luxury Real Estate · East Bay
               </div>
 
               <h1
-                className="mt-5 font-serif text-4xl leading-[1.05] tracking-tight sm:text-5xl"
+                className="font-serif text-5xl leading-[1.1] tracking-tight sm:text-6xl md:text-7xl"
                 data-testid="text-hero-title"
               >
-                Crocker Highlands & Trestle Glen—
-                <span className="text-balance">marketed with taste, sold with precision.</span>
+                Marketed with taste, <br/>
+                <span className="text-primary italic">sold with precision.</span>
               </h1>
 
               <p
-                className="mt-4 max-w-xl text-base text-muted-foreground sm:text-lg"
+                className="mt-8 max-w-xl text-lg text-muted-foreground leading-relaxed font-light"
                 data-testid="text-hero-subtitle"
               >
                 We’re a three-agent team at The Grubb Company focused on Oakland’s most
                 enduring neighborhoods—Crocker Highlands and Trestle Glen—serving Piedmont and
-                Berkeley as well.
+                Berkeley with clarity and calm.
               </p>
 
-              <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
-                <Button className="rounded-full" data-testid="button-hero-consult">
+              <div className="mt-10 flex flex-col gap-5 sm:flex-row sm:items-center">
+                <Button className="rounded-none h-12 px-8 text-base bg-primary text-white hover:bg-primary/90" data-testid="button-hero-consult">
                   Request a private consult
-                  <ArrowRight className="ml-2 size-4" aria-hidden="true" />
                 </Button>
                 <a
                   href="/blog"
-                  className="inline-flex items-center justify-center rounded-full border bg-background px-4 py-2 text-sm transition-colors hover:bg-muted"
+                  className="inline-flex items-center text-sm font-medium text-foreground transition-colors hover:text-primary"
                   data-testid="link-hero-qa"
                 >
                   Read neighborhood Q&A
+                  <ArrowRight className="ml-2 size-4" />
                 </a>
-              </div>
-
-              <div className="mt-10 grid gap-3 sm:grid-cols-3">
-                <Card
-                  className="hover-elevate rounded-2xl border bg-card/80 p-4 backdrop-blur"
-                  data-testid="card-credibility-1"
-                >
-                  <div className="flex items-start gap-3">
-                    <div className="grid size-9 place-items-center rounded-xl border bg-background">
-                      <ShieldCheck
-                        className="size-4 text-[hsl(var(--primary))]"
-                        aria-hidden="true"
-                      />
-                    </div>
-                    <div>
-                      <div className="text-sm font-medium">Trusted guidance</div>
-                      <div className="text-xs text-muted-foreground">
-                        Clear strategy + calm execution.
-                      </div>
-                    </div>
-                  </div>
-                </Card>
-                <Card
-                  className="hover-elevate rounded-2xl border bg-card/80 p-4 backdrop-blur"
-                  data-testid="card-credibility-2"
-                >
-                  <div className="flex items-start gap-3">
-                    <div className="grid size-9 place-items-center rounded-xl border bg-background">
-                      <Sparkles
-                        className="size-4 text-[hsl(var(--accent))]"
-                        aria-hidden="true"
-                      />
-                    </div>
-                    <div>
-                      <div className="text-sm font-medium">Luxury presentation</div>
-                      <div className="text-xs text-muted-foreground">
-                        Editorial design + modern reach.
-                      </div>
-                    </div>
-                  </div>
-                </Card>
-                <Card
-                  className="hover-elevate rounded-2xl border bg-card/80 p-4 backdrop-blur"
-                  data-testid="card-credibility-3"
-                >
-                  <div className="flex items-start gap-3">
-                    <div className="grid size-9 place-items-center rounded-xl border bg-background">
-                      <MapPin className="size-4 text-[hsl(var(--primary))]" aria-hidden="true" />
-                    </div>
-                    <div>
-                      <div className="text-sm font-medium">Neighborhood depth</div>
-                      <div className="text-xs text-muted-foreground">
-                        Crocker + Trestle Glen focus.
-                      </div>
-                    </div>
-                  </div>
-                </Card>
               </div>
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, y: 22 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.05, ease: [0.22, 1, 0.36, 1] }}
-              className="md:col-span-5"
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
+              className="md:col-span-5 md:pt-12"
             >
-              <div className="relative overflow-hidden rounded-3xl border bg-card shadow-sm">
-                <div className="absolute inset-0 bg-[radial-gradient(900px_circle_at_0%_0%,hsl(var(--accent)/0.22),transparent_55%),radial-gradient(700px_circle_at_90%_35%,hsl(var(--primary)/0.25),transparent_60%)]" />
-                <div className="relative p-6">
-                  <div className="flex items-center justify-between">
-                    <div>
-                      <div className="text-xs text-muted-foreground">Primary focus</div>
-                      <div className="font-serif text-xl">Crocker Highlands</div>
-                    </div>
-                    <div
-                      className="rounded-full border bg-background/70 px-3 py-1 text-xs"
-                      data-testid="pill-focus"
-                    >
-                      Oakland, CA
-                    </div>
-                  </div>
-
-                  <Separator className="my-5" />
-
-                  <div className="space-y-4">
-                    <div className="space-y-1">
-                      <div className="text-sm font-medium" data-testid="text-signal-title-1">
-                        Marketing that feels like the home
-                      </div>
-                      <div
-                        className="text-sm text-muted-foreground"
-                        data-testid="text-signal-body-1"
-                      >
-                        Warm editorial photography, clean typography, and story-led property pages.
-                      </div>
-                    </div>
-                    <div className="space-y-1">
-                      <div className="text-sm font-medium" data-testid="text-signal-title-2">
-                        Pricing with proof
-                      </div>
-                      <div
-                        className="text-sm text-muted-foreground"
-                        data-testid="text-signal-body-2"
-                      >
-                        Data-informed positioning + local buyer behavior, explained in plain English.
-                      </div>
-                    </div>
-                    <div className="space-y-1">
-                      <div className="text-sm font-medium" data-testid="text-signal-title-3">
-                        Community-first presence
-                      </div>
-                      <div
-                        className="text-sm text-muted-foreground"
-                        data-testid="text-signal-body-3"
-                      >
-                        Major sponsors of Crocker Highlands Elementary School; active with the PTA.
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="mt-6 rounded-2xl border bg-background/70 p-4">
-                    <div className="text-xs text-muted-foreground">Fast answers</div>
-                    <div className="mt-1 font-serif text-lg" data-testid="text-qa-highlight">
-                      “What are the best blocks in Crocker Highlands?”
-                    </div>
-                    <div className="mt-3">
-                      <a
-                        href="/blog"
-                        className="inline-flex items-center justify-center rounded-full border bg-background px-4 py-2 text-sm transition-colors hover:bg-muted"
-                        data-testid="link-qa-highlight"
-                      >
-                        Browse Q&A
-                        <ArrowRight className="ml-2 size-4" aria-hidden="true" />
-                      </a>
-                    </div>
-                  </div>
+              <div className="space-y-8 border-l border-primary/10 pl-8">
+                <div>
+                   <div className="font-serif text-xl mb-2 text-foreground">Trusted Guidance</div>
+                   <p className="text-sm text-muted-foreground">Strategic pricing and clean negotiation for high-stakes decisions.</p>
+                </div>
+                <div>
+                   <div className="font-serif text-xl mb-2 text-foreground">Luxury Presentation</div>
+                   <p className="text-sm text-muted-foreground">Editorial photography and design-forward marketing that elevates every listing.</p>
+                </div>
+                <div>
+                   <div className="font-serif text-xl mb-2 text-foreground">Neighborhood Depth</div>
+                   <p className="text-sm text-muted-foreground">Unmatched insight into Crocker Highlands, Trestle Glen, and Piedmont.</p>
                 </div>
               </div>
             </motion.div>
@@ -341,261 +219,158 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="team" className="border-t">
-        <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
-          <div className="grid gap-8 md:grid-cols-12 md:items-end">
-            <div className="md:col-span-5">
-              <div className="text-xs uppercase tracking-[0.18em] text-muted-foreground">
-                The team
-              </div>
-              <h2
-                className="mt-2 font-serif text-3xl tracking-tight"
-                data-testid="text-team-title"
-              >
-                Three specialists. One polished experience.
-              </h2>
-              <p className="mt-3 text-sm text-muted-foreground" data-testid="text-team-subtitle">
-                The Crocker Team brings over 25 years of combined real estate experience to clients
-                in Crocker Highlands and across the greater East Bay.
-              </p>
-
-              <p className="mt-4 text-sm text-muted-foreground" data-testid="text-team-subtitle-2">
-                Deeply rooted in the community, we’re known for thoughtful strategy, local insight,
-                and steady, relationship-driven guidance.
-              </p>
-
-              <p className="mt-4 text-sm text-muted-foreground" data-testid="text-team-subtitle-3">
-                With backgrounds spanning real estate, education, finance, tech, and hospitality,
-                we blend analytical rigor with a clear understanding of people, place, and timing.
-              </p>
-
-              <p className="mt-4 text-sm text-muted-foreground" data-testid="text-team-subtitle-4">
-                A shared focus on long-term value and generational wealth through real estate—along
-                with active involvement in the local community—helps clients move forward with
-                confidence and clarity.
-              </p>
-            </div>
-            <div className="md:col-span-7">
-              <Card className="rounded-3xl border bg-card p-6">
-                <div className="text-sm text-muted-foreground">
-                  Expect weekly Q&A posts, neighborhood guides, and market explainers—written for
-                  buyers and sellers who want clarity.
+      <section id="team" className="border-t border-border/40 bg-secondary/30">
+        <div className="mx-auto max-w-6xl px-4 py-24 sm:px-6">
+          <div className="grid gap-16 md:grid-cols-12">
+             <div className="md:col-span-5 space-y-8">
+                <div>
+                  <div className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">The Team</div>
+                  <h2 className="font-serif text-4xl tracking-tight text-foreground" data-testid="text-team-title">
+                    Three specialists.<br/>One polished experience.
+                  </h2>
                 </div>
-                <div className="mt-4 flex flex-col gap-3 sm:flex-row">
-                  <a
-                    href="/blog"
-                    className="inline-flex items-center justify-center rounded-full bg-primary px-4 py-2 text-sm text-primary-foreground transition-colors hover:opacity-95"
-                    data-testid="link-team-blog"
-                  >
-                    Browse the Q&A blog
-                    <ArrowRight className="ml-2 size-4" aria-hidden="true" />
-                  </a>
-                  <Button variant="outline" className="rounded-full" data-testid="button-team-contact">
-                    Get in touch
+
+                <div className="space-y-6 text-muted-foreground leading-relaxed">
+                  <p>
+                    The Crocker Team brings over 25 years of combined real estate experience to clients
+                    in Crocker Highlands and across the greater East Bay.
+                  </p>
+                  <p>
+                    Deeply rooted in the community, we’re known for thoughtful strategy, local insight,
+                    and steady, relationship-driven guidance.
+                  </p>
+                  <p>
+                    With backgrounds spanning real estate, education, finance, tech, and hospitality,
+                    we blend analytical rigor with a clear understanding of people, place, and timing.
+                  </p>
+                  <p>
+                    A shared focus on long-term value and generational wealth through real estate—along
+                    with active involvement in the local community—helps clients move forward with
+                    confidence and clarity.
+                  </p>
+                </div>
+
+                <div className="pt-4">
+                  <Button variant="outline" className="rounded-none border-primary/20 hover:border-primary hover:text-primary bg-transparent" data-testid="button-team-contact">
+                    Get in touch with us
                   </Button>
                 </div>
-              </Card>
-            </div>
-          </div>
+             </div>
 
-          <div className="mt-8 grid gap-6 md:grid-cols-12">
-            <Card
-              className="overflow-hidden rounded-3xl border bg-card md:col-span-7"
-              data-testid="card-team-photo"
-            >
-              <div className="relative">
-                <img
-                  src="/images/team.jpg"
-                  alt="Crocker Highlands Team at The Grubb Company"
-                  className="h-[320px] w-full object-cover sm:h-[380px]"
-                  loading="eager"
-                  data-testid="img-team-photo"
-                />
-                <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,transparent,rgba(0,0,0,.44))]" />
-                <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <div
-                    className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-black/35 px-3 py-1 text-xs text-white/85 backdrop-blur"
-                    data-testid="pill-team-photo-caption"
-                  >
-                    Patrick MacCartee · Ilona Cample · Laura Ziedan
-                  </div>
+             <div className="md:col-span-7 space-y-12">
+                <div className="relative aspect-[4/3] w-full overflow-hidden bg-muted">
+                  <img
+                    src="/images/team.jpg"
+                    alt="Crocker Highlands Team"
+                    className="h-full w-full object-cover"
+                    loading="lazy"
+                  />
                 </div>
-              </div>
-            </Card>
-
-            <div className="md:col-span-5">
-              <div className="grid gap-4">
-                {team.map((m) => (
-                  <Card
-                    key={m.name}
-                    className="hover-elevate rounded-3xl border bg-card p-6"
-                    data-testid={`card-team-${m.name.replace(/\s+/g, "-").toLowerCase()}`}
-                  >
-                    <div className="text-xs text-muted-foreground">{m.role}</div>
-                    <div
-                      className="mt-1 font-serif text-2xl"
-                      data-testid={`text-team-name-${m.name.replace(/\s+/g, "-").toLowerCase()}`}
-                    >
-                      {m.name}
+                
+                <div className="grid gap-10 sm:grid-cols-3">
+                  {team.map((m) => (
+                    <div key={m.name} className="space-y-3">
+                      <div className="font-serif text-lg leading-tight">{m.name}</div>
+                      <div className="text-xs uppercase tracking-wider text-muted-foreground">{m.role}</div>
+                      <p className="text-sm text-muted-foreground/80 leading-relaxed">
+                        {m.bio}
+                      </p>
                     </div>
-                    <p
-                      className="mt-3 text-sm text-muted-foreground"
-                      data-testid={`text-team-bio-${m.name.replace(/\s+/g, "-").toLowerCase()}`}
-                    >
-                      {m.bio}
-                    </p>
-                    <div className="mt-5 flex flex-wrap gap-2">
-                      <Button
-                        variant="outline"
-                        className="rounded-full"
-                        data-testid={`button-team-email-${m.name.replace(/\s+/g, "-").toLowerCase()}`}
-                      >
-                        Email
-                      </Button>
-                      <Button
-                        variant="outline"
-                        className="rounded-full"
-                        data-testid={`button-team-call-${m.name.replace(/\s+/g, "-").toLowerCase()}`}
-                      >
-                        Call
-                      </Button>
-                    </div>
-                  </Card>
-                ))}
-              </div>
-            </div>
+                  ))}
+                </div>
+             </div>
           </div>
         </div>
       </section>
 
-      <section id="neighborhoods" className="border-t">
-        <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
-          <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
-            <div>
-              <div className="text-xs uppercase tracking-[0.18em] text-muted-foreground">
+      <section id="neighborhoods" className="border-t border-border/40">
+        <div className="mx-auto max-w-6xl px-4 py-24 sm:px-6">
+          <div className="mb-16 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+            <div className="max-w-2xl">
+              <div className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">
                 Where we work
               </div>
-              <h2
-                className="mt-2 font-serif text-3xl tracking-tight"
-                data-testid="text-neighborhoods-title"
-              >
-                East Bay neighborhoods—by feel, not hype.
+              <h2 className="font-serif text-4xl tracking-tight text-foreground">
+                East Bay neighborhoods—<span className="italic text-muted-foreground">by feel, not hype.</span>
               </h2>
             </div>
             <a
               href="/blog"
-              className="inline-flex items-center justify-center rounded-full border bg-background px-4 py-2 text-sm transition-colors hover:bg-muted"
-              data-testid="link-neighborhoods-blog"
+              className="inline-flex items-center text-sm font-medium transition-colors hover:text-primary"
             >
               Read Q&A by neighborhood
-              <ArrowRight className="ml-2 size-4" aria-hidden="true" />
+              <ArrowRight className="ml-2 size-4" />
             </a>
           </div>
 
-          <div className="mt-8 grid gap-4 md:grid-cols-2">
+          <div className="grid gap-x-8 gap-y-12 md:grid-cols-2 lg:grid-cols-4">
             {neighborhoods.map((n) => (
-              <Card
-                key={n.title}
-                className="hover-elevate rounded-3xl border bg-card p-6"
-                data-testid={`card-neighborhood-${n.title.replace(/\s+/g, "-").toLowerCase()}`}
-              >
-                <div className="font-serif text-2xl">{n.title}</div>
-                <div className="mt-2 max-w-prose text-sm text-muted-foreground">{n.desc}</div>
-                <div className="mt-5">
-                  <a
-                    href="/blog"
-                    className="inline-flex items-center justify-center rounded-full border bg-background px-4 py-2 text-sm transition-colors hover:bg-muted"
-                    data-testid={`link-neighborhood-${n.title.replace(/\s+/g, "-").toLowerCase()}`}
-                  >
-                    Explore Q&A
-                    <ArrowRight className="ml-2 size-4" aria-hidden="true" />
-                  </a>
+              <div key={n.title} className="group cursor-pointer space-y-4">
+                <div className="aspect-[4/3] w-full overflow-hidden bg-muted transition-colors group-hover:bg-muted/80">
+                   {/* Placeholder for neighborhood image */}
+                   <div className="h-full w-full bg-secondary/50"></div>
                 </div>
-              </Card>
+                <div className="space-y-2">
+                  <div className="font-serif text-xl">{n.title}</div>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{n.desc}</p>
+                  <div className="pt-2">
+                    <span className="text-xs font-medium uppercase tracking-wider text-primary opacity-0 transition-opacity group-hover:opacity-100">
+                      Explore Q&A
+                    </span>
+                  </div>
+                </div>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section id="community" className="border-t">
-        <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
-          <Card className="overflow-hidden rounded-3xl border bg-card">
-            <div className="grid gap-0 md:grid-cols-12">
-              <div className="relative md:col-span-5">
-                <div className="absolute inset-0 bg-[radial-gradient(900px_circle_at_40%_10%,hsl(var(--accent)/0.25),transparent_55%),linear-gradient(180deg,hsl(var(--primary)/0.18),transparent_60%)]" />
-                <div className="relative p-8">
-                  <div className="text-xs uppercase tracking-[0.18em] text-muted-foreground">
-                    Community
-                  </div>
-                  <div
-                    className="mt-2 font-serif text-3xl tracking-tight"
-                    data-testid="text-community-title"
-                  >
-                    We show up.
-                  </div>
-                  <p className="mt-3 text-sm text-muted-foreground" data-testid="text-community-body">
-                    We’re major sponsors of Crocker Highlands Elementary School and active with the
-                    PTA—because the best neighborhoods are built by neighbors.
-                  </p>
-                  <div className="mt-6">
-                    <Button className="rounded-full" data-testid="button-community-connect">
-                      Connect with us
-                      <ArrowRight className="ml-2 size-4" aria-hidden="true" />
-                    </Button>
-                  </div>
-                </div>
+      <section id="community" className="border-t border-border/40 bg-secondary/20">
+        <div className="mx-auto max-w-6xl px-4 py-24 sm:px-6">
+          <div className="grid gap-16 md:grid-cols-2">
+            <div>
+              <div className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">
+                Community
               </div>
-              <div className="md:col-span-7">
-                <div className="p-8">
-                  <div className="grid gap-4 sm:grid-cols-2">
-                    <Card className="rounded-2xl border bg-background p-5" data-testid="card-community-1">
-                      <div className="text-xs text-muted-foreground">What this means for clients</div>
-                      <div className="mt-1 font-serif text-xl">Local context</div>
-                      <div className="mt-2 text-sm text-muted-foreground">
-                        We understand school patterns, street-by-street character, and what buyers
-                        value here.
-                      </div>
-                    </Card>
-                    <Card className="rounded-2xl border bg-background p-5" data-testid="card-community-2">
-                      <div className="text-xs text-muted-foreground">How we market</div>
-                      <div className="mt-1 font-serif text-xl">Community credibility</div>
-                      <div className="mt-2 text-sm text-muted-foreground">
-                        Real relationships create authentic demand—not generic impressions.
-                      </div>
-                    </Card>
-                    <Card className="rounded-2xl border bg-background p-5" data-testid="card-community-3">
-                      <div className="text-xs text-muted-foreground">For buyers</div>
-                      <div className="mt-1 font-serif text-xl">Fast answers</div>
-                      <div className="mt-2 text-sm text-muted-foreground">
-                        Our Q&A library is built to answer the questions people actually search.
-                      </div>
-                    </Card>
-                    <Card className="rounded-2xl border bg-background p-5" data-testid="card-community-4">
-                      <div className="text-xs text-muted-foreground">For sellers</div>
-                      <div className="mt-1 font-serif text-xl">Polished process</div>
-                      <div className="mt-2 text-sm text-muted-foreground">
-                        Timing, pricing, prep, and storytelling—handled with clarity and taste.
-                      </div>
-                    </Card>
-                  </div>
-
-                  <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-                    <div className="text-sm text-muted-foreground" data-testid="text-community-cta">
-                      Want a specific answer? Start here.
-                    </div>
-                    <a
-                      href="/blog"
-                      className="inline-flex items-center justify-center rounded-full border bg-background px-4 py-2 text-sm transition-colors hover:bg-muted"
-                      data-testid="link-community-blog"
-                    >
-                      Browse Crocker Highlands Q&A
-                      <ArrowRight className="ml-2 size-4" aria-hidden="true" />
-                    </a>
-                  </div>
-                </div>
-              </div>
+              <h2 className="font-serif text-4xl tracking-tight text-foreground mb-6">
+                We show up.
+              </h2>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-8 max-w-md">
+                We’re major sponsors of Crocker Highlands Elementary School and active with the
+                PTA—because the best neighborhoods are built by neighbors.
+              </p>
+              <Button className="rounded-none bg-primary text-white hover:bg-primary/90">
+                Connect with us
+              </Button>
             </div>
-          </Card>
+
+            <div className="grid gap-8 sm:grid-cols-2">
+               <div className="space-y-3">
+                 <h3 className="font-serif text-lg">Local Context</h3>
+                 <p className="text-sm text-muted-foreground leading-relaxed">
+                   We understand school patterns, street-by-street character, and what buyers value here.
+                 </p>
+               </div>
+               <div className="space-y-3">
+                 <h3 className="font-serif text-lg">Community Credibility</h3>
+                 <p className="text-sm text-muted-foreground leading-relaxed">
+                   Real relationships create authentic demand—not generic impressions.
+                 </p>
+               </div>
+               <div className="space-y-3">
+                 <h3 className="font-serif text-lg">Fast Answers</h3>
+                 <p className="text-sm text-muted-foreground leading-relaxed">
+                   Our Q&A library is built to answer the questions people actually search.
+                 </p>
+               </div>
+               <div className="space-y-3">
+                 <h3 className="font-serif text-lg">Polished Process</h3>
+                 <p className="text-sm text-muted-foreground leading-relaxed">
+                   Timing, pricing, prep, and storytelling—handled with clarity and taste.
+                 </p>
+               </div>
+            </div>
+          </div>
         </div>
       </section>
     </Shell>
