@@ -148,68 +148,60 @@ function Shell({ children }: { children: React.ReactNode }) {
 export default function Home() {
   return (
     <Shell>
-      <section className="relative overflow-hidden bg-white">
-        <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 md:py-32">
-          <div className="grid gap-12 md:grid-cols-12 md:items-start">
-            <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-              className="md:col-span-7"
+      <section className="relative min-h-[90vh] w-full overflow-hidden bg-black/10">
+        <div className="absolute inset-0">
+          <img
+            src="/images/hero-street.jpg"
+            alt="Crocker Highlands Street"
+            className="h-full w-full object-cover object-center"
+            loading="eager"
+          />
+          <div className="absolute inset-0 bg-black/40" />
+        </div>
+        
+        <div className="relative mx-auto flex min-h-[90vh] max-w-6xl flex-col justify-center px-4 py-20 sm:px-6">
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+            className="max-w-2xl text-white"
+          >
+            <div className="mb-6 inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-white/90">
+              <span className="h-px w-8 bg-white/60"></span>
+              Luxury Real Estate · East Bay
+            </div>
+
+            <h1
+              className="font-serif text-5xl leading-[1.1] tracking-tight text-white sm:text-6xl md:text-7xl"
+              data-testid="text-hero-title"
             >
-              <div className="mb-6 inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-muted-foreground">
-                <span className="h-px w-8 bg-primary/40"></span>
-                Luxury Real Estate · East Bay
-              </div>
+              Marketed with taste, <br/>
+              <span className="italic">sold with precision.</span>
+            </h1>
 
-              <h1
-                className="font-serif text-5xl leading-[1.1] tracking-tight sm:text-6xl md:text-7xl"
-                data-testid="text-hero-title"
-              >
-                Marketed with taste, <br/>
-                <span className="text-primary italic">sold with precision.</span>
-              </h1>
-
-              <p
-                className="mt-8 max-w-xl text-lg text-muted-foreground leading-relaxed font-light"
-                data-testid="text-hero-subtitle"
-              >
-                We’re a three-agent team at The Grubb Company focused on Oakland’s most
-                enduring neighborhoods—Crocker Highlands and Trestle Glen—serving Piedmont and
-                Berkeley with clarity and calm.
-              </p>
-
-              <div className="mt-10 flex flex-col gap-5 sm:flex-row sm:items-center">
-                <Button className="rounded-none h-12 px-8 text-base bg-primary text-white hover:bg-primary/90" data-testid="button-hero-consult">
-                  Request a private consult
-                </Button>
-                <a
-                  href="/blog"
-                  className="inline-flex items-center text-sm font-medium text-foreground transition-colors hover:text-primary"
-                  data-testid="link-hero-qa"
-                >
-                  Read neighborhood Q&A
-                  <ArrowRight className="ml-2 size-4" />
-                </a>
-              </div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-              className="md:col-span-5 relative"
+            <p
+              className="mt-8 max-w-xl text-lg text-white/90 leading-relaxed font-light"
+              data-testid="text-hero-subtitle"
             >
-              <div className="relative aspect-[3/4] w-full overflow-hidden bg-muted">
-                <img
-                  src="/images/hero-gate.jpg"
-                  alt="Crocker Highlands Gate"
-                  className="h-full w-full object-cover"
-                  loading="eager"
-                />
-              </div>
-            </motion.div>
-          </div>
+              We’re a three-agent team at The Grubb Company focused on Oakland’s most
+              enduring neighborhoods—Crocker Highlands and Trestle Glen—serving Piedmont and
+              Berkeley with clarity and calm.
+            </p>
+
+            <div className="mt-10 flex flex-col gap-5 sm:flex-row sm:items-center">
+              <Button className="rounded-none h-12 px-8 text-base bg-white text-primary hover:bg-white/90" data-testid="button-hero-consult">
+                Request a private consult
+              </Button>
+              <a
+                href="/blog"
+                className="inline-flex items-center text-sm font-medium text-white transition-colors hover:text-white/80"
+                data-testid="link-hero-qa"
+              >
+                Read neighborhood Q&A
+                <ArrowRight className="ml-2 size-4" />
+              </a>
+            </div>
+          </motion.div>
         </div>
       </section>
 
