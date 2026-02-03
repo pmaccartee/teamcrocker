@@ -19,7 +19,7 @@ const team = [
     bio: "Strategic pricing, thoughtful strategy, and steady, relationship-driven guidance.",
   },
   {
-    name: "Ilona Cample",
+    name: "Ilona Campbell",
     role: "Partner Agent",
     bio: "Detail-forward operations and client care that keeps the process polished and low-friction.",
   },
