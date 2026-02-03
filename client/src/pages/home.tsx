@@ -252,7 +252,7 @@ export default function Home() {
                   <img
                     src="/images/team.jpg"
                     alt="Crocker Highlands Team"
-                    className="h-full w-full object-cover"
+                    className="h-full w-full object-cover scale-x-[-1]"
                     loading="lazy"
                   />
                 </div>
