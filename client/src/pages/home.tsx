@@ -273,6 +273,55 @@ export default function Home() {
         </div>
       </section>
 
+      <section id="community" className="border-t border-border/40 bg-secondary/20">
+        <div className="mx-auto max-w-6xl px-4 py-24 sm:px-6">
+          <div className="grid gap-16 md:grid-cols-2">
+            <div>
+              <div className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">
+                Community
+              </div>
+              <h2 className="font-serif text-4xl tracking-tight text-foreground mb-6">
+                We show up.
+              </h2>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-8 max-w-md">
+                We’re major sponsors of Crocker Highlands Elementary School and active with the
+                PTA—because the best neighborhoods are built by neighbors.
+              </p>
+              <Button className="rounded-none bg-primary text-white hover:bg-primary/90">
+                Connect with us
+              </Button>
+            </div>
+
+            <div className="grid gap-8 sm:grid-cols-2">
+               <div className="space-y-3">
+                 <h3 className="font-serif text-lg">Local Context</h3>
+                 <p className="text-sm text-muted-foreground leading-relaxed">
+                   We understand school patterns, street-by-street character, and what buyers value here.
+                 </p>
+               </div>
+               <div className="space-y-3">
+                 <h3 className="font-serif text-lg">Community Credibility</h3>
+                 <p className="text-sm text-muted-foreground leading-relaxed">
+                   Real relationships create authentic demand—not generic impressions.
+                 </p>
+               </div>
+               <div className="space-y-3">
+                 <h3 className="font-serif text-lg">Fast Answers</h3>
+                 <p className="text-sm text-muted-foreground leading-relaxed">
+                   Our Q&A library is built to answer the questions people actually search.
+                 </p>
+               </div>
+               <div className="space-y-3">
+                 <h3 className="font-serif text-lg">Polished Process</h3>
+                 <p className="text-sm text-muted-foreground leading-relaxed">
+                   Timing, pricing, prep, and storytelling—handled with clarity and taste.
+                 </p>
+               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="neighborhoods" className="border-t border-border/40">
         <div className="mx-auto max-w-6xl px-4 py-24 sm:px-6">
           <div className="mb-16 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
@@ -319,55 +368,6 @@ export default function Home() {
                 </div>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      <section id="community" className="border-t border-border/40 bg-secondary/20">
-        <div className="mx-auto max-w-6xl px-4 py-24 sm:px-6">
-          <div className="grid gap-16 md:grid-cols-2">
-            <div>
-              <div className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">
-                Community
-              </div>
-              <h2 className="font-serif text-4xl tracking-tight text-foreground mb-6">
-                We show up.
-              </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-8 max-w-md">
-                We’re major sponsors of Crocker Highlands Elementary School and active with the
-                PTA—because the best neighborhoods are built by neighbors.
-              </p>
-              <Button className="rounded-none bg-primary text-white hover:bg-primary/90">
-                Connect with us
-              </Button>
-            </div>
-
-            <div className="grid gap-8 sm:grid-cols-2">
-               <div className="space-y-3">
-                 <h3 className="font-serif text-lg">Local Context</h3>
-                 <p className="text-sm text-muted-foreground leading-relaxed">
-                   We understand school patterns, street-by-street character, and what buyers value here.
-                 </p>
-               </div>
-               <div className="space-y-3">
-                 <h3 className="font-serif text-lg">Community Credibility</h3>
-                 <p className="text-sm text-muted-foreground leading-relaxed">
-                   Real relationships create authentic demand—not generic impressions.
-                 </p>
-               </div>
-               <div className="space-y-3">
-                 <h3 className="font-serif text-lg">Fast Answers</h3>
-                 <p className="text-sm text-muted-foreground leading-relaxed">
-                   Our Q&A library is built to answer the questions people actually search.
-                 </p>
-               </div>
-               <div className="space-y-3">
-                 <h3 className="font-serif text-lg">Polished Process</h3>
-                 <p className="text-sm text-muted-foreground leading-relaxed">
-                   Timing, pricing, prep, and storytelling—handled with clarity and taste.
-                 </p>
-               </div>
-            </div>
           </div>
         </div>
       </section>
