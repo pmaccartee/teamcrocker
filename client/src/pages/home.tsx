@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
+import { Layout } from "@/components/layout";
 
 const team = [
   {
@@ -47,111 +48,9 @@ const neighborhoods = [
   },
 ] as const;
 
-function Shell({ children }: { children: React.ReactNode }) {
-  return (
-    <div className="min-h-screen bg-background text-foreground">
-      <header className="sticky top-0 z-50 border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
-        <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-4 sm:px-6">
-          <a
-            href="/"
-            className="group inline-flex items-center gap-3"
-            data-testid="link-home"
-          >
-            <div
-              className="grid size-10 place-items-center rounded-none border border-primary/20 bg-background"
-              aria-hidden="true"
-            >
-              <span className="font-serif text-lg tracking-tight text-primary">CH</span>
-            </div>
-            <div className="leading-tight">
-              <div className="font-serif text-base tracking-tight">
-                Crocker Highlands Team
-              </div>
-              <div className="text-xs text-muted-foreground uppercase tracking-wider">The Grubb Company</div>
-            </div>
-          </a>
-
-          <nav className="hidden items-center gap-8 text-sm md:flex">
-            <a
-              href="#neighborhoods"
-              className="text-muted-foreground transition-colors hover:text-primary"
-              data-testid="link-neighborhoods"
-            >
-              Neighborhoods
-            </a>
-            <a
-              href="#team"
-              className="text-muted-foreground transition-colors hover:text-primary"
-              data-testid="link-team"
-            >
-              Team
-            </a>
-            <a
-              href="#community"
-              className="text-muted-foreground transition-colors hover:text-primary"
-              data-testid="link-community"
-            >
-              Community
-            </a>
-            <a
-              href="/blog"
-              className="text-muted-foreground transition-colors hover:text-primary"
-              data-testid="link-blog"
-            >
-              Q&A Blog
-            </a>
-          </nav>
-
-          <div className="flex items-center gap-4">
-            <a
-              href="/blog"
-              className="hidden text-sm text-muted-foreground transition-colors hover:text-primary md:inline-flex"
-              data-testid="link-explore-blog"
-            >
-              Explore Q&A
-            </a>
-            <Button className="rounded-none bg-primary text-white hover:bg-primary/90" data-testid="button-contact">
-              Contact
-            </Button>
-          </div>
-        </div>
-      </header>
-
-      <main>{children}</main>
-
-      <footer className="border-t border-border/40">
-        <div className="mx-auto grid max-w-6xl gap-6 px-4 py-12 sm:px-6 md:grid-cols-2 md:items-center">
-          <div className="space-y-3">
-            <div className="font-serif text-lg">Crocker Highlands Team</div>
-            <div className="text-sm text-muted-foreground">
-              Patrick MacCartee · Laura Ziedan · Ilona Cample
-            </div>
-            <div className="text-xs text-muted-foreground/60 max-w-sm">
-              Affiliated with The Grubb Company. All information deemed reliable but
-              not guaranteed. DRE# 01234567
-            </div>
-          </div>
-          <div className="flex flex-wrap justify-start gap-6 md:justify-end">
-            <a
-              href="/blog"
-              className="inline-flex items-center text-sm font-medium transition-colors hover:text-primary"
-              data-testid="link-footer-blog"
-            >
-              Read the Q&A Blog
-            </a>
-            <Button className="rounded-none bg-primary text-white hover:bg-primary/90" data-testid="button-footer-contact">
-              Request a consult
-            </Button>
-          </div>
-        </div>
-      </footer>
-    </div>
-  );
-}
-
 export default function Home() {
   return (
-    <Shell>
+    <Layout>
       <section className="relative min-h-[90vh] w-full overflow-hidden bg-black/10">
         <div className="absolute inset-0">
           <img
@@ -379,6 +278,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </Shell>
+    </Layout>
   );
 }

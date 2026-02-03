@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
+import { Layout } from "@/components/layout";
 
 type Article = {
   slug: string;
@@ -100,31 +101,8 @@ export default function Blog() {
   }, [query]);
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      <header className="border-b bg-background/75 backdrop-blur supports-[backdrop-filter]:bg-background/65">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-5 sm:px-6">
-          <div>
-            <div className="text-xs uppercase tracking-[0.18em] text-muted-foreground">
-              Q&A Blog
-            </div>
-            <div className="mt-1 font-serif text-2xl" data-testid="text-blog-title">
-              Crocker Highlands answers—built for search.
-            </div>
-          </div>
-          <Link href="/">
-            <Button
-              asChild
-              variant="outline"
-              className="rounded-full"
-              data-testid="button-blog-home"
-            >
-              <a data-testid="link-blog-home">Back home</a>
-            </Button>
-          </Link>
-        </div>
-      </header>
-
-      <main className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
+    <Layout>
+      <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -232,15 +210,7 @@ export default function Blog() {
             </div>
           </div>
         </motion.div>
-      </main>
-
-      <footer className="border-t">
-        <div className="mx-auto max-w-6xl px-4 py-10 text-sm text-muted-foreground sm:px-6">
-          <div data-testid="text-blog-footer">
-            Crocker Highlands Team · The Grubb Company — Q&A library (prototype)
-          </div>
-        </div>
-      </footer>
-    </div>
+      </div>
+    </Layout>
   );
 }

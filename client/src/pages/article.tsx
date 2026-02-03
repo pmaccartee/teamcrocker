@@ -111,6 +111,8 @@ const articles: Article[] = [
   },
 ];
 
+import { Layout } from "@/components/layout";
+
 function getArticle(slug: string | undefined) {
   return articles.find((a) => a.slug === slug) ?? null;
 }
@@ -121,7 +123,7 @@ export default function ArticlePage() {
 
   if (!article) {
     return (
-      <div className="min-h-screen bg-background text-foreground">
+      <Layout>
         <div className="mx-auto max-w-3xl px-4 py-14 sm:px-6">
           <Card className="rounded-3xl border bg-card p-10 text-center">
             <div className="font-serif text-2xl" data-testid="text-article-missing-title">
@@ -142,41 +144,34 @@ export default function ArticlePage() {
             </div>
           </Card>
         </div>
-      </div>
+      </Layout>
     );
   }
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      <header className="border-b bg-background/75 backdrop-blur supports-[backdrop-filter]:bg-background/65">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-5 sm:px-6">
-          <Link href="/blog">
-            <Button
-              asChild
-              variant="outline"
-              className="rounded-full"
-              data-testid="button-article-back"
-            >
-              <a data-testid="link-article-back">
-                <ArrowLeft className="mr-2 size-4" aria-hidden="true" />
-                All Q&A
-              </a>
-            </Button>
-          </Link>
-
-          <Button variant="outline" className="rounded-full" data-testid="button-article-save">
-            <Bookmark className="mr-2 size-4" aria-hidden="true" />
-            Save
-          </Button>
-        </div>
-      </header>
-
-      <main className="mx-auto max-w-3xl px-4 py-12 sm:px-6">
+    <Layout>
+      <div className="mx-auto max-w-3xl px-4 py-12 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
         >
+          <div className="mb-8">
+            <Link href="/blog">
+                <Button
+                  asChild
+                  variant="ghost"
+                  className="pl-0 text-muted-foreground hover:text-foreground"
+                  data-testid="button-article-back"
+                >
+                  <a data-testid="link-article-back">
+                    <ArrowLeft className="mr-2 size-4" aria-hidden="true" />
+                    Back to Q&A
+                  </a>
+                </Button>
+              </Link>
+          </div>
+
           <div className="flex flex-wrap items-center gap-2">
             <span
               className="inline-flex items-center rounded-full border bg-card px-2.5 py-1 text-xs text-muted-foreground"
@@ -272,13 +267,7 @@ export default function ArticlePage() {
             </div>
           </div>
         </motion.div>
-      </main>
-
-      <footer className="border-t">
-        <div className="mx-auto max-w-6xl px-4 py-10 text-sm text-muted-foreground sm:px-6">
-          <div data-testid="text-article-footer">Crocker Highlands Team · The Grubb Company</div>
-        </div>
-      </footer>
-    </div>
+      </div>
+    </Layout>
   );
 }
