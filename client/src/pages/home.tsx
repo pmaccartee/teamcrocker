@@ -278,6 +278,31 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section id="listings" className="border-t border-border/40">
+        <div className="mx-auto max-w-6xl px-4 py-24 sm:px-6">
+          <div className="flex flex-col items-center text-center">
+            <div className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">
+              Current Market
+            </div>
+            <h2 className="font-serif text-4xl tracking-tight text-foreground mb-6">
+              Homes for Sale
+            </h2>
+            <p className="text-lg text-muted-foreground leading-relaxed mb-10 max-w-xl">
+              Explore active listings in Crocker Highlands, Trestle Glen, and our featured collection.
+            </p>
+            <Button asChild className="rounded-none h-12 px-8 text-base bg-primary text-white hover:bg-primary/90">
+              <a 
+                href="https://patrickmaccartee970.realscout.com/homesearch/shared-searches/U2hhcmVhYmxlU2VhcmNoTGluay0xNzQ2OA==" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                View Listings
+              </a>
+            </Button>
+          </div>
+        </div>
+      </section>
+
       <section id="valuation" className="border-t border-border/40 bg-secondary/30">
         <div className="mx-auto max-w-4xl px-4 py-24 sm:px-6 text-center">
           <div className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">
