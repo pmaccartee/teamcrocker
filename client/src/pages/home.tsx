@@ -38,7 +38,7 @@ const neighborhoods = [
   {
     title: "Piedmont",
     desc: "Classic East Bay prestige with walkability and top-tier schools.",
-    image: null,
+    image: "/images/piedmont-havens.jpg",
   },
   {
     title: "Berkeley",
