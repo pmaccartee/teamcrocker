@@ -33,7 +33,7 @@ const neighborhoods = [
   {
     title: "Trestle Glen",
     desc: "A tucked-away pocket with storybook homes and a true community feel.",
-    image: null,
+    image: "/images/trestle-glen.jpg",
   },
   {
     title: "Piedmont",
