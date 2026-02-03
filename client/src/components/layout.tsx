@@ -27,7 +27,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
             </div>
             <div className="leading-tight">
               <div className="font-serif text-base tracking-tight">
-                Crocker Highlands Team
+                Crocker Highlands & Trestle Glen
               </div>
               <div className="text-xs text-muted-foreground uppercase tracking-wider">The Grubb Company</div>
             </div>
