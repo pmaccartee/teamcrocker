@@ -8,14 +8,14 @@ import { Separator } from "@/components/ui/separator";
 
 const team = [
   {
-    name: "Patrick MacCartee",
-    role: "Partner Agent",
-    bio: "Strategic pricing, thoughtful strategy, and steady, relationship-driven guidance.",
-  },
-  {
     name: "Laura Ziedan",
     role: "Partner Agent",
     bio: "Local insight and calm execution—helping clients navigate timing, prep, and pricing with clarity.",
+  },
+  {
+    name: "Patrick MacCartee",
+    role: "Partner Agent",
+    bio: "Strategic pricing, thoughtful strategy, and steady, relationship-driven guidance.",
   },
   {
     name: "Ilona Cample",
