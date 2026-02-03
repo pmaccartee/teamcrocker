@@ -278,6 +278,22 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section id="valuation" className="border-t border-border/40 bg-secondary/30">
+        <div className="mx-auto max-w-4xl px-4 py-24 sm:px-6 text-center">
+          <div className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">
+             Market Value
+          </div>
+          <h2 className="font-serif text-3xl tracking-tight text-foreground mb-8">
+            What is your home worth in today's market?
+          </h2>
+          
+          <div className="mx-auto max-w-2xl bg-background p-6 rounded-xl border border-border/40 shadow-sm">
+             {/* @ts-ignore */}
+             <realscout-home-value></realscout-home-value>
+          </div>
+        </div>
+      </section>
+
       <section id="listings" className="border-t border-border/40">
         <div className="mx-auto max-w-6xl px-4 py-24 sm:px-6">
           <div className="flex flex-col items-center text-center">
@@ -299,22 +315,6 @@ export default function Home() {
                 View Listings
               </a>
             </Button>
-          </div>
-        </div>
-      </section>
-
-      <section id="valuation" className="border-t border-border/40 bg-secondary/30">
-        <div className="mx-auto max-w-4xl px-4 py-24 sm:px-6 text-center">
-          <div className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">
-             Market Value
-          </div>
-          <h2 className="font-serif text-3xl tracking-tight text-foreground mb-8">
-            What is your home worth in today's market?
-          </h2>
-          
-          <div className="mx-auto max-w-2xl bg-background p-6 rounded-xl border border-border/40 shadow-sm">
-             {/* @ts-ignore */}
-             <realscout-home-value></realscout-home-value>
           </div>
         </div>
       </section>
