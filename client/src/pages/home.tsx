@@ -31,7 +31,7 @@ const team = [
     name: "Ilona Campbell",
     role: "Partner Agent",
     bio: "Detail-forward operations and client care that keeps the process polished and low-friction.",
-    image: "/images/team-ilona.png",
+    image: "/images/ilona-headshot.jpg",
     dre: "02167214",
     phone: "415-746-0957",
     email: "ilona@grubbco.com",
