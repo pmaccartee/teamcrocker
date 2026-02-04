@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import { ArrowRight, Search } from "lucide-react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import { ContactDialog } from "@/components/contact-dialog";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
@@ -81,10 +82,12 @@ export default function Blog() {
               </div>
 
               <div className="mt-6">
-                <Button className="w-full rounded-2xl" data-testid="button-blog-contact">
-                  Ask us a question
-                  <ArrowRight className="ml-2 size-4" aria-hidden="true" />
-                </Button>
+                <ContactDialog>
+                  <Button className="w-full rounded-2xl" data-testid="button-blog-contact">
+                    Ask us a question
+                    <ArrowRight className="ml-2 size-4" aria-hidden="true" />
+                  </Button>
+                </ContactDialog>
               </div>
             </Card>
           </div>

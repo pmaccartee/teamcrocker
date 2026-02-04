@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import { ArrowRight, MapPin, ShieldCheck, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import { ContactDialog } from "@/components/contact-dialog";
 import { Card } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { Layout } from "@/components/layout";
@@ -95,9 +96,11 @@ export default function Home() {
             </div>
 
             <div className="mt-10 flex flex-col gap-5 sm:flex-row sm:items-center">
-              <Button className="rounded-none h-12 px-8 text-base bg-white text-primary hover:bg-white/90" data-testid="button-hero-consult">
-                Request a private consult
-              </Button>
+              <ContactDialog>
+                <Button className="rounded-none h-12 px-8 text-base bg-white text-primary hover:bg-white/90" data-testid="button-hero-consult">
+                  Request a private consult
+                </Button>
+              </ContactDialog>
               <a
                 href="/blog"
                 className="inline-flex items-center text-sm font-medium text-white transition-colors hover:text-white/80"
@@ -143,9 +146,11 @@ export default function Home() {
                 </div>
 
                 <div className="pt-4">
-                  <Button variant="outline" className="rounded-none border-primary/20 hover:border-primary hover:text-primary bg-transparent" data-testid="button-team-contact">
-                    Get in touch with us
-                  </Button>
+                  <ContactDialog>
+                    <Button variant="outline" className="rounded-none border-primary/20 hover:border-primary hover:text-primary bg-transparent" data-testid="button-team-contact">
+                      Get in touch with us
+                    </Button>
+                  </ContactDialog>
                 </div>
              </div>
 
@@ -189,9 +194,11 @@ export default function Home() {
                 We’re major sponsors of Crocker Highlands Elementary School and active with the
                 PTA—because the best neighborhoods are built by neighbors.
               </p>
-              <Button className="rounded-none bg-primary text-white hover:bg-primary/90">
-                Connect with us
-              </Button>
+              <ContactDialog>
+                <Button className="rounded-none bg-primary text-white hover:bg-primary/90">
+                  Connect with us
+                </Button>
+              </ContactDialog>
             </div>
             <div className="relative aspect-[4/3] w-full overflow-hidden bg-muted">
               <img

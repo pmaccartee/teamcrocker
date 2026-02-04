@@ -1,6 +1,7 @@
 import type React from "react";
 import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
+import { ContactDialog } from "@/components/contact-dialog";
 
 export function Layout({ children }: { children: React.ReactNode }) {
   const [location] = useLocation();
@@ -63,9 +64,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
           </nav>
 
           <div className="flex items-center gap-4">
-            <Button className="rounded-none bg-primary text-white hover:bg-primary/90" data-testid="button-contact">
-              Contact
-            </Button>
+            <ContactDialog>
+              <Button className="rounded-none bg-primary text-white hover:bg-primary/90" data-testid="button-contact">
+                Contact
+              </Button>
+            </ContactDialog>
           </div>
         </div>
       </header>
@@ -93,9 +96,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 Answers
               </a>
             </Link>
-            <Button className="rounded-none bg-primary text-white hover:bg-primary/90" data-testid="button-footer-contact">
-              Request a consult
-            </Button>
+            <ContactDialog>
+              <Button className="rounded-none bg-primary text-white hover:bg-primary/90" data-testid="button-footer-contact">
+                Request a consult
+              </Button>
+            </ContactDialog>
           </div>
         </div>
       </footer>
