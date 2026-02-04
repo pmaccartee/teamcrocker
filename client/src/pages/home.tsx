@@ -342,6 +342,41 @@ export default function Home() {
         </div>
       </section>
 
+      <section id="brokerage" className="border-t border-border/40 bg-secondary/30">
+        <div className="mx-auto max-w-6xl px-4 py-24 sm:px-6">
+          <div className="grid gap-12 md:grid-cols-2 md:items-center">
+            <div className="relative aspect-[4/3] w-full overflow-hidden bg-muted">
+              <img
+                src="/images/grubb-office.png"
+                alt="The Grubb Company Office"
+                className="h-full w-full object-cover"
+                loading="lazy"
+              />
+            </div>
+            <div>
+              <div className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">
+                Excellence Evolved
+              </div>
+              <h2 className="font-serif text-4xl tracking-tight text-foreground mb-6">
+                The Grubb Company
+              </h2>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+                The Grubb Company has set the high bar for luxury real estate in the East Bay since 1967. As a locally owned brokerage, we combine our deep knowledge with modern technologies to deliver an exceptional experience for our clients.
+              </p>
+              <Button asChild variant="outline" className="rounded-none border-primary/20 hover:border-primary hover:text-primary bg-transparent">
+                <a 
+                  href="https://www.grubbco.com/about/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  More about the Grubb Co.
+                </a>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="agents" className="border-t border-border/40">
         <div className="mx-auto max-w-6xl px-4 py-24 sm:px-6">
           <div className="text-center mb-16">
