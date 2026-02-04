@@ -11,7 +11,7 @@ import { Layout } from "@/components/layout";
 const team = [
   {
     name: "Patrick MacCartee",
-    role: "Partner Agent",
+    role: "Realtor",
     bio: "Strategic pricing, thoughtful strategy, and steady, relationship-driven guidance.",
     image: "/images/patrick-headshot.png",
     dre: "02142693",
@@ -20,7 +20,7 @@ const team = [
   },
   {
     name: "Laura Zeidan Baldazo",
-    role: "Partner Agent",
+    role: "Realtor",
     bio: "Local insight and calm execution—helping clients navigate timing, prep, and pricing with clarity.",
     image: "/images/team-laura.png",
     dre: "01955500",
@@ -29,7 +29,7 @@ const team = [
   },
   {
     name: "Ilona Campbell",
-    role: "Partner Agent",
+    role: "Realtor",
     bio: "Detail-forward operations and client care that keeps the process polished and low-friction.",
     image: "/images/ilona-headshot.jpg",
     dre: "02167214",
