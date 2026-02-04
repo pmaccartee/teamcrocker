@@ -1017,5 +1017,432 @@ export const blogPosts: BlogPost[] = [
       keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
       related: ["moving checklist", "new homeowner guide"]
     }
+  },
+  // New Bulk Seller Articles
+  {
+    slug: "determine-listing-price",
+    title: "How do I determine the right listing price for my home?",
+    excerpt: "Start with a Comparative Market Analysis (CMA) and consider location, condition, and market trends. Consult an expert agent.",
+    neighborhood: "East Bay",
+    intent: "Seller",
+    updated: "2026-02-04",
+    question: "How do I determine the right listing price for my home?",
+    answer: [
+      "Pricing your home correctly is crucial for attracting potential buyers. Start with a Comparative Market Analysis (CMA), which evaluates similar homes in your area that have sold recently.",
+      "Factors to consider include location, square footage, condition, and unique features of your home. It’s also wise to monitor market trends—if homes are selling quickly, you might price slightly higher. Conversely, if the market is slow, consider pricing competitively.",
+      "Consulting a knowledgeable real estate agent with experience in your specific neighborhood, such as Rockridge or Crocker Highlands, can provide invaluable insights and help you set a price that maximizes your return while appealing to buyers."
+    ],
+    seo: {
+      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
+      related: ["pricing strategy", "home valuation"]
+    }
+  },
+  {
+    slug: "renovations-increase-value",
+    title: "What renovations will increase my home’s value?",
+    excerpt: "Focus on kitchen and bathroom remodels for the best ROI. Enhance curb appeal and consider energy-efficient upgrades.",
+    neighborhood: "East Bay",
+    intent: "Seller",
+    updated: "2026-02-04",
+    question: "What renovations will increase my home’s value?",
+    answer: [
+      "Not all renovations yield the same return on investment. Focus on kitchen and bathroom remodels, as these areas typically attract the most attention from buyers. Upgrades like modern appliances, high-quality countertops, and updated fixtures can significantly enhance appeal.",
+      "Additionally, consider enhancing curb appeal with landscaping or a fresh coat of paint. Energy-efficient upgrades, like new windows or HVAC systems, can also attract buyers who are environmentally conscious. It’s essential to align your renovations with the expectations of buyers in the luxury market, as they often look for high-end finishes and smart home features."
+    ],
+    seo: {
+      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
+      related: ["home renovations", "ROI on home improvements"]
+    }
+  },
+  {
+    slug: "time-to-sell-home",
+    title: "How long will it take to sell my home?",
+    excerpt: "Selling time varies by market, but typically takes 30-90 days in luxury areas. Marketing strategies can expedite the process.",
+    neighborhood: "East Bay",
+    intent: "Seller",
+    updated: "2026-02-04",
+    question: "How long will it take to sell my home?",
+    answer: [
+      "The time it takes to sell a home can vary widely based on market conditions, pricing strategies, and the home’s location and condition. In luxury markets like Piedmont, homes can take longer to sell due to the higher price points and more discerning buyers.",
+      "On average, homes in these areas may take anywhere from 30 to 90 days to sell, but it could be longer in a slow market. Working with a skilled real estate agent can help you implement effective marketing strategies to expedite the sale, such as staging, professional photography, and targeted online advertising to reach the right audience."
+    ],
+    seo: {
+      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
+      related: ["days on market", "selling timeline"]
+    }
+  },
+  {
+    slug: "seller-disclosures",
+    title: "What should I disclose to potential buyers?",
+    excerpt: "Disclose known issues like past flooding or repairs. Transparency builds trust and avoids legal disputes.",
+    neighborhood: "East Bay",
+    intent: "Seller",
+    updated: "2026-02-04",
+    question: "What should I disclose to potential buyers?",
+    answer: [
+      "Transparency is key when it comes to disclosures. Sellers are legally required to disclose known issues that could affect the property’s value or livability, such as past flooding, plumbing issues, or any repairs conducted.",
+      "Providing this information upfront can build trust with potential buyers and mitigate the risk of legal disputes later. Additionally, consider sharing details about the home’s history, neighborhood amenities, and any upgrades or renovations that have been completed, as these can enhance the property's appeal."
+    ],
+    seo: {
+      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
+      related: ["real estate disclosures", "seller obligations"]
+    }
+  },
+  {
+    slug: "prepare-home-for-showings",
+    title: "How can I prepare my home for showings?",
+    excerpt: "Deep clean, declutter, depersonalize, and stage your home. Highlight key features and ensure good lighting.",
+    neighborhood: "East Bay",
+    intent: "Seller",
+    updated: "2026-02-04",
+    question: "How can I prepare my home for showings?",
+    answer: [
+      "First impressions matter. Start by deep cleaning your home and decluttering to create a more spacious feel. Depersonalizing your space is essential; remove family photos and personal items so buyers can envision themselves living there.",
+      "Staging can significantly enhance the home’s appeal—consider hiring a professional stager who understands the luxury market. Highlight key features of your home, such as fireplaces or outdoor spaces, and ensure that your home is well-lit and inviting during showings. If possible, schedule showings during the day to take advantage of natural light."
+    ],
+    seo: {
+      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
+      related: ["home staging", "showing tips"]
+    }
+  },
+  {
+    slug: "what-is-sellers-market",
+    title: "What is a seller’s market?",
+    excerpt: "A seller’s market is when demand exceeds supply, leading to higher prices and bidding wars. Use this to your advantage.",
+    neighborhood: "East Bay",
+    intent: "Seller",
+    updated: "2026-02-04",
+    question: "What is a seller’s market?",
+    answer: [
+      "A seller’s market occurs when demand for homes exceeds supply, often resulting in higher prices and quicker sales. In such a market, buyers may compete for limited listings, leading to bidding wars.",
+      "As a seller, this can work in your favor, allowing you to negotiate better terms and potentially sell above your asking price. Understanding local market conditions is crucial—stay informed about inventory levels, average days on the market, and recent sales in your area, as these factors influence your selling strategy."
+    ],
+    seo: {
+      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
+      related: ["market trends", "seller advantage"]
+    }
+  },
+  {
+    slug: "negotiate-offers-effectively",
+    title: "How do I negotiate offers effectively?",
+    excerpt: "Review offers carefully, considering price and terms. Counter-offer strategically and maintain communication with your agent.",
+    neighborhood: "East Bay",
+    intent: "Seller",
+    updated: "2026-02-04",
+    question: "How do I negotiate offers effectively?",
+    answer: [
+      "Effective negotiation requires a clear strategy. Review each offer carefully, considering not only the price but also the buyer’s financial qualifications and contingencies.",
+      "Be prepared to counter-offer, and consider what terms are most important to you—perhaps a quicker closing date or fewer contingencies. Maintaining open lines of communication with your real estate agent is essential, as they can provide insights into the motivations of potential buyers and help you craft a response that aligns with your objectives. Additionally, consider the emotional aspect; if you feel a personal connection to the buyer’s offer, it might influence your decision."
+    ],
+    seo: {
+      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
+      related: ["negotiation tips", "counter offers"]
+    }
+  },
+  {
+    slug: "staging-home-benefits",
+    title: "Should I stage my home?",
+    excerpt: "Yes, staging creates an emotional connection and highlights best features. Staged homes often sell faster and for more.",
+    neighborhood: "East Bay",
+    intent: "Seller",
+    updated: "2026-02-04",
+    question: "Should I stage my home?",
+    answer: [
+      "Yes, staging can make a significant difference in how buyers perceive your home. In the luxury market, buyers are looking for properties that feel inviting and well-maintained.",
+      "Professional staging can highlight the best features of your home and create an emotional connection with potential buyers. Staged homes often sell faster and at a higher price point than those that are not staged. Consider hiring a staging professional who has experience with luxury properties to ensure that your home appeals to your target demographic."
+    ],
+    seo: {
+      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
+      related: ["home staging", "selling tips"]
+    }
+  },
+  {
+    slug: "common-selling-pitfalls",
+    title: "What are the common pitfalls in selling a home?",
+    excerpt: "Avoid overpricing, neglecting repairs, and poor marketing. Work with a knowledgeable agent to navigate the process.",
+    neighborhood: "East Bay",
+    intent: "Seller",
+    updated: "2026-02-04",
+    question: "What are the common pitfalls in selling a home?",
+    answer: [
+      "Common pitfalls include overpricing your home, neglecting necessary repairs, and poor marketing strategies. Overpricing can lead to prolonged listings and potential price reductions, while neglecting repairs may result in lower offers or failed inspections.",
+      "Additionally, inadequate marketing can prevent your home from reaching the right audience. To avoid these pitfalls, work closely with a knowledgeable real estate agent who can guide you through the selling process and help you implement a comprehensive marketing plan tailored to the luxury market."
+    ],
+    seo: {
+      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
+      related: ["selling mistakes", "real estate advice"]
+    }
+  },
+  {
+    slug: "choosing-listing-agent",
+    title: "How do I choose the right listing agent?",
+    excerpt: "Look for a proven track record, effective marketing, and personal rapport. Check references and past successes.",
+    neighborhood: "East Bay",
+    intent: "Seller",
+    updated: "2026-02-04",
+    question: "How do I choose the right listing agent?",
+    answer: [
+      "Selecting the right listing agent is critical to a successful sale. Look for an agent with a proven track record in your specific neighborhood and the luxury market, as they will have a better understanding of local trends and buyer expectations.",
+      "Assess their marketing strategies and ensure they utilize high-quality photography, virtual tours, and targeted online advertising. Personal rapport is also essential; you want an agent who communicates effectively and understands your needs and goals. Don’t hesitate to ask for references or examples of their past successes."
+    ],
+    seo: {
+      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
+      related: ["hiring a realtor", "listing agent"]
+    }
+  },
+  {
+    slug: "seller-closing-costs",
+    title: "What are the closing costs for sellers?",
+    excerpt: "Seller closing costs include commissions, transfer taxes, and title insurance. Budget for these expenses upfront.",
+    neighborhood: "East Bay",
+    intent: "Seller",
+    updated: "2026-02-04",
+    question: "What are the closing costs for sellers?",
+    answer: [
+      "Closing costs can vary but typically include agent commissions (often 5-6% of the sale price), transfer taxes, title insurance, and any outstanding property taxes. It’s important to budget for these costs, as they can add up to a significant amount.",
+      "Understanding these expenses upfront can help you plan your finances and avoid surprises during the closing process. Your real estate agent should provide a detailed breakdown of expected closing costs based on your specific situation."
+    ],
+    seo: {
+      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
+      related: ["closing costs", "seller expenses"]
+    }
+  },
+  {
+    slug: "handling-multiple-offers-seller",
+    title: "How do I handle multiple offers?",
+    excerpt: "Review all offers carefully. Consider counter-offering or asking for 'highest and best' to maximize your sale.",
+    neighborhood: "East Bay",
+    intent: "Seller",
+    updated: "2026-02-04",
+    question: "How do I handle multiple offers?",
+    answer: [
+      "Handling multiple offers can be both exciting and challenging. Start by reviewing each offer carefully, considering not just the price but also contingencies, financing, and the buyer's qualifications.",
+      "Consider making a counter-offer to one or more buyers, and if necessary, ask for “highest and best” offers to encourage competitive bidding. Keep open communication with your real estate agent throughout the process, as they can help you navigate negotiations and determine the best course of action based on your goals."
+    ],
+    seo: {
+      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
+      related: ["multiple offers", "bidding wars"]
+    }
+  },
+  {
+    slug: "documents-for-selling",
+    title: "What documents do I need to prepare for selling?",
+    excerpt: "Gather deeds, disclosures, warranties, and repair records. Having these ready builds buyer confidence.",
+    neighborhood: "East Bay",
+    intent: "Seller",
+    updated: "2026-02-04",
+    question: "What documents do I need to prepare for selling?",
+    answer: [
+      "Essential documents include the property deed, disclosure statements, and any warranties or guarantees related to appliances or systems in the home. It’s also helpful to have any repair records, previous inspection reports, and documentation regarding any renovations or upgrades you’ve made.",
+      "Having these documents readily available can streamline the selling process and instill confidence in potential buyers."
+    ],
+    seo: {
+      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
+      related: ["selling documents", "paperwork"]
+    }
+  },
+  {
+    slug: "marketing-luxury-home",
+    title: "How do I market my luxury home?",
+    excerpt: "Use high-quality media, targeted online ads, and exclusive events. Tailor the approach to affluent buyers.",
+    neighborhood: "East Bay",
+    intent: "Seller",
+    updated: "2026-02-04",
+    question: "How do I market my luxury home?",
+    answer: [
+      "Marketing a luxury home requires a tailored approach. Utilize high-quality photography and videography to showcase your property’s best features, and consider creating virtual tours for online viewers.",
+      "Engage in targeted online advertising through platforms like Facebook and Instagram, and leverage real estate websites that attract affluent buyers. Networking within local luxury markets and hosting exclusive open houses can also drive interest. Collaborating with a marketing professional experienced in luxury real estate can enhance your strategy and reach the right audience."
+    ],
+    seo: {
+      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
+      related: ["luxury marketing", "selling strategy"]
+    }
+  },
+  {
+    slug: "contingencies-affect-sale",
+    title: "What are contingencies, and how do they affect my sale?",
+    excerpt: "Contingencies protect buyers but limit seller flexibility. Understand financing, inspection, and appraisal clauses.",
+    neighborhood: "East Bay",
+    intent: "Seller",
+    updated: "2026-02-04",
+    question: "What are contingencies, and how do they affect my sale?",
+    answer: [
+      "Contingencies are conditions that must be met for the sale to proceed, such as financing, inspection, or appraisal contingencies. These clauses protect buyers but can impact the seller’s flexibility during negotiations.",
+      "Be prepared to discuss potential contingencies with interested buyers and consider which ones you’re willing to accommodate. Understanding how these contingencies affect your selling timeline and negotiations is crucial for a smooth transaction."
+    ],
+    seo: {
+      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
+      related: ["real estate contingencies", "contract terms"]
+    }
+  },
+  {
+    slug: "sell-before-buying",
+    title: "Should I sell my home before buying a new one?",
+    excerpt: "Selling first offers financial clarity but may require temporary housing. Selling second offers convenience but financial risk.",
+    neighborhood: "East Bay",
+    intent: "Seller",
+    updated: "2026-02-04",
+    question: "Should I sell my home before buying a new one?",
+    answer: [
+      "Selling your home before buying a new one can provide financial clarity and strengthen your negotiating position. However, it may require temporary housing if you find a buyer before securing a new home.",
+      "Assess your financial situation and market conditions—if homes are selling quickly, it might be advantageous to sell first. Alternatively, if you find a home you love, consider exploring bridge loans or other financing options to facilitate a smoother transition."
+    ],
+    seo: {
+      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
+      related: ["timing the market", "bridge loans"]
+    }
+  },
+  {
+    slug: "smooth-closing-process",
+    title: "How do I ensure a smooth closing process?",
+    excerpt: "Stay organized, review documents, and communicate openly. Address issues early to avoid delays.",
+    neighborhood: "East Bay",
+    intent: "Seller",
+    updated: "2026-02-04",
+    question: "How do I ensure a smooth closing process?",
+    answer: [
+      "To ensure a smooth closing process, stay organized and responsive to requests from your agent, lender, and title company. Review all documents carefully before signing, and be prepared to provide any necessary information promptly.",
+      "Address any potential issues early, such as title problems or outstanding repairs, to avoid delays. Maintaining open communication with all parties involved can help facilitate a seamless closing experience."
+    ],
+    seo: {
+      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
+      related: ["closing tips", "transaction management"]
+    }
+  },
+  {
+    slug: "tax-implications-selling",
+    title: "What are the tax implications of selling my home?",
+    excerpt: "Capital gains tax may apply, but exemptions exist ($250k/$500k). Consult a tax professional for details.",
+    neighborhood: "East Bay",
+    intent: "Seller",
+    updated: "2026-02-04",
+    question: "What are the tax implications of selling my home?",
+    answer: [
+      "When selling a home, capital gains tax may apply if you sell for a profit. The IRS allows for certain exemptions, such as the $250,000 exclusion for single filers and $500,000 for married couples filing jointly, provided you’ve lived in the home for at least two of the past five years.",
+      "Consult a tax professional to understand your specific situation, potential deductions, and any tax implications related to the sale."
+    ],
+    seo: {
+      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
+      related: ["capital gains tax", "real estate taxes"]
+    }
+  },
+  {
+    slug: "sell-home-as-is",
+    title: "Can I sell my home as-is?",
+    excerpt: "Yes, but it may limit buyers and lower price. Disclose issues and price competitively.",
+    neighborhood: "East Bay",
+    intent: "Seller",
+    updated: "2026-02-04",
+    question: "Can I sell my home as-is?",
+    answer: [
+      "Yes, selling as-is is an option, but it may limit your buyer pool and affect your selling price. While some buyers may be looking for renovation projects, many prefer move-in ready homes.",
+      "If you choose to sell as-is, disclose any known issues and consider pricing the home competitively to attract offers. Working with an experienced agent can help you navigate the challenges of an as-is sale."
+    ],
+    seo: {
+      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
+      related: ["selling as-is", "fixer upper"]
+    }
+  },
+  {
+    slug: "role-of-curb-appeal",
+    title: "What role does curb appeal play in selling my home?",
+    excerpt: "Curb appeal creates the first impression. Landscaping, paint, and lighting are key, especially in luxury markets.",
+    neighborhood: "East Bay",
+    intent: "Seller",
+    updated: "2026-02-04",
+    question: "What role does curb appeal play in selling my home?",
+    answer: [
+      "Curb appeal is crucial as it forms the first impression for potential buyers. Enhancing your home’s exterior can significantly impact interest levels. Simple improvements such as landscaping, fresh paint, and clean walkways can make a substantial difference.",
+      "Consider upgrading outdoor lighting and ensuring the front door looks inviting. In luxury markets, buyers often expect high standards for curb appeal, so investing in these improvements can pay off during showings."
+    ],
+    seo: {
+      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
+      related: ["curb appeal", "home exterior"]
+    }
+  },
+  {
+    slug: "market-trends-selling-strategy",
+    title: "How do market trends affect my selling strategy?",
+    excerpt: "Market trends dictate pricing and marketing. Adjust your strategy based on inventory and competition.",
+    neighborhood: "East Bay",
+    intent: "Seller",
+    updated: "2026-02-04",
+    question: "How do market trends affect my selling strategy?",
+    answer: [
+      "Understanding local market trends is essential for developing an effective selling strategy. Factors like inventory levels, average days on the market, and recent sales data can inform your pricing and marketing decisions.",
+      "If the market is competitive, you may want to price slightly below market value to attract more buyers. Conversely, in a slower market, pricing competitively and highlighting unique features can help differentiate your home from others. Staying informed about trends in luxury markets, such as those in Piedmont, can help you make data-driven decisions."
+    ],
+    seo: {
+      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
+      related: ["market analysis", "selling strategy"]
+    }
+  },
+  {
+    slug: "what-happens-inspection",
+    title: "What happens during the home inspection?",
+    excerpt: "Inspectors check major systems. Be ready for negotiations on repairs or credits after the report.",
+    neighborhood: "East Bay",
+    intent: "Seller",
+    updated: "2026-02-04",
+    question: "What happens during the home inspection?",
+    answer: [
+      "A home inspection involves a professional examining your property to identify any potential issues. Inspectors evaluate major systems, including plumbing, electrical, roofing, and HVAC.",
+      "After the inspection, you’ll receive a detailed report outlining any findings. Be prepared for potential negotiations regarding repairs or credits based on the inspection results. Understanding common inspection concerns in your area can help you address them proactively before listing."
+    ],
+    seo: {
+      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
+      related: ["home inspection", "repair negotiation"]
+    }
+  },
+  {
+    slug: "present-during-showings",
+    title: "Should I be present during showings?",
+    excerpt: "It's best to leave during showings so buyers feel comfortable. Ensure the home is clean and ready.",
+    neighborhood: "East Bay",
+    intent: "Seller",
+    updated: "2026-02-04",
+    question: "Should I be present during showings?",
+    answer: [
+      "It’s generally best to allow buyers to explore your home without your presence. This creates a more comfortable environment for them to envision themselves in the space.",
+      "It’s important to allow buyers to discuss their thoughts openly with their agents. Consider scheduling showings when you’re not home, but ensure your home is clean and well-prepared to make a positive impression."
+    ],
+    seo: {
+      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
+      related: ["showings", "selling etiquette"]
+    }
+  },
+  {
+    slug: "benefits-of-agent",
+    title: "What are the benefits of using a real estate agent?",
+    excerpt: "Agents provide expertise, negotiation skills, and marketing resources, making the process smoother and more successful.",
+    neighborhood: "East Bay",
+    intent: "Seller",
+    updated: "2026-02-04",
+    question: "What are the benefits of using a real estate agent?",
+    answer: [
+      "A skilled real estate agent provides expertise, negotiation skills, and marketing resources that can significantly enhance your selling experience. They can help you navigate the complexities of the selling process, from pricing and staging to negotiations and closing.",
+      "Agents have access to market data, allowing them to position your home effectively within the luxury market. Additionally, they can handle the paperwork and ensure compliance with local regulations, making the process smoother and less stressful for you."
+    ],
+    seo: {
+      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
+      related: ["real estate agent", "selling benefits"]
+    }
+  },
+  {
+    slug: "best-time-to-sell",
+    title: "What is the best time to sell my home?",
+    excerpt: "Spring and summer are popular, but luxury markets may differ. Consult your agent for the best timing.",
+    neighborhood: "East Bay",
+    intent: "Seller",
+    updated: "2026-02-04",
+    question: "What is the best time to sell my home?",
+    answer: [
+      "The best time to sell a home often depends on local market conditions. Spring and summer typically see increased buyer activity, as families prefer to move during school breaks.",
+      "However, luxury markets can have unique trends; for example, affluent buyers may be more active in the fall or winter months. Consult with your real estate agent to analyze current market conditions and determine the optimal time to list your home for sale."
+    ],
+    seo: {
+      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
+      related: ["market timing", "selling season"]
+    }
   }
 ];
