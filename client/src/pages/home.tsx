@@ -317,33 +317,64 @@ export default function Home() {
              </div>
 
              <div className="md:col-span-12 lg:col-span-8 space-y-12">
-                <div className="grid gap-8 sm:grid-cols-3">
+                <div className="relative aspect-[4/3] w-full overflow-hidden bg-muted">
+                  <img
+                    src="/images/team.jpg"
+                    alt="Crocker Highlands Team"
+                    className="h-full w-full object-cover scale-x-[-1]"
+                    loading="lazy"
+                  />
+                </div>
+                
+                <div className="grid gap-10 sm:grid-cols-3">
                   {team.map((m) => (
-                    <div key={m.name} className="space-y-4">
-                      <div className="aspect-[3/4] w-full overflow-hidden bg-muted">
-                        <img
-                          src={m.image}
-                          alt={m.name}
-                          className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
-                          loading="lazy"
-                        />
-                      </div>
-                      <div className="space-y-2">
-                        <div className="font-serif text-lg leading-tight">{m.name}</div>
-                        <div className="text-xs uppercase tracking-wider text-muted-foreground">{m.role}</div>
-                        <p className="text-sm text-muted-foreground/80 leading-relaxed">
-                          {m.bio}
-                        </p>
-                        <div className="pt-2 space-y-1 text-sm text-muted-foreground">
-                          <div className="text-xs uppercase tracking-wider text-primary font-medium">DRE# {m.dre}</div>
-                          <div><a href={`tel:${m.phone}`} className="hover:text-primary transition-colors">{m.phone}</a></div>
-                          <div><a href={`mailto:${m.email}`} className="hover:text-primary transition-colors">{m.email}</a></div>
-                        </div>
-                      </div>
+                    <div key={m.name} className="space-y-3">
+                      <div className="font-serif text-lg leading-tight">{m.name}</div>
+                      <div className="text-xs uppercase tracking-wider text-muted-foreground">{m.role}</div>
+                      <p className="text-sm text-muted-foreground/80 leading-relaxed">
+                        {m.bio}
+                      </p>
                     </div>
                   ))}
                 </div>
              </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="agents" className="border-t border-border/40">
+        <div className="mx-auto max-w-6xl px-4 py-24 sm:px-6">
+          <div className="text-center mb-16">
+            <div className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">
+              Direct Contact
+            </div>
+            <h2 className="font-serif text-4xl tracking-tight text-foreground">
+              Individual Agent Details
+            </h2>
+          </div>
+          
+          <div className="grid gap-8 sm:grid-cols-3">
+            {team.map((m) => (
+              <div key={m.name} className="space-y-4">
+                <div className="aspect-[3/4] w-full overflow-hidden bg-muted">
+                  <img
+                    src={m.image}
+                    alt={m.name}
+                    className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="space-y-2">
+                  <div className="font-serif text-lg leading-tight">{m.name}</div>
+                  <div className="text-xs uppercase tracking-wider text-muted-foreground">{m.role}</div>
+                  <div className="pt-2 space-y-1 text-sm text-muted-foreground">
+                    <div className="text-xs uppercase tracking-wider text-primary font-medium">DRE# {m.dre}</div>
+                    <div><a href={`tel:${m.phone}`} className="hover:text-primary transition-colors">{m.phone}</a></div>
+                    <div><a href={`mailto:${m.email}`} className="hover:text-primary transition-colors">{m.email}</a></div>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
