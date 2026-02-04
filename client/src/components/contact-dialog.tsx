@@ -21,7 +21,7 @@ export function ContactDialog({ children }: ContactDialogProps) {
 
   const user = "teamcrocker";
   const domain = "grubbco.com";
-  const phoneDigits = "5103390400";
+  const phoneDigits = "5108594895";
 
   const handleReveal = () => {
     setEmailHref(`mailto:${user}@${domain}`);
@@ -64,7 +64,7 @@ export function ContactDialog({ children }: ContactDialogProps) {
           >
             <a href={phoneHref}>
               <Phone className="size-5" />
-              Call 510.339.0400
+              Call 510.859.4895
             </a>
           </Button>
         </div>
