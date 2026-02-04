@@ -16,7 +16,7 @@ const team = [
     image: "/images/patrick-headshot.png",
     dre: "02142693",
     phone: "415-637-0257",
-    email: "patrick@realtor510.com",
+    email: "patrick@grubbco.com",
   },
   {
     name: "Laura Zeidan Baldazo",
