@@ -23,7 +23,7 @@ const team = [
     name: "Laura Zeidan Baldazo",
     role: "Realtor",
     bio: "Local insight and calm execution—helping clients navigate timing, prep, and pricing with clarity.",
-    image: "/images/team-laura.png",
+    image: "/images/laura-headshot.jpg",
     dre: "01955500",
     phone: "(925) 482-4759",
     email: "lzeidan@grubbco.com",
