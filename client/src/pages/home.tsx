@@ -69,7 +69,7 @@ export default function Home() {
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
             className="max-w-2xl text-white"
           >
-            <div className="mb-6 inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-white/90">
+            <div className="mb-6 inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-white/90 font-semibold">
               <span className="h-px w-8 bg-white/60"></span>
               Luxury Real Estate · East Bay
             </div>
