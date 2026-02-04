@@ -19,17 +19,13 @@ export function Layout({ children }: { children: React.ReactNode }) {
             className="group inline-flex items-center gap-3"
             data-testid="link-home"
           >
-            <div
-              className="grid size-10 place-items-center rounded-none border border-primary/20 bg-background"
-              aria-hidden="true"
-            >
-              <span className="font-serif text-lg tracking-tight text-primary">CH</span>
+            <div className="flex items-center" aria-hidden="true">
+               <img src="/images/grubb-logo.png" alt="The Grubb Company" className="h-14 w-auto" />
             </div>
             <div className="leading-tight">
               <div className="font-serif text-base tracking-tight">
                 Crocker Highlands & Trestle Glen
               </div>
-              <div className="text-xs text-muted-foreground uppercase tracking-wider">The Grubb Company</div>
             </div>
           </a>
 
