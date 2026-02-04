@@ -9,7 +9,7 @@ import { Layout } from "@/components/layout";
 
 const team = [
   {
-    name: "Laura Ziedan",
+    name: "Laura Zeidan Baldazo",
     role: "Partner Agent",
     bio: "Local insight and calm execution—helping clients navigate timing, prep, and pricing with clarity.",
   },

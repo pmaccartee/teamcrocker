@@ -77,7 +77,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
           <div className="space-y-3">
             <div className="font-serif text-lg">Crocker Highlands Team</div>
             <div className="text-sm text-muted-foreground">
-              Patrick MacCartee · Laura Ziedan · Ilona Campbell
+              Patrick MacCartee · Laura Zeidan Baldazo · Ilona Campbell
             </div>
             <div className="text-xs text-muted-foreground/60 max-w-sm">
               Affiliated with The Grubb Company. All information deemed reliable but
