@@ -180,7 +180,6 @@ export default function Home() {
                   {team.map((m) => (
                     <div key={m.name} className="space-y-3">
                       <div className="font-serif text-lg leading-tight">{m.name}</div>
-                      <div className="text-xs uppercase tracking-wider text-muted-foreground">{m.role}</div>
                       <p className="text-sm text-muted-foreground/80 leading-relaxed">
                         {m.bio}
                       </p>
