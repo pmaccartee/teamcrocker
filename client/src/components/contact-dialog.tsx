@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Mail, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -14,13 +15,24 @@ interface ContactDialogProps {
 }
 
 export function ContactDialog({ children }: ContactDialogProps) {
-  const email = "teamcrocker@grubbco.com";
-  const phone = "510.339.0400"; // The Grubb Company main office
-  const phoneLink = "5103390400";
+  // Simple obfuscation to prevent basic scrapers from grabbing the email/phone from source
+  const [emailHref, setEmailHref] = useState<string | undefined>(undefined);
+  const [phoneHref, setPhoneHref] = useState<string | undefined>(undefined);
+
+  const user = "teamcrocker";
+  const domain = "grubbco.com";
+  const phoneDigits = "5103390400";
+
+  const handleReveal = () => {
+    setEmailHref(`mailto:${user}@${domain}`);
+    setPhoneHref(`tel:${phoneDigits}`);
+  };
 
   return (
     <Dialog>
-      <DialogTrigger asChild>{children}</DialogTrigger>
+      <DialogTrigger asChild onMouseEnter={handleReveal} onFocus={handleReveal} onClick={handleReveal}>
+        {children}
+      </DialogTrigger>
       <DialogContent className="sm:max-w-md">
         <DialogHeader>
           <DialogTitle>Get in touch</DialogTitle>
@@ -33,8 +45,11 @@ export function ContactDialog({ children }: ContactDialogProps) {
             size="lg"
             className="w-full justify-start gap-3 text-lg h-14"
             asChild
+            onMouseEnter={handleReveal}
+            onFocus={handleReveal}
           >
-            <a href={`mailto:${email}`}>
+            {/* Href is generated on interaction */}
+            <a href={emailHref}>
               <Mail className="size-5" />
               Email the Team
             </a>
@@ -44,10 +59,12 @@ export function ContactDialog({ children }: ContactDialogProps) {
             variant="outline"
             className="w-full justify-start gap-3 text-lg h-14"
             asChild
+            onMouseEnter={handleReveal}
+            onFocus={handleReveal}
           >
-            <a href={`tel:${phoneLink}`}>
+            <a href={phoneHref}>
               <Phone className="size-5" />
-              Call {phone}
+              Call 510.339.0400
             </a>
           </Button>
         </div>
