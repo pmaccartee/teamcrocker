@@ -1,5 +1,6 @@
+import { useEffect } from "react";
 import { Link, useRoute } from "wouter";
-import { ArrowLeft, Bookmark } from "lucide-react";
+import { ArrowLeft, Bookmark, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -11,9 +12,31 @@ function getArticle(slug: string | undefined) {
   return blogPosts.find((a) => a.slug === slug) ?? null;
 }
 
+function getRelatedPosts(currentSlug: string, neighborhood: string) {
+  return blogPosts
+    .filter((p) => p.slug !== currentSlug && p.neighborhood === neighborhood)
+    .slice(0, 2);
+}
+
 export default function ArticlePage() {
   const [, params] = useRoute("/blog/:slug");
   const article = getArticle(params?.slug);
+
+  useEffect(() => {
+    if (article) {
+      document.title = `${article.title} | Crocker Highlands Team`;
+      // Update meta description if possible (basic implementation)
+      let metaDesc = document.querySelector('meta[name="description"]');
+      if (!metaDesc) {
+        metaDesc = document.createElement('meta');
+        metaDesc.setAttribute('name', 'description');
+        document.head.appendChild(metaDesc);
+      }
+      metaDesc.setAttribute('content', article.excerpt);
+    } else {
+      document.title = "Article Not Found | Crocker Highlands Team";
+    }
+  }, [article]);
 
   if (!article) {
     return (
@@ -42,8 +65,40 @@ export default function ArticlePage() {
     );
   }
 
+  const relatedPosts = getRelatedPosts(article.slug, article.neighborhood);
+
+  // Structured Data for SEO
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": article.title,
+    "description": article.excerpt,
+    "author": {
+      "@type": "Organization",
+      "name": "Crocker Highlands Team"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "The Grubb Company",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://replit.com/public/images/grubb-logo-g.png"
+      }
+    },
+    "datePublished": article.updated,
+    "dateModified": article.updated,
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://yourdomain.com/blog/${article.slug}`
+    }
+  };
+
   return (
     <Layout>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="mx-auto max-w-3xl px-4 py-12 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 12 }}
@@ -160,6 +215,31 @@ export default function ArticlePage() {
               to your property or goals, contact the Crocker Highlands Team at The Grubb Company.
             </div>
           </div>
+
+          {relatedPosts.length > 0 && (
+            <div className="mt-16">
+              <h2 className="mb-6 font-serif text-2xl">Read Next</h2>
+              <div className="grid gap-6 sm:grid-cols-2">
+                {relatedPosts.map((post) => (
+                  <Link key={post.slug} href={`/blog/${post.slug}`}>
+                    <a className="group block h-full">
+                      <Card className="h-full rounded-3xl border bg-card p-6 transition-colors hover:bg-muted/50">
+                        <div className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-2">
+                          {post.neighborhood}
+                        </div>
+                        <h3 className="font-serif text-xl leading-tight group-hover:text-primary transition-colors">
+                          {post.title}
+                        </h3>
+                        <div className="mt-4 flex items-center text-sm font-medium text-primary">
+                          Read article <ArrowRight className="ml-2 size-4" />
+                        </div>
+                      </Card>
+                    </a>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
         </motion.div>
       </div>
     </Layout>
