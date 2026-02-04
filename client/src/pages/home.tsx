@@ -14,18 +14,27 @@ const team = [
     role: "Partner Agent",
     bio: "Strategic pricing, thoughtful strategy, and steady, relationship-driven guidance.",
     image: "/images/team-patrick.png",
+    dre: "02142693",
+    phone: "415-637-0257",
+    email: "patrick@realtor510.com",
   },
   {
     name: "Laura Zeidan Baldazo",
     role: "Partner Agent",
     bio: "Local insight and calm execution—helping clients navigate timing, prep, and pricing with clarity.",
     image: "/images/team-laura.png",
+    dre: "01955500",
+    phone: "(925) 482-4759",
+    email: "lzeidan@grubbco.com",
   },
   {
     name: "Ilona Campbell",
     role: "Partner Agent",
     bio: "Detail-forward operations and client care that keeps the process polished and low-friction.",
     image: "/images/team-ilona.png",
+    dre: "02167214",
+    phone: "415-746-0957",
+    email: "ilona@grubbco.com",
   },
 ] as const;
 
@@ -325,6 +334,11 @@ export default function Home() {
                         <p className="text-sm text-muted-foreground/80 leading-relaxed">
                           {m.bio}
                         </p>
+                        <div className="pt-2 space-y-1 text-sm text-muted-foreground">
+                          <div className="text-xs uppercase tracking-wider text-primary font-medium">DRE# {m.dre}</div>
+                          <div><a href={`tel:${m.phone}`} className="hover:text-primary transition-colors">{m.phone}</a></div>
+                          <div><a href={`mailto:${m.email}`} className="hover:text-primary transition-colors">{m.email}</a></div>
+                        </div>
                       </div>
                     </div>
                   ))}
