@@ -13,7 +13,7 @@ const team = [
     name: "Patrick MacCartee",
     role: "Partner Agent",
     bio: "Strategic pricing, thoughtful strategy, and steady, relationship-driven guidance.",
-    image: "/images/team-patrick.png",
+    image: "/images/patrick-headshot.png",
     dre: "02142693",
     phone: "415-637-0257",
     email: "patrick@realtor510.com",
