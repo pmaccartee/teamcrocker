@@ -10,19 +10,22 @@ import { Layout } from "@/components/layout";
 
 const team = [
   {
-    name: "Laura Zeidan Baldazo",
-    role: "Partner Agent",
-    bio: "Local insight and calm execution—helping clients navigate timing, prep, and pricing with clarity.",
-  },
-  {
     name: "Patrick MacCartee",
     role: "Partner Agent",
     bio: "Strategic pricing, thoughtful strategy, and steady, relationship-driven guidance.",
+    image: "/images/team-patrick.png",
+  },
+  {
+    name: "Laura Zeidan Baldazo",
+    role: "Partner Agent",
+    bio: "Local insight and calm execution—helping clients navigate timing, prep, and pricing with clarity.",
+    image: "/images/team-laura.png",
   },
   {
     name: "Ilona Campbell",
     role: "Partner Agent",
     bio: "Detail-forward operations and client care that keeps the process polished and low-friction.",
+    image: "/images/team-ilona.png",
   },
 ] as const;
 
@@ -111,72 +114,6 @@ export default function Home() {
               </a>
             </div>
           </motion.div>
-        </div>
-      </section>
-
-      <section id="team" className="border-t border-border/40 bg-secondary/30">
-        <div className="mx-auto max-w-6xl px-4 py-24 sm:px-6">
-          <div className="grid gap-16 md:grid-cols-12">
-             <div className="md:col-span-5 space-y-8">
-                <div>
-                  <div className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">The Team</div>
-                  <h2 className="font-serif text-4xl tracking-tight text-foreground" data-testid="text-team-title">
-                    Three specialists.<br/>One polished experience.
-                  </h2>
-                </div>
-
-                <div className="space-y-6 text-muted-foreground leading-relaxed">
-                  <p>
-                    The Crocker Team brings over 25 years of combined real estate experience to clients
-                    in Crocker Highlands and across the greater East Bay.
-                  </p>
-                  <p>
-                    Deeply rooted in the community, we’re known for thoughtful strategy, local insight,
-                    and steady, relationship-driven guidance.
-                  </p>
-                  <p>
-                    With backgrounds spanning real estate, education, finance, tech, and hospitality,
-                    we blend analytical rigor with a clear understanding of people, place, and timing.
-                  </p>
-                  <p>
-                    A shared focus on long-term value and generational wealth through real estate—along
-                    with active involvement in the local community—helps clients move forward with
-                    confidence and clarity.
-                  </p>
-                </div>
-
-                <div className="pt-4">
-                  <ContactDialog>
-                    <Button variant="outline" className="rounded-none border-primary/20 hover:border-primary hover:text-primary bg-transparent" data-testid="button-team-contact">
-                      Get in touch with us
-                    </Button>
-                  </ContactDialog>
-                </div>
-             </div>
-
-             <div className="md:col-span-7 space-y-12">
-                <div className="relative aspect-[4/3] w-full overflow-hidden bg-muted">
-                  <img
-                    src="/images/team.jpg"
-                    alt="Crocker Highlands Team"
-                    className="h-full w-full object-cover scale-x-[-1]"
-                    loading="lazy"
-                  />
-                </div>
-                
-                <div className="grid gap-10 sm:grid-cols-3">
-                  {team.map((m) => (
-                    <div key={m.name} className="space-y-3">
-                      <div className="font-serif text-lg leading-tight">{m.name}</div>
-                      <div className="text-xs uppercase tracking-wider text-muted-foreground">{m.role}</div>
-                      <p className="text-sm text-muted-foreground/80 leading-relaxed">
-                        {m.bio}
-                      </p>
-                    </div>
-                  ))}
-                </div>
-             </div>
-          </div>
         </div>
       </section>
 
@@ -288,6 +225,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       <section id="valuation" className="border-t border-border/40 bg-secondary/30">
         <div className="mx-auto max-w-4xl px-4 py-24 sm:px-6 text-center">
           <div className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">
@@ -325,6 +263,73 @@ export default function Home() {
                 View Listings
               </a>
             </Button>
+          </div>
+        </div>
+      </section>
+
+      <section id="team" className="border-t border-border/40 bg-secondary/30">
+        <div className="mx-auto max-w-6xl px-4 py-24 sm:px-6">
+          <div className="grid gap-16 md:grid-cols-12">
+             <div className="md:col-span-12 lg:col-span-4 space-y-8">
+                <div>
+                  <div className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">The Team</div>
+                  <h2 className="font-serif text-4xl tracking-tight text-foreground" data-testid="text-team-title">
+                    Three specialists.<br/>One polished experience.
+                  </h2>
+                </div>
+
+                <div className="space-y-6 text-muted-foreground leading-relaxed">
+                  <p>
+                    The Crocker Team brings over 25 years of combined real estate experience to clients
+                    in Crocker Highlands and across the greater East Bay.
+                  </p>
+                  <p>
+                    Deeply rooted in the community, we’re known for thoughtful strategy, local insight,
+                    and steady, relationship-driven guidance.
+                  </p>
+                  <p>
+                    With backgrounds spanning real estate, education, finance, tech, and hospitality,
+                    we blend analytical rigor with a clear understanding of people, place, and timing.
+                  </p>
+                  <p>
+                    A shared focus on long-term value and generational wealth through real estate—along
+                    with active involvement in the local community—helps clients move forward with
+                    confidence and clarity.
+                  </p>
+                </div>
+
+                <div className="pt-4">
+                  <ContactDialog>
+                    <Button variant="outline" className="rounded-none border-primary/20 hover:border-primary hover:text-primary bg-transparent" data-testid="button-team-contact">
+                      Get in touch with us
+                    </Button>
+                  </ContactDialog>
+                </div>
+             </div>
+
+             <div className="md:col-span-12 lg:col-span-8 space-y-12">
+                <div className="grid gap-8 sm:grid-cols-3">
+                  {team.map((m) => (
+                    <div key={m.name} className="space-y-4">
+                      <div className="aspect-[3/4] w-full overflow-hidden bg-muted">
+                        <img
+                          src={m.image}
+                          alt={m.name}
+                          className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
+                          loading="lazy"
+                        />
+                      </div>
+                      <div className="space-y-2">
+                        <div className="font-serif text-lg leading-tight">{m.name}</div>
+                        <div className="text-xs uppercase tracking-wider text-muted-foreground">{m.role}</div>
+                        <p className="text-sm text-muted-foreground/80 leading-relaxed">
+                          {m.bio}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+             </div>
           </div>
         </div>
       </section>
