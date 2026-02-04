@@ -57,20 +57,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 className={`text-muted-foreground transition-colors hover:text-primary ${location.startsWith("/blog") ? "text-primary font-medium" : ""}`}
                 data-testid="link-blog"
               >
-                Q&A Blog
+                Answers
               </a>
             </Link>
           </nav>
 
           <div className="flex items-center gap-4">
-            <Link href="/blog">
-              <a
-                className="hidden text-sm text-muted-foreground transition-colors hover:text-primary md:inline-flex"
-                data-testid="link-explore-blog"
-              >
-                Explore Q&A
-              </a>
-            </Link>
             <Button className="rounded-none bg-primary text-white hover:bg-primary/90" data-testid="button-contact">
               Contact
             </Button>
@@ -98,7 +90,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 className="inline-flex items-center text-sm font-medium transition-colors hover:text-primary"
                 data-testid="link-footer-blog"
               >
-                Read the Q&A Blog
+                Answers
               </a>
             </Link>
             <Button className="rounded-none bg-primary text-white hover:bg-primary/90" data-testid="button-footer-contact">
