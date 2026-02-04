@@ -20,12 +20,13 @@ export function Layout({ children }: { children: React.ReactNode }) {
             data-testid="link-home"
           >
             <div className="flex items-center" aria-hidden="true">
-               <img src="/images/grubb-logo.png" alt="The Grubb Company" className="h-14 w-auto" />
+               <img src="/images/grubb-logo-g.png" alt="The Grubb Company" className="h-14 w-auto" />
             </div>
             <div className="leading-tight">
               <div className="font-serif text-base tracking-tight">
                 Crocker Highlands & Trestle Glen
               </div>
+              <div className="text-xs text-muted-foreground uppercase tracking-wider">The Grubb Company</div>
             </div>
           </a>
 
