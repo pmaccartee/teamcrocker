@@ -7,76 +7,7 @@ import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
 import { Layout } from "@/components/layout";
-
-type Article = {
-  slug: string;
-  title: string;
-  excerpt: string;
-  neighborhood:
-    | "Crocker Highlands"
-    | "Trestle Glen"
-    | "Oakland"
-    | "Piedmont"
-    | "Berkeley";
-  intent: "Buyer" | "Seller" | "Market";
-  updated: string;
-};
-
-const articles: Article[] = [
-  {
-    slug: "best-blocks-crocker-highlands",
-    title: "What are the best blocks in Crocker Highlands?",
-    excerpt:
-      "A practical way to think about streets, walkability, views, and day-to-day feel—without oversimplifying it.",
-    neighborhood: "Crocker Highlands",
-    intent: "Buyer",
-    updated: "2026-02-02",
-  },
-  {
-    slug: "crocker-highlands-price-premium",
-    title: "Why do Crocker Highlands homes command a premium?",
-    excerpt:
-      "Architecture, school proximity, and buyer psychology—plus what actually moves the number up or down.",
-    neighborhood: "Crocker Highlands",
-    intent: "Market",
-    updated: "2026-02-02",
-  },
-  {
-    slug: "trestle-glen-vs-crocker-highlands",
-    title: "Trestle Glen vs. Crocker Highlands: which fits your lifestyle?",
-    excerpt: "Two beautiful Oakland neighborhoods—here’s how they live differently.",
-    neighborhood: "Trestle Glen",
-    intent: "Buyer",
-    updated: "2026-02-02",
-  },
-  {
-    slug: "selling-in-crocker-highlands-prep",
-    title: "Selling in Crocker Highlands: what prep is actually worth it?",
-    excerpt:
-      "Where to spend (and not spend) to maximize outcome—paint, staging, landscaping, and inspection strategy.",
-    neighborhood: "Crocker Highlands",
-    intent: "Seller",
-    updated: "2026-02-02",
-  },
-  {
-    slug: "piedmont-vs-oakland-hills",
-    title: "Piedmont vs. Oakland Hills: how do buyers decide?",
-    excerpt:
-      "A simple framework buyers use—schools, walkability, commute, architecture, and daily rhythm.",
-    neighborhood: "Piedmont",
-    intent: "Buyer",
-    updated: "2026-02-02",
-  },
-  {
-    slug: "berkeley-hills-buyer-mistakes",
-    title: "Berkeley Hills: the most common buyer mistakes (and how to avoid them)",
-    excerpt:
-      "Slope, drainage, microclimates, permits, and seismic—what to ask before you fall in love.",
-    neighborhood: "Berkeley",
-    intent: "Buyer",
-    updated: "2026-02-02",
-  },
-];
+import { blogPosts } from "@/data/blog-posts";
 
 function Pill({ children }: { children: React.ReactNode }) {
   return (
@@ -91,8 +22,8 @@ export default function Blog() {
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
-    if (!q) return articles;
-    return articles.filter((a) =>
+    if (!q) return blogPosts;
+    return blogPosts.filter((a) =>
       [a.title, a.excerpt, a.neighborhood, a.intent, a.slug]
         .join(" ")
         .toLowerCase()

@@ -4,117 +4,11 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-
-type Article = {
-  slug: string;
-  title: string;
-  neighborhood: string;
-  updated: string;
-  question: string;
-  answer: string[];
-  seo: {
-    keywords: string[];
-    related: string[];
-  };
-};
-
-const articles: Article[] = [
-  {
-    slug: "best-blocks-crocker-highlands",
-    title: "What are the best blocks in Crocker Highlands?",
-    neighborhood: "Crocker Highlands",
-    updated: "2026-02-02",
-    question:
-      "What are the best blocks in Crocker Highlands for walkability, architecture, and day-to-day feel?",
-    answer: [
-      "There isn’t one single ‘best’ block—buyers tend to value a mix of street character, proximity to Lakeshore, and how the home sits (light, privacy, and traffic).",
-      "A simple way to narrow it down: start with your daily rhythm. If you want coffee-and-walkability, prioritize areas that feel easiest to Lakeshore. If you want quieter, prioritize the interior streets and hillside pockets.",
-      "The right block is also price-sensitive: two streets can feel similar, but the view corridor, the lot shape, or the number of steps can move the value meaningfully.",
-      "If you share your ‘must-haves’ (walk score vs. view vs. minimal stairs), we can suggest the micro-areas that match—without overpaying.",
-    ],
-    seo: {
-      keywords: [
-        "best blocks in Crocker Highlands",
-        "Crocker Highlands Oakland homes",
-        "Crocker Highlands neighborhood guide",
-      ],
-      related: [
-        "Crocker Highlands vs Trestle Glen",
-        "Crocker Highlands walkability",
-        "Crocker Highlands school proximity",
-      ],
-    },
-  },
-  {
-    slug: "crocker-highlands-price-premium",
-    title: "Why do Crocker Highlands homes command a premium?",
-    neighborhood: "Crocker Highlands",
-    updated: "2026-02-02",
-    question:
-      "Why are home prices higher in Crocker Highlands compared to nearby Oakland neighborhoods?",
-    answer: [
-      "Premiums usually come from a combination of architecture, consistency of street character, and the buyer pool’s perception of long-term value.",
-      "Crocker Highlands also benefits from ‘low-friction living’: quick access to Lakeshore, parks, and commute corridors while still feeling residential.",
-      "Within the neighborhood, premiums concentrate around light, layout, and minimal deferred maintenance—buyers pay for certainty.",
-      "If you’re selling, the goal is to make your home ‘read’ like the premium version of itself—through prep, storytelling, and pricing with proof.",
-    ],
-    seo: {
-      keywords: [
-        "Crocker Highlands price premium",
-        "Crocker Highlands home values",
-        "Oakland luxury real estate",
-      ],
-      related: ["Crocker Highlands listing strategy", "Oakland market trends"],
-    },
-  },
-  {
-    slug: "trestle-glen-vs-crocker-highlands",
-    title: "Trestle Glen vs. Crocker Highlands: which fits your lifestyle?",
-    neighborhood: "Trestle Glen",
-    updated: "2026-02-02",
-    question:
-      "How do Trestle Glen and Crocker Highlands compare for buyers who want charm, walkability, and community?",
-    answer: [
-      "Both are beautiful and ‘classic Oakland,’ but they live differently. Crocker Highlands often feels closer to the Lakeshore corridor; Trestle Glen can feel a touch more tucked-away and intimate.",
-      "Buyers who prioritize a consistent architectural ‘edit’ often gravitate toward Crocker Highlands. Buyers who want a softer, storybook pocket sometimes fall for Trestle Glen.",
-      "The best choice usually comes down to commute direction, your daily errands, and how you want the streets to feel when you walk outside.",
-    ],
-    seo: {
-      keywords: [
-        "Trestle Glen vs Crocker Highlands",
-        "Trestle Glen Oakland",
-        "Crocker Highlands vs Trestle Glen",
-      ],
-      related: ["Trestle Glen homes", "Crocker Highlands homes"],
-    },
-  },
-  {
-    slug: "selling-in-crocker-highlands-prep",
-    title: "Selling in Crocker Highlands: what prep is actually worth it?",
-    neighborhood: "Crocker Highlands",
-    updated: "2026-02-02",
-    question:
-      "If we’re selling in Crocker Highlands, what improvements actually increase the result?",
-    answer: [
-      "In luxury neighborhoods, buyers pay for ‘move-in certainty’—not novelty. The highest ROI usually comes from clarity and confidence: paint, lighting, landscaping, and staging that makes the home read clean and intentional.",
-      "We typically prioritize: (1) exterior first impression, (2) kitchen/baths ‘freshness,’ (3) flooring consistency, and (4) inspection strategy to reduce surprises.",
-      "The goal isn’t to over-renovate—it’s to remove questions so buyers can emotionally commit.",
-    ],
-    seo: {
-      keywords: [
-        "selling in Crocker Highlands",
-        "Crocker Highlands listing prep",
-        "Oakland home staging",
-      ],
-      related: ["Crocker Highlands pricing", "Oakland inspection tips"],
-    },
-  },
-];
-
 import { Layout } from "@/components/layout";
+import { blogPosts } from "@/data/blog-posts";
 
 function getArticle(slug: string | undefined) {
-  return articles.find((a) => a.slug === slug) ?? null;
+  return blogPosts.find((a) => a.slug === slug) ?? null;
 }
 
 export default function ArticlePage() {
