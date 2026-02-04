@@ -87,7 +87,7 @@ export default function Home() {
               data-testid="text-hero-subtitle"
             >
               <p>
-                The Crocker Team is a three-agent group within The Grubb Company, providing steady, relationship-driven guidance for buyers and sellers in Crocker Highlands and Trestle Glen.
+                Our Crocker Team is a three-agent group within The Grubb Company, providing steady, relationship-driven guidance for buyers and sellers in Crocker Highlands and Trestle Glen.
               </p>
               <p>
                 We are proud major sponsors of Crocker Highlands Elementary School and active members of the PTA, with deep, long-standing ties to the community.
