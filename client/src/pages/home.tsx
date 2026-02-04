@@ -83,7 +83,7 @@ export default function Home() {
             </h1>
 
             <div
-              className="mt-8 max-w-xl text-lg text-white/90 leading-relaxed font-light space-y-4"
+              className="mt-8 max-w-xl text-lg text-white/90 leading-relaxed font-light space-y-4 bg-black/40 p-6 backdrop-blur-sm"
               data-testid="text-hero-subtitle"
             >
               <p>
