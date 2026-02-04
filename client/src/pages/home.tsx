@@ -78,18 +78,21 @@ export default function Home() {
               className="font-serif text-5xl leading-[1.1] tracking-tight text-white sm:text-6xl md:text-7xl"
               data-testid="text-hero-title"
             >
-              Marketed with taste, <br/>
-              <span className="italic">sold with precision.</span>
+              Thoughtful local representation, <br/>
+              <span className="italic">with The Grubb Company behind you.</span>
             </h1>
 
-            <p
-              className="mt-8 max-w-xl text-lg text-white/90 leading-relaxed font-light"
+            <div
+              className="mt-8 max-w-xl text-lg text-white/90 leading-relaxed font-light space-y-4"
               data-testid="text-hero-subtitle"
             >
-              We’re a three-agent team at The Grubb Company focused on Oakland’s most
-              enduring neighborhoods—Crocker Highlands and Trestle Glen—serving Piedmont and
-              Berkeley with clarity and calm.
-            </p>
+              <p>
+                The Crocker Team is a three-agent group within The Grubb Company, providing steady, relationship-driven guidance for buyers and sellers in Crocker Highlands and Trestle Glen.
+              </p>
+              <p>
+                We are proud major sponsors of Crocker Highlands Elementary School and active members of the PTA, with deep, long-standing ties to the community.
+              </p>
+            </div>
 
             <div className="mt-10 flex flex-col gap-5 sm:flex-row sm:items-center">
               <Button className="rounded-none h-12 px-8 text-base bg-white text-primary hover:bg-white/90" data-testid="button-hero-consult">
