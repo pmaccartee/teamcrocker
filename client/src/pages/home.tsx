@@ -4,6 +4,7 @@ import { ArrowRight, MapPin, ShieldCheck, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ContactDialog } from "@/components/contact-dialog";
+import { ObfuscatedContact } from "@/components/obfuscated-contact";
 import { Card } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { Layout } from "@/components/layout";
@@ -368,8 +369,8 @@ export default function Home() {
                   <div className="text-xs uppercase tracking-wider text-muted-foreground">{m.role}</div>
                   <div className="pt-2 space-y-1 text-sm text-muted-foreground">
                     <div className="text-xs uppercase tracking-wider text-primary font-medium">DRE# {m.dre}</div>
-                    <div><a href={`tel:${m.phone}`} className="hover:text-primary transition-colors">{m.phone}</a></div>
-                    <div><a href={`mailto:${m.email}`} className="hover:text-primary transition-colors">{m.email}</a></div>
+                    <div><ObfuscatedContact type="phone" value={m.phone} /></div>
+                    <div><ObfuscatedContact type="email" value={m.email} /></div>
                   </div>
                 </div>
               </div>
