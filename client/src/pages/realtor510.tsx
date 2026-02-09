@@ -52,7 +52,7 @@ export default function Realtor510() {
             REALTOR<span className="text-neutral-400">510</span>
           </div>
           <div className="hidden md:flex gap-8 text-sm font-medium tracking-wide items-center">
-            <span className="text-xs text-neutral-400 border-r border-neutral-200 pr-6 mr-[-10px]">
+            <span className="text-xs font-bold text-primary border-r border-neutral-200 pr-6 mr-[-10px] tracking-widest">
               AT THE GRUBB CO.
             </span>
             <a href="#about" className="hover:text-neutral-500 transition-colors">TEAM</a>
@@ -152,7 +152,7 @@ export default function Realtor510() {
                 Brokerage Backing
              </div>
              <h2 className="text-4xl font-bold tracking-tight mb-6">
-               Powered by <br/>The Grubb Company.
+               Powered by <br/><span className="text-primary">The Grubb Company.</span>
              </h2>
              <div className="space-y-6 text-lg text-neutral-400 font-light leading-relaxed">
                <p>
