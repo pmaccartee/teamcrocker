@@ -67,6 +67,7 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "RealEstateAgent",
     "name": "Crocker Highlands Team | The Grubb Company",
+    "url": "https://teamcrocker.com",
     "image": "https://replit.com/public/images/grubb-logo-g.png",
     "description": "Top-rated Realtors specializing in Crocker Highlands, Trestle Glen, and Piedmont luxury real estate.",
     "address": {
