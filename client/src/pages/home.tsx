@@ -63,8 +63,43 @@ const neighborhoods = [
 ] as const;
 
 export default function Home() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    "name": "Crocker Highlands Team | The Grubb Company",
+    "image": "https://replit.com/public/images/grubb-logo-g.png",
+    "description": "Top-rated Realtors specializing in Crocker Highlands, Trestle Glen, and Piedmont luxury real estate.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "3070 Claremont Ave",
+      "addressLocality": "Berkeley",
+      "addressRegion": "CA",
+      "postalCode": "94705",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 37.8562,
+      "longitude": -122.2455
+    },
+    "telephone": "+1-510-859-4895",
+    "priceRange": "$$$$",
+    "areaServed": ["Crocker Highlands", "Trestle Glen", "Piedmont", "Oakland", "Berkeley"],
+    "employee": team.map(member => ({
+      "@type": "Person",
+      "name": member.name,
+      "jobTitle": "Realtor",
+      "telephone": member.phone,
+      "email": member.email
+    }))
+  };
+
   return (
     <Layout>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <section className="relative min-h-[90vh] w-full overflow-hidden bg-black/10">
         <div className="absolute inset-0">
           <img
