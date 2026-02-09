@@ -71,7 +71,7 @@ export default function Realtor510() {
       <section className="relative h-screen w-full overflow-hidden bg-black">
         <div className="absolute inset-0 opacity-70">
           <img
-            src="/images/oakland-skyline.jpg"
+            src="/images/oakland-hero-gen.png"
             alt="Oakland Skyline"
             className="h-full w-full object-cover"
           />
