@@ -378,6 +378,33 @@ export default function Home() {
         </div>
       </section>
 
+      <section id="reviews" className="border-t border-border/40 bg-secondary/20">
+        <div className="mx-auto max-w-4xl px-4 py-24 sm:px-6 text-center">
+          <div className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">
+             Client Words
+          </div>
+          <h2 className="font-serif text-3xl tracking-tight text-foreground mb-12">
+            Trusted by your neighbors.
+          </h2>
+          
+          <div className="grid gap-8 md:grid-cols-1">
+             <div className="space-y-6">
+               <div className="flex justify-center gap-1 text-primary">
+                 {[1, 2, 3, 4, 5].map((i) => (
+                   <Sparkles key={i} className="size-5 fill-current" />
+                 ))}
+               </div>
+               <blockquote className="text-xl md:text-2xl font-light leading-relaxed text-muted-foreground italic">
+                 "Patrick is an extremely knowledgeable and flexible agent. He definitely knew the local market, which was invaluable for us in the competitive Oakland, CA market."
+               </blockquote>
+               <cite className="not-italic font-medium text-foreground block mt-4">
+                 — Susan H.
+               </cite>
+             </div>
+          </div>
+        </div>
+      </section>
+
       <section id="brokerage" className="border-t border-border/40 bg-secondary/30">
         <div className="mx-auto max-w-6xl px-4 py-24 sm:px-6">
           <div className="grid gap-12 md:grid-cols-2 md:items-center">
