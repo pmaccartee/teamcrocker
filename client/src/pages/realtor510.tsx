@@ -51,7 +51,10 @@ export default function Realtor510() {
           <div className="text-2xl font-bold tracking-tighter">
             REALTOR<span className="text-neutral-400">510</span>
           </div>
-          <div className="hidden md:flex gap-8 text-sm font-medium tracking-wide">
+          <div className="hidden md:flex gap-8 text-sm font-medium tracking-wide items-center">
+            <span className="text-xs text-neutral-400 border-r border-neutral-200 pr-6 mr-[-10px]">
+              AT THE GRUBB CO.
+            </span>
             <a href="#about" className="hover:text-neutral-500 transition-colors">TEAM</a>
             <a href="#listings" className="hover:text-neutral-500 transition-colors">LISTINGS</a>
             <a href="#reviews" className="hover:text-neutral-500 transition-colors">REVIEWS</a>
@@ -136,6 +139,47 @@ export default function Realtor510() {
                 <div className="text-3xl font-bold mb-1">$100M+</div>
                 <div className="text-sm text-neutral-500 uppercase tracking-wider">Sales Volume</div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* The Grubb Company Integration - Stark Monochrome */}
+      <section className="bg-neutral-900 text-white py-24 border-y border-neutral-800">
+        <div className="mx-auto grid max-w-7xl gap-12 px-6 md:grid-cols-2 items-center">
+          <div className="order-2 md:order-1">
+             <div className="text-xs font-bold uppercase tracking-[0.2em] text-neutral-500 mb-6">
+                Brokerage Backing
+             </div>
+             <h2 className="text-4xl font-bold tracking-tight mb-6">
+               Powered by <br/>The Grubb Company.
+             </h2>
+             <div className="space-y-6 text-lg text-neutral-400 font-light leading-relaxed">
+               <p>
+                 We are backed by the East Bay's premier luxury brokerage. Since 1967, The Grubb Company has set the standard for high-touch service and deep local roots.
+               </p>
+               <p>
+                 This partnership combines our modern, data-driven agility with the stability and network of a legendary local institution.
+               </p>
+             </div>
+             <div className="mt-8">
+               <a 
+                 href="https://www.grubbco.com/" 
+                 target="_blank" 
+                 rel="noopener noreferrer"
+                 className="inline-flex items-center text-sm font-bold tracking-widest uppercase hover:text-neutral-300 transition-colors"
+               >
+                 Visit Grubbco.com <ArrowRight className="ml-2 h-4 w-4" />
+               </a>
+             </div>
+          </div>
+          <div className="order-1 md:order-2 flex justify-center md:justify-end">
+            <div className="bg-white p-12 w-full max-w-sm flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-500">
+              <img 
+                src="/images/grubb-logo.png" 
+                alt="The Grubb Company" 
+                className="w-full h-auto opacity-90"
+              />
             </div>
           </div>
         </div>
@@ -267,7 +311,8 @@ export default function Realtor510() {
         </div>
         <div className="mx-auto max-w-7xl px-6 mt-16 pt-8 border-t border-neutral-100 flex flex-col md:flex-row justify-between text-xs text-neutral-400">
            <div>© {new Date().getFullYear()} Realtor 510. All rights reserved.</div>
-           <div className="flex gap-6 mt-4 md:mt-0">
+           <div className="flex gap-6 mt-4 md:mt-0 items-center">
+             <img src="/images/grubb-logo-g.png" alt="Grubb Co" className="h-6 w-auto opacity-50 grayscale hover:grayscale-0 transition-all" />
              <a href="#" className="hover:text-black">Privacy Policy</a>
              <a href="#" className="hover:text-black">Terms of Service</a>
              <a href="#" className="hover:text-black">DRE# 02142693</a>
