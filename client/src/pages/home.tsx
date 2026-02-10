@@ -44,21 +44,25 @@ const neighborhoods = [
     title: "Crocker Highlands",
     desc: "Tree-lined streets, iconic architecture, and an easy rhythm of neighborhood life.",
     image: "/images/crocker-street.jpg",
+    link: "https://patrickmaccartee970.realscout.com/homesearch/shared-searches/U2hhcmVhYmxlU2VhcmNoTGluay0xNzQ2OA=="
   },
   {
     title: "Trestle Glen",
     desc: "A tucked-away pocket with storybook homes and a true community feel.",
     image: "/images/trestle-glen.jpg",
+    link: "https://patrickmaccartee970.realscout.com/homesearch/shared-searches/U2hhcmVhYmxlU2VhcmNoTGluay0xNzQ2OA=="
   },
   {
     title: "Piedmont",
     desc: "Classic East Bay prestige with walkability and top-tier schools.",
     image: "/images/piedmont-havens.jpg",
+    link: "https://patrickmaccartee970.realscout.com/homesearch/shared-searches/U2hhcmVhYmxlU2VhcmNoTGluay0xNzgxOA=="
   },
   {
     title: "Berkeley",
     desc: "A creative, architectural mix—north, hills, and beyond.",
     image: "/images/berkeley-uplands.webp",
+    link: "https://patrickmaccartee970.realscout.com/homesearch/shared-searches/U2hhcmVhYmxlU2VhcmNoTGluay0xNzQ2OA=="
   },
 ] as const;
 
@@ -309,7 +313,13 @@ export default function Home() {
 
           <div className="grid gap-x-8 gap-y-12 md:grid-cols-2 lg:grid-cols-4">
             {neighborhoods.map((n) => (
-              <div key={n.title} className="group cursor-pointer space-y-4">
+              <a 
+                key={n.title} 
+                href={n.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group cursor-pointer space-y-4 block"
+              >
                 <div className="aspect-[4/3] w-full overflow-hidden bg-muted transition-colors group-hover:bg-muted/80">
                   {n.image ? (
                     <img
@@ -326,12 +336,12 @@ export default function Home() {
                   <div className="font-serif text-xl">{n.title}</div>
                   <p className="text-sm text-muted-foreground leading-relaxed">{n.desc}</p>
                   <div className="pt-2">
-                    <span className="text-xs font-medium uppercase tracking-wider text-primary opacity-0 transition-opacity group-hover:opacity-100">
-                      Explore Q&A
+                    <span className="text-xs font-medium uppercase tracking-wider text-primary opacity-0 transition-opacity group-hover:opacity-100 flex items-center gap-2">
+                      Explore Homes <ArrowRight className="size-3" />
                     </span>
                   </div>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>
