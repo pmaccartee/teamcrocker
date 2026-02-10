@@ -62,7 +62,7 @@ const neighborhoods = [
     title: "Berkeley",
     desc: "A creative, architectural mix—north, hills, and beyond.",
     image: "/images/berkeley-uplands.webp",
-    link: "https://patrickmaccartee970.realscout.com/homesearch/shared-searches/U2hhcmVhYmxlU2VhcmNoTGluay0xNzQ2OA=="
+    link: "https://patrickmaccartee970.realscout.com/homesearch/shared-searches/U2hhcmVhYmxlU2VhcmNoTGluay0xNzgxNg=="
   },
 ] as const;
 
