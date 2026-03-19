@@ -1,6 +1,6 @@
 import { build as esbuild } from "esbuild";
 import { build as viteBuild } from "vite";
-import { rm, readFile } from "fs/promises";
+import { rm, readFile, writeFile } from "fs/promises";
 
 // server deps to bundle to reduce openat(2) syscalls
 // which helps cold start times
@@ -37,6 +37,16 @@ async function buildAll() {
 
   console.log("building client...");
   await viteBuild();
+
+  // For Replit static deployments, use index.html as the 404 fallback
+  // so that SPA routing works for deep links like /blog or /recycle
+  try {
+    const indexHtml = await readFile("dist/public/index.html", "utf-8");
+    await writeFile("dist/public/404.html", indexHtml, "utf-8");
+    console.log("created 404.html fallback for SPA routing");
+  } catch (err) {
+    console.log("could not create 404.html fallback:", err);
+  }
 
   console.log("building server...");
   const pkg = JSON.parse(await readFile("package.json", "utf-8"));
