@@ -1,6 +1,6 @@
 import { build as esbuild } from "esbuild";
 import { build as viteBuild } from "vite";
-import { rm, readFile, writeFile } from "fs/promises";
+import { rm, readFile, writeFile, mkdir } from "fs/promises";
 
 // server deps to bundle to reduce openat(2) syscalls
 // which helps cold start times
@@ -43,9 +43,17 @@ async function buildAll() {
   try {
     const indexHtml = await readFile("dist/public/index.html", "utf-8");
     await writeFile("dist/public/404.html", indexHtml, "utf-8");
-    console.log("created 404.html fallback for SPA routing");
+    
+    // Create specific folders for known routes to ensure they load on static hosting
+    await mkdir("dist/public/recycle", { recursive: true });
+    await writeFile("dist/public/recycle/index.html", indexHtml, "utf-8");
+    
+    await mkdir("dist/public/blog", { recursive: true });
+    await writeFile("dist/public/blog/index.html", indexHtml, "utf-8");
+    
+    console.log("created fallback HTML files for SPA routing");
   } catch (err) {
-    console.log("could not create 404.html fallback:", err);
+    console.log("could not create fallback HTML files:", err);
   }
 
   console.log("building server...");
