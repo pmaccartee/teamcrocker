@@ -342,25 +342,82 @@
 
     /* ── Footer ── */
     footer {
-      background: var(--text);
-      padding: 40px 48px;
-      text-align: center;
-      border-top: 3px solid var(--red);
+      background: var(--white);
+      padding: 48px;
+      text-align: left;
+      border-top: 1px solid var(--border);
+    }
+    .footer-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      align-items: center;
+    }
+    @media (max-width: 768px) {
+      .footer-inner {
+        grid-template-columns: 1fr;
+        text-align: left;
+      }
+    }
+    .footer-left {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
     }
     .footer-brand {
       font-family: 'Libre Baskerville', serif;
-      font-size: 1rem;
+      font-size: 1.125rem;
       font-weight: 700;
-      color: #fff;
-      margin-bottom: 10px;
+      color: var(--text);
     }
-    footer p {
+    .footer-left p {
+      font-size: 0.875rem;
+      color: var(--mid);
+      line-height: 1.5;
+    }
+    .footer-left .disclaimer {
       font-size: 0.75rem;
-      color: rgba(255,255,255,0.45);
-      line-height: 1.8;
+      color: var(--light-text);
+      max-width: 380px;
     }
-    footer a { color: rgba(255,255,255,0.65); text-decoration: none; }
-    footer a:hover { color: #fff; }
+    .footer-right {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 24px;
+    }
+    @media (min-width: 769px) {
+      .footer-right {
+        justify-content: flex-end;
+      }
+    }
+    footer a { 
+      color: var(--text); 
+      text-decoration: none; 
+      font-size: 0.875rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    footer a:hover { color: var(--red); }
+    .footer-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--text);
+      color: var(--white);
+      padding: 0 32px;
+      height: 48px;
+      font-size: 1rem;
+      font-weight: 500;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .footer-btn:hover {
+      background: rgba(26,26,26,0.9);
+      color: var(--white);
+    }
 
     @media (max-width: 640px) {
       .site-header { padding: 0 20px; height: 60px; }
@@ -505,14 +562,22 @@
 
   <!-- Footer -->
   <footer>
-    <div class="footer-brand">Team Crocker · The Grubb Company</div>
-    <p>
-      Patrick MacCartee · Ilona Campbell · Laura Zeidan Baldazo<br>
-      DRE #02142693 · #2167214 · #01955500<br>
-      <a href="https://teamcrocker.com">teamcrocker.com</a> &nbsp;·&nbsp;
-      <a href="mailto:patrick@grubbco.com">patrick@grubbco.com</a> &nbsp;·&nbsp;
-      <a href="tel:4156370257">415-637-0257</a>
-    </p>
+    <div class="footer-inner">
+      <div class="footer-left">
+        <div class="footer-brand">Crocker Highlands Team</div>
+        <p>
+          Patrick MacCartee · Laura Zeidan Baldazo · Ilona Campbell
+        </p>
+        <p class="disclaimer">
+          Affiliated with The Grubb Company. All information deemed reliable but
+          not guaranteed. DRE# 01234567
+        </p>
+      </div>
+      <div class="footer-right">
+        <a href="/blog">Blog</a>
+        <a href="mailto:patrick@grubbco.com" class="footer-btn">Request a consult</a>
+      </div>
+    </div>
   </footer>
 
   <script>
