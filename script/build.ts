@@ -48,6 +48,15 @@ async function buildAll() {
     await mkdir("dist/public/blog", { recursive: true });
     await writeFile("dist/public/blog/index.html", indexHtml, "utf-8");
     
+    // Copy the static recycle page into the root as well as the folder just in case
+    try {
+      const recycleHtml = await readFile("client/public/recycle/index.html", "utf-8");
+      await writeFile("dist/public/recycle.html", recycleHtml, "utf-8");
+      console.log("copied recycle.html to root");
+    } catch (e) {
+      console.log("no recycle page found to copy");
+    }
+    
     console.log("created fallback HTML files for SPA routing");
   } catch (err) {
     console.log("could not create fallback HTML files:", err);
