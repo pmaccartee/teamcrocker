@@ -1,0 +1,67 @@
+2026-03-20T18:54:29.588231Z	Cloning repository...
+2026-03-20T18:54:32.71504Z	From https://github.com/pmaccartee/teamcrocker
+2026-03-20T18:54:32.715441Z	 * branch            901581f40680b5a6c0a69724d6bd23c9c1d622b1 -> FETCH_HEAD
+2026-03-20T18:54:32.715521Z	
+2026-03-20T18:54:33.153813Z	HEAD is now at 901581f Saved progress at the end of the loop
+2026-03-20T18:54:33.154287Z	
+2026-03-20T18:54:33.201437Z	
+2026-03-20T18:54:33.201871Z	Using v2 root directory strategy
+2026-03-20T18:54:33.217399Z	Success: Finished cloning repository files
+2026-03-20T18:54:34.965399Z	Checking for configuration in a Wrangler configuration file (BETA)
+2026-03-20T18:54:34.965884Z	
+2026-03-20T18:54:36.065253Z	No Wrangler configuration file found. Continuing.
+2026-03-20T18:54:36.323463Z	Detected the following tools from environment: npm@10.9.2, nodejs@22.16.0
+2026-03-20T18:54:36.325356Z	Installing project dependencies: npm clean-install --progress=false
+2026-03-20T18:54:41.013563Z	npm warn deprecated @esbuild-kit/esm-loader@2.6.5: Merged into tsx: https://tsx.is
+2026-03-20T18:54:41.068032Z	npm warn deprecated @esbuild-kit/core-utils@3.3.2: Merged into tsx: https://tsx.is
+2026-03-20T18:54:47.027997Z	
+2026-03-20T18:54:47.02825Z	added 380 packages, and audited 381 packages in 10s
+2026-03-20T18:54:47.028311Z	
+2026-03-20T18:54:47.028376Z	51 packages are looking for funding
+2026-03-20T18:54:47.028431Z	  run `npm fund` for details
+2026-03-20T18:54:47.053615Z	
+2026-03-20T18:54:47.05396Z	7 vulnerabilities (1 low, 5 moderate, 1 high)
+2026-03-20T18:54:47.054064Z	
+2026-03-20T18:54:47.054162Z	To address issues that do not require attention, run:
+2026-03-20T18:54:47.054216Z	  npm audit fix
+2026-03-20T18:54:47.054268Z	
+2026-03-20T18:54:47.054298Z	To address all issues (including breaking changes), run:
+2026-03-20T18:54:47.054333Z	  npm audit fix --force
+2026-03-20T18:54:47.054363Z	
+2026-03-20T18:54:47.054406Z	Run `npm audit` for details.
+2026-03-20T18:54:47.128377Z	Executing user command: npm run build
+2026-03-20T18:54:47.393813Z	
+2026-03-20T18:54:47.394168Z	> rest-express@1.0.0 build
+2026-03-20T18:54:47.394271Z	> tsx script/build.ts
+2026-03-20T18:54:47.394474Z	
+2026-03-20T18:54:48.386245Z	building client...
+2026-03-20T18:54:48.585169Z	[36mvite v7.3.1 [32mbuilding client environment for production...[36m[39m
+2026-03-20T18:54:48.905Z	transforming...
+2026-03-20T18:54:52.670878Z	[32m✓[39m 2215 modules transformed.
+2026-03-20T18:54:53.124595Z	rendering chunks...
+2026-03-20T18:54:53.13156Z	[meta-images] no Replit deployment domain found, skipping meta tag updates
+2026-03-20T18:54:53.135631Z	computing gzip size...
+2026-03-20T18:54:53.159603Z	[2m../dist/public/[22m[32mindex.html                 [39m[1m[2m  2.19 kB[22m[1m[22m[2m │ gzip:   0.75 kB[22m
+2026-03-20T18:54:53.160204Z	[2m../dist/public/[22m[2massets/[22m[35mindex-CPeJf7ru.css  [39m[1m[2m107.98 kB[22m[1m[22m[2m │ gzip:  17.75 kB[22m
+2026-03-20T18:54:53.160325Z	[2m../dist/public/[22m[2massets/[22m[36mindex-Dv1dlM4v.js   [39m[1m[33m576.26 kB[39m[22m[2m │ gzip: 180.59 kB[22m
+2026-03-20T18:54:53.160474Z	[32m✓ built in 4.30s[39m
+2026-03-20T18:54:53.162308Z	copied recycle.html to root
+2026-03-20T18:54:53.16256Z	[33m
+2026-03-20T18:54:53.162635Z	created fallback HTML files for SPA routing
+2026-03-20T18:54:53.162703Z	building server...
+2026-03-20T18:54:53.162787Z	(!) Some chunks are larger than 500 kB after minification. Consider:
+2026-03-20T18:54:53.162993Z	- Using dynamic import() to code-split the application
+2026-03-20T18:54:53.163095Z	- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+2026-03-20T18:54:53.163158Z	- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+2026-03-20T18:54:53.24208Z	
+2026-03-20T18:54:53.242393Z	  dist/index.cjs  788.9kb
+2026-03-20T18:54:53.242474Z	
+2026-03-20T18:54:53.242538Z	⚡ Done in 65ms
+2026-03-20T18:54:53.357845Z	Finished
+2026-03-20T18:54:54.12004Z	Checking for configuration in a Wrangler configuration file (BETA)
+2026-03-20T18:54:54.120568Z	
+2026-03-20T18:54:55.228005Z	No Wrangler configuration file found. Continuing.
+2026-03-20T18:54:55.228663Z	Note: No functions dir at /functions found. Skipping.
+2026-03-20T18:54:55.228776Z	Validating asset output directory
+2026-03-20T18:55:11.94885Z	Success: Assets published!
+2026-03-20T18:55:15.738634Z	Success: Your site was deployed!
