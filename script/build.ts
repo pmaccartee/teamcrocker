@@ -39,15 +39,12 @@ async function buildAll() {
   await viteBuild();
 
   // For Replit static deployments, use index.html as the 404 fallback
-  // so that SPA routing works for deep links like /blog or /recycle
+  // so that SPA routing works for deep links like /blog
   try {
     const indexHtml = await readFile("dist/public/index.html", "utf-8");
     await writeFile("dist/public/404.html", indexHtml, "utf-8");
     
-    // Create specific folders for known routes to ensure they load on static hosting
-    await mkdir("dist/public/recycle", { recursive: true });
-    await writeFile("dist/public/recycle/index.html", indexHtml, "utf-8");
-    
+    // Create specific folders for known SPA routes to ensure they load on static hosting
     await mkdir("dist/public/blog", { recursive: true });
     await writeFile("dist/public/blog/index.html", indexHtml, "utf-8");
     

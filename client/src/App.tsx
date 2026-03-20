@@ -7,7 +7,6 @@ import NotFound from "@/pages/not-found";
 import Home from "./pages/home";
 import Blog from "./pages/blog";
 import Article from "./pages/article";
-import Recycle from "./pages/recycle";
 
 function Router() {
   return (
@@ -15,7 +14,6 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/blog" component={Blog} />
       <Route path="/blog/:slug" component={Article} />
-      <Route path="/recycle" component={Recycle} />
       <Route component={NotFound} />
     </Switch>
   );
