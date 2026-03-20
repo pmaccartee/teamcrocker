@@ -58,7 +58,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 className={`text-muted-foreground transition-colors hover:text-primary ${location.startsWith("/blog") ? "text-primary font-medium" : ""}`}
                 data-testid="link-blog"
               >
-                Answers
+                Blog
               </a>
             </Link>
           </nav>
@@ -93,7 +93,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 className="inline-flex items-center text-sm font-medium transition-colors hover:text-primary"
                 data-testid="link-footer-blog"
               >
-                Answers
+                Blog
               </a>
             </Link>
             <ContactDialog>

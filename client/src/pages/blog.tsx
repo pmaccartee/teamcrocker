@@ -116,7 +116,7 @@ export default function Blog() {
                         {a.excerpt}
                       </div>
                       <div className="mt-4 inline-flex items-center text-sm font-medium">
-                        Read answer
+                        Read post
                         <ArrowRight
                           className="ml-2 size-4 transition-transform group-hover:translate-x-0.5"
                           aria-hidden="true"

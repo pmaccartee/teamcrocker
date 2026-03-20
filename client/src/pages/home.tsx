@@ -159,7 +159,7 @@ export default function Home() {
                 className="inline-flex items-center text-sm font-medium text-white transition-colors hover:text-white/80"
                 data-testid="link-hero-qa"
               >
-                Read neighborhood Q&A
+                Read our blog
                 <ArrowRight className="ml-2 size-4" />
               </a>
             </div>
@@ -278,7 +278,7 @@ export default function Home() {
              <div className="space-y-3">
                <h3 className="font-serif text-lg">Fast Answers</h3>
                <p className="text-sm text-muted-foreground leading-relaxed">
-                 Our Q&A library is built to answer the questions people actually search.
+                 Our blog is built to answer the questions people actually search.
                </p>
              </div>
              <div className="space-y-3">
@@ -306,7 +306,7 @@ export default function Home() {
               href="/blog"
               className="inline-flex items-center text-sm font-medium transition-colors hover:text-primary"
             >
-              Read Q&A by neighborhood
+              Read our blog
               <ArrowRight className="ml-2 size-4" />
             </a>
           </div>
