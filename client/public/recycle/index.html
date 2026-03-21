@@ -503,41 +503,51 @@
     <h2 class="section-heading">Reserve Your Spot</h2>
     <p class="form-sub">Registration helps us plan — walk-ins are always welcome. This event is completely free and open to the community.</p>
 
-    <form id="regForm">
+    <script>
+      let submitted = false;
+    </script>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {
+      document.getElementById('regForm').style.display = 'none';
+      const msg = document.getElementById('successMsg');
+      msg.style.display = 'block';
+      window.scrollTo({ top: msg.offsetTop - 40, behavior: 'smooth' });
+    }"></iframe>
+
+    <form id="regForm" action="https://docs.google.com/forms/d/e/1FAIpQLSdzkISefOAk_P9dDwTlVL309q5dPAtLbgzj6n6Z8jf9OjUPig/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
       <div class="form-row">
         <div class="form-group">
           <label for="firstName">First Name</label>
-          <input type="text" id="firstName" name="firstName" placeholder="Jane" required />
+          <input type="text" id="firstName" name="entry.536743079" placeholder="Jane" required />
         </div>
         <div class="form-group">
           <label for="lastName">Last Name</label>
-          <input type="text" id="lastName" name="lastName" placeholder="Smith" required />
+          <input type="text" id="lastName" name="entry.1625518009" placeholder="Smith" required />
         </div>
       </div>
 
       <div class="form-group">
         <label for="email">Email Address</label>
-        <input type="email" id="email" name="email" placeholder="jane@email.com" required />
+        <input type="email" id="email" name="entry.738122790" placeholder="jane@email.com" required />
       </div>
 
       <div class="form-group">
         <label for="phone">Phone <span class="opt">(optional)</span></label>
-        <input type="tel" id="phone" name="phone" placeholder="(510) 555-0000" />
+        <input type="tel" id="phone" name="entry.51875225" placeholder="(510) 555-0000" />
       </div>
 
       <div class="form-group">
         <label>What are you bringing? <span class="opt">(select all that apply)</span></label>
         <div class="checkbox-group">
           <label class="checkbox-label">
-            <input type="checkbox" name="bringing" value="shredding" />
+            <input type="checkbox" name="entry.25193686" value="Documents for shredding" />
             Documents for shredding
           </label>
           <label class="checkbox-label">
-            <input type="checkbox" name="bringing" value="ewaste" />
+            <input type="checkbox" name="entry.25193686" value="E-waste / electronics" />
             E-waste / electronics
           </label>
           <label class="checkbox-label">
-            <input type="checkbox" name="bringing" value="both" />
+            <input type="checkbox" name="entry.25193686" value="Both" />
             Both
           </label>
         </div>
@@ -545,7 +555,7 @@
 
       <div class="form-group">
         <label for="notes">Questions or Notes <span class="opt">(optional)</span></label>
-        <textarea id="notes" name="notes" placeholder="Anything we should know?"></textarea>
+        <textarea id="notes" name="entry.2073546612" placeholder="Anything we should know?"></textarea>
       </div>
 
       <button type="submit" class="submit-btn">Register for the Event</button>
@@ -579,16 +589,6 @@
       </div>
     </div>
   </footer>
-
-  <script>
-    document.getElementById('regForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      document.getElementById('regForm').style.display = 'none';
-      const msg = document.getElementById('successMsg');
-      msg.style.display = 'block';
-      window.scrollTo({ top: msg.offsetTop - 40, behavior: 'smooth' });
-    });
-  </script>
 
 </body>
 </html>
