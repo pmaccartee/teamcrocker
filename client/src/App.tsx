@@ -14,6 +14,12 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/blog" component={Blog} />
       <Route path="/blog/:slug" component={Article} />
+      <Route path="/recycle">
+        {() => {
+          window.location.href = "/recycle/index.html";
+          return null;
+        }}
+      </Route>
       <Route component={NotFound} />
     </Switch>
   );
