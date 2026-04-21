@@ -96,11 +96,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 Blog
               </a>
             </Link>
-            <ContactDialog>
-              <Button className="rounded-none bg-primary text-white hover:bg-primary/90" data-testid="button-footer-contact">
+            <Button asChild className="rounded-none bg-primary text-white hover:bg-primary/90" data-testid="button-footer-contact">
+              <a href="https://calendly.com/patrick-realtor510/crocker" target="_blank" rel="noopener noreferrer">
                 Request a consult
-              </Button>
-            </ContactDialog>
+              </a>
+            </Button>
           </div>
         </div>
       </footer>

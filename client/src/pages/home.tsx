@@ -149,11 +149,11 @@ export default function Home() {
             </div>
 
             <div className="mt-10 flex flex-col gap-5 sm:flex-row sm:items-center">
-              <ContactDialog>
-                <Button className="rounded-none h-12 px-8 text-base bg-white text-primary hover:bg-white/90" data-testid="button-hero-consult">
+              <Button asChild className="rounded-none h-12 px-8 text-base bg-white text-primary hover:bg-white/90" data-testid="button-hero-consult">
+                <a href="https://calendly.com/patrick-realtor510/crocker" target="_blank" rel="noopener noreferrer">
                   Request a private consult
-                </Button>
-              </ContactDialog>
+                </a>
+              </Button>
               <a
                 href="/blog"
                 className="inline-flex items-center text-sm font-medium text-white transition-colors hover:text-white/80"
