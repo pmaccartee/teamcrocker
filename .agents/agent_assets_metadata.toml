@@ -1,0 +1,8 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "8GZMWj_TM78pHQGbvpaC2"
+uri = "file://client/public/images/teamcrocker-og.png"
+type = "image"
+title = "Team Crocker OpenGraph Image"

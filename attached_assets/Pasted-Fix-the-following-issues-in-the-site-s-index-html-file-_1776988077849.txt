@@ -1,0 +1,59 @@
+Fix the following issues in the site's index.html file:
+
+Replace the og:image and twitter:image meta tags. They currently point to https://replit.com/public/images/opengraph.png — replace with an actual image hosted on the site, for example /images/teamcrocker-og.jpg. This image should be 1200x630px and should be created/uploaded first.
+Add the following structured data schema inside the <head> tag before the closing </head>:
+html
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "RealEstateAgent",
+  "name": "Team Crocker | The Grubb Company",
+  "url": "https://teamcrocker.com",
+  "logo": "https://teamcrocker.com/images/grubb-logo-g.png",
+  "description": "Top-rated Crocker Highlands Realtors & Luxury Real Estate Agents serving Trestle Glen, Piedmont, and Oakland.",
+  "areaServed": ["Crocker Highlands", "Trestle Glen", "Piedmont", "Oakland"],
+  "member": [
+    {
+      "@type": "Person",
+      "name": "Patrick MacCartee",
+      "jobTitle": "Realtor",
+      "url": "https://teamcrocker.com"
+    },
+    {
+      "@type": "Person",
+      "name": "Laura Arechiga",
+      "jobTitle": "Realtor",
+      "url": "https://teamcrocker.com"
+    },
+    {
+      "@type": "Person",
+      "name": "Ilona Campbell",
+      "jobTitle": "Realtor",
+      "url": "https://teamcrocker.com"
+    }
+  ]
+}
+</script>
+Update the meta description to include the agent names:
+html
+<meta name="description" content="Patrick MacCartee, Laura Arechiga & Ilona Campbell — top-rated Realtors serving Crocker Highlands, Trestle Glen, Piedmont, and Oakland at The Grubb Company." />
+Do the same for the og:description and twitter:description tags.
+
+Add a <noscript> fallback inside the <body> tag so crawlers that don't run JavaScript see something:
+html
+<noscript>
+  <div>
+    <h1>Team Crocker | The Grubb Company</h1>
+    <p>Patrick MacCartee, Laura Arechiga, and Ilona Campbell are top-rated Realtors serving Crocker Highlands, Trestle Glen, Piedmont, and Oakland.</p>
+    <p>Contact us at teamcrocker.com</p>
+  </div>
+</noscript>
+After making these changes, commit and push to GitHub. Cloudflare will rebuild automatically.
+
+The og:image fix and noscript tag are the most urgent — do those first.
+
+
+
+
+
+
