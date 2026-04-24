@@ -20,243 +20,13 @@ export type BlogPost = {
 };
 
 export const blogPosts: BlogPost[] = [
-  // Existing Articles
-  {
-    slug: "best-blocks-crocker-highlands",
-    title: "What are the best blocks in Crocker Highlands?",
-    excerpt: "A practical way to think about streets, walkability, views, and day-to-day feel—without oversimplifying it.",
-    neighborhood: "Crocker Highlands",
-    intent: "Buyer",
-    updated: "2026-02-02",
-    question: "What are the best blocks in Crocker Highlands for walkability, architecture, and day-to-day feel?",
-    answer: [
-      "There isn’t one single ‘best’ block—buyers tend to value a mix of street character, proximity to Lakeshore, and how the home sits (light, privacy, and traffic).",
-      "A simple way to narrow it down: start with your daily rhythm. If you want coffee-and-walkability, prioritize areas that feel easiest to Lakeshore. If you want quieter, prioritize the interior streets and hillside pockets.",
-      "The right block is also price-sensitive: two streets can feel similar, but the view corridor, the lot shape, or the number of steps can move the value meaningfully.",
-      "If you share your ‘must-haves’ (walk score vs. view vs. minimal stairs), we can suggest the micro-areas that match—without overpaying.",
-    ],
-    seo: {
-      keywords: ["best blocks in Crocker Highlands", "Crocker Highlands Oakland homes", "Crocker Highlands neighborhood guide"],
-      related: ["Crocker Highlands vs Trestle Glen", "Crocker Highlands walkability", "Crocker Highlands school proximity"],
-    },
-  },
-  {
-    slug: "crocker-highlands-price-premium",
-    title: "Why do Crocker Highlands homes command a premium?",
-    excerpt: "Architecture, school proximity, and buyer psychology—plus what actually moves the number up or down.",
-    neighborhood: "Crocker Highlands",
-    intent: "Market",
-    updated: "2026-02-02",
-    question: "Why are home prices higher in Crocker Highlands compared to nearby Oakland neighborhoods?",
-    answer: [
-      "Premiums usually come from a combination of architecture, consistency of street character, and the buyer pool’s perception of long-term value.",
-      "Crocker Highlands also benefits from ‘low-friction living’: quick access to Lakeshore, parks, and commute corridors while still feeling residential.",
-      "Within the neighborhood, premiums concentrate around light, layout, and minimal deferred maintenance—buyers pay for certainty.",
-      "If you’re selling, the goal is to make your home ‘read’ like the premium version of itself—through prep, storytelling, and pricing with proof.",
-    ],
-    seo: {
-      keywords: ["Crocker Highlands price premium", "Crocker Highlands home values", "Oakland luxury real estate"],
-      related: ["Crocker Highlands listing strategy", "Oakland market trends"],
-    },
-  },
-  {
-    slug: "trestle-glen-vs-crocker-highlands",
-    title: "Trestle Glen vs. Crocker Highlands: which fits your lifestyle?",
-    excerpt: "Two beautiful Oakland neighborhoods—here’s how they live differently.",
-    neighborhood: "Trestle Glen",
-    intent: "Buyer",
-    updated: "2026-02-02",
-    question: "How do Trestle Glen and Crocker Highlands compare for buyers who want charm, walkability, and community?",
-    answer: [
-      "Both are beautiful and ‘classic Oakland,’ but they live differently. Crocker Highlands often feels closer to the Lakeshore corridor; Trestle Glen can feel a touch more tucked-away and intimate.",
-      "Buyers who prioritize a consistent architectural ‘edit’ often gravitate toward Crocker Highlands. Buyers who want a softer, storybook pocket sometimes fall for Trestle Glen.",
-      "The best choice usually comes down to commute direction, your daily errands, and how you want the streets to feel when you walk outside.",
-    ],
-    seo: {
-      keywords: ["Trestle Glen vs Crocker Highlands", "Trestle Glen Oakland", "Crocker Highlands vs Trestle Glen"],
-      related: ["Trestle Glen homes", "Crocker Highlands homes"],
-    },
-  },
-  {
-    slug: "selling-in-crocker-highlands-prep",
-    title: "Selling in Crocker Highlands: what prep is actually worth it?",
-    excerpt: "Where to spend (and not spend) to maximize outcome—paint, staging, landscaping, and inspection strategy.",
-    neighborhood: "Crocker Highlands",
-    intent: "Seller",
-    updated: "2026-02-02",
-    question: "If we’re selling in Crocker Highlands, what improvements actually increase the result?",
-    answer: [
-      "In luxury neighborhoods, buyers pay for ‘move-in certainty’—not novelty. The highest ROI usually comes from clarity and confidence: paint, lighting, landscaping, and staging that makes the home read clean and intentional.",
-      "We typically prioritize: (1) exterior first impression, (2) kitchen/baths ‘freshness,’ (3) flooring consistency, and (4) inspection strategy to reduce surprises.",
-      "The goal isn’t to over-renovate—it’s to remove questions so buyers can emotionally commit.",
-    ],
-    seo: {
-      keywords: ["selling in Crocker Highlands", "Crocker Highlands listing prep", "Oakland home staging"],
-      related: ["Crocker Highlands pricing", "Oakland inspection tips"],
-    },
-  },
-  // Re-added lost articles with inferred content
-  {
-    slug: "piedmont-vs-oakland-hills",
-    title: "Piedmont vs. Oakland Hills: how do buyers decide?",
-    excerpt: "A simple framework buyers use—schools, walkability, commute, architecture, and daily rhythm.",
-    neighborhood: "Piedmont",
-    intent: "Buyer",
-    updated: "2026-02-02",
-    question: "How do buyers choose between Piedmont and the Oakland Hills?",
-    answer: [
-      "The decision often comes down to three factors: schools, lot size, and walkability.",
-      "Piedmont offers top-tier independent schools and a centralized community feel, but lots can be smaller and privacy harder to find.",
-      "The Oakland Hills (Montclair, Claremont) offer sweeping views, privacy, and a 'retreat' feeling, often with more square footage for the price, but can be less walkable.",
-      "We help buyers weigh the daily trade-offs: the drive to school vs. the view from the deck."
-    ],
-    seo: {
-      keywords: ["Piedmont vs Oakland Hills", "Piedmont schools", "Oakland Hills homes"],
-      related: ["Piedmont real estate", "Montclair Oakland homes"]
-    }
-  },
-  {
-    slug: "berkeley-hills-buyer-mistakes",
-    title: "Berkeley Hills: the most common buyer mistakes (and how to avoid them)",
-    excerpt: "Slope, drainage, microclimates, permits, and seismic—what to ask before you fall in love.",
-    neighborhood: "Berkeley",
-    intent: "Buyer",
-    updated: "2026-02-02",
-    question: "What are the most common mistakes buyers make in the Berkeley Hills?",
-    answer: [
-      "The biggest mistake is falling for the view without checking the foundation. Hillside homes have complex engineering needs.",
-      "Buyers often overlook drainage and sewer compliance—critical in our rainy seasons.",
-      "Permit history is another trap; unpermitted additions can cause headaches during resale or insurance underwriting.",
-      "We guide buyers to look 'under the hood' first: engineering reports, sewer laterals, and insurance insurability."
-    ],
-    seo: {
-      keywords: ["Berkeley Hills real estate", "buying in Berkeley Hills", "Berkeley home inspections"],
-      related: ["Berkeley Hills foundation issues", "Berkeley seismic retrofit"]
-    }
-  },
-
-  // New Imported Articles
-  {
-    slug: "luxury-buyer-definition-east-bay",
-    title: "What defines a luxury buyer in today’s East Bay market?",
-    excerpt: "Today’s luxury buyer is sophisticated, valuing architecture, privacy, and authentic experiences over sheer size.",
-    neighborhood: "East Bay",
-    intent: "Market",
-    updated: "2026-10-03",
-    question: "What defines a luxury buyer in today’s East Bay market?",
-    answer: [
-      "Today’s East Bay luxury buyer is more sophisticated than ever—savvy about architecture, design, and long-term value.",
-      "They’re not just purchasing property; they’re curating lifestyle. Many are Bay Area professionals balancing remote flexibility with community and character. They value privacy, walkability, and a home that feels authentic—not over-produced.",
-      "Post-pandemic, luxury is less about size and more about quality of experience: natural light, indoor-outdoor flow, spa-level bathrooms, and thoughtful craftsmanship.",
-      "These buyers research neighborhoods deeply—school districts, commute options, and even microclimates. And they expect polished service from their agent: data-backed insights plus taste-level curation."
-    ],
-    seo: {
-      keywords: ["East Bay luxury real estate", "luxury home buyer profile", "Oakland high end homes", "luxury buyer trends"],
-      related: ["East Bay market insights", "luxury home features"]
-    }
-  },
-  {
-    slug: "handling-multiple-offers-luxury",
-    title: "How do you handle multiple-offer situations on luxury homes?",
-    excerpt: "Managing tone, transparency, and quality over quantity to prevent fatigue and ensure the best outcome.",
-    neighborhood: "East Bay",
-    intent: "Seller",
-    updated: "2026-11-03",
-    question: "How do you handle multiple-offer situations on luxury homes without creating fatigue?",
-    answer: [
-      "In the high-end market, multiple offers are both a blessing and a balancing act. While competition drives price, managing tone and transparency ensures the process stays productive.",
-      "I start by setting expectations before offers arrive — sellers understand the evaluation process, and agents know timelines and decision criteria. Clarity prevents chaos.",
-      "Next, I focus on quality over quantity. Not every offer deserves the same attention; I filter for motivation, financing strength, and contingencies.",
-      "I also maintain respect for all parties — clear communication builds reputation and ensures agents continue bringing their best clients to your listings."
-    ],
-    seo: {
-      keywords: ["managing multiple offers", "luxury home negotiation", "seller strategy multiple offers", "real estate bidding wars"],
-      related: ["selling luxury homes", "negotiation strategies"]
-    }
-  },
-  {
-    slug: "pricing-strategy-low-inventory",
-    title: "What’s your process for pricing strategy in low-inventory zones?",
-    excerpt: "Using real-time data, buyer psychology, and momentum to drive competition in high-demand neighborhoods.",
-    neighborhood: "Crocker Highlands",
-    intent: "Seller",
-    updated: "2026-06-11",
-    question: "What’s your process for pricing strategy in low-inventory, high-demand zones?",
-    answer: [
-      "Pricing a luxury home in the East Bay is both art and analytics. When inventory is tight, as it often is in Crocker Highlands or Piedmont, the right pricing strategy can mean the difference between a weekend frenzy and a stale listing.",
-      "My approach begins with real-time data, not lagging comps. I evaluate active listings and pending sales—what’s actually attracting offers today. Then, I layer in buyer psychology: people tend to shop in round-number price bands ($1.995M vs. $2.05M can change who sees your listing online).",
-      "We also factor emotional value—architectural pedigree, lot orientation, or custom craftsmanship can justify a premium even when comps don’t fully capture it.",
-      "Finally, I align pricing with momentum. In a low-inventory zone, I often price below the aspirational mark to generate multiple offers and drive competition upward."
-    ],
-    seo: {
-      keywords: ["pricing home for sale", "low inventory pricing strategy", "Crocker Highlands home values", "strategic pricing real estate"],
-      related: ["East Bay market trends", "home selling tips"]
-    }
-  },
-  {
-    slug: "affluent-buyer-preferences-post-2020",
-    title: "How are affluent buyers’ preferences changing post-2020?",
-    excerpt: "Flexibility, wellness, and calm are the new luxuries. Buyers want adaptable layouts and grounded design.",
-    neighborhood: "East Bay",
-    intent: "Market",
-    updated: "2026-02-05",
-    question: "How are affluent buyers’ preferences changing post-2020?",
-    answer: [
-      "Since 2020, “home” has become multi-purpose: office, gym, retreat, and social hub. Affluent buyers in the East Bay now prioritize flexibility and wellness as core luxuries.",
-      "They want private outdoor space, ADU potential, and layouts adaptable to evolving needs. Open concept still matters, but separation between living and work zones has regained importance.",
-      "Design preferences lean warm and natural—less gray, more texture. Eco-conscious materials and energy efficiency are increasingly on trend.",
-      "And the emotional layer? Buyers crave calm. The most successful listings feel grounded—lush landscaping, abundant light, and indoor-outdoor harmony."
-    ],
-    seo: {
-      keywords: ["post-pandemic home trends", "luxury home amenities", "East Bay buyer preferences", "wellness in design"],
-      related: ["home design trends", "luxury real estate demand"]
-    }
-  },
-  {
-    slug: "emotional-triggers-luxury-buyers",
-    title: "What emotional triggers influence luxury buyer decisions?",
-    excerpt: "Luxury buyers fall in love with moments, not data. Staging for feeling and lifestyle authenticity is key.",
-    neighborhood: "East Bay",
-    intent: "Seller",
-    updated: "2026-11-03",
-    question: "What emotional triggers influence luxury buyer decisions?",
-    answer: [
-      "Luxury buyers don’t fall in love with data — they fall in love with moments. The scent of cedar, the morning light through picture windows, the view that tells a story.",
-      "Emotion is always the closer. Data just justifies it later.",
-      "In the East Bay, those triggers often connect to lifestyle and authenticity: walkable neighborhoods, architecture with soul, and outdoor spaces that feel private yet social.",
-      "As a listing agent, I stage for feeling, not furniture. I want buyers to imagine experiences — breakfast on the deck, friends gathered around the island, a golden-hour glass of wine on the patio."
-    ],
-    seo: {
-      keywords: ["real estate psychology", "selling luxury homes emotion", "staging for emotion", "luxury buyer psychology"],
-      related: ["luxury home marketing", "staging tips"]
-    }
-  },
-  {
-    slug: "high-end-buyer-credits-concessions",
-    title: "What’s your approach when a high-end buyer requests excessive credits?",
-    excerpt: "Handling boundary-testing in luxury negotiations with firm grace, focusing on facts and preserving deal momentum.",
-    neighborhood: "East Bay",
-    intent: "Seller",
-    updated: "2025-11-03",
-    question: "What’s your approach when a high-end buyer requests excessive credits or concessions?",
-    answer: [
-      "High-end buyers often test boundaries—it’s part of negotiation culture at this level. I respond with firm grace.",
-      "First, I reframe the conversation: 'Let’s focus on what the inspection actually supports.' Grounding in facts removes emotion.",
-      "If the requests feel inflated, I counter with partial credits or targeted repairs—enough to maintain goodwill but protect net value.",
-      "I also evaluate psychology: sometimes buyers want reassurance, not a discount. A small gesture often preserves momentum toward close."
-    ],
-    seo: {
-      keywords: ["negotiating real estate credits", "seller concessions strategy", "luxury home negotiation", "managing buyer requests"],
-      related: ["seller protection", "negotiation tactics"]
-    }
-  },
   {
     slug: "create-leverage-one-offer",
     title: "How do you create leverage when there’s only one offer?",
-    excerpt: "Manufacturing confidence through narrative control, timing, and clean terms to maximize a single buyer's interest.",
+    excerpt: "Only one offer? Learn how strategic timing and confidence build negotiating power.",
     neighborhood: "East Bay",
     intent: "Seller",
-    updated: "2025-11-03",
+    updated: "2026-04-18",
     question: "How do you create leverage when there’s only one offer?",
     answer: [
       "One offer doesn’t mean no leverage — it just means you have to manufacture confidence.",
@@ -270,67 +40,12 @@ export const blogPosts: BlogPost[] = [
     }
   },
   {
-    slug: "negotiate-mismatched-comps",
-    title: "How do you negotiate with agents who rely heavily on mismatched comps?",
-    excerpt: "Pivoting from argument to education. Using distinct property features and trends to justify value against bad data.",
-    neighborhood: "East Bay",
-    intent: "Seller",
-    updated: "2025-11-03",
-    question: "How do you negotiate with agents who rely heavily on mismatched comps?",
-    answer: [
-      "When another agent cites irrelevant comps ('but that house two miles away sold for X'), I pivot to education, not argument.",
-      "I calmly highlight distinctions: lot size, view, layout, condition, or micro-neighborhood. I support my stance with appraiser-style data—DOM, price-per-square-foot trends, and demand tiers.",
-      "Tone is key: professionalism earns credibility. I invite them to walk through my property to see the differences firsthand."
-    ],
-    seo: {
-      keywords: ["real estate comps negotiation", "appraisal disputes", "justifying home value", "luxury real estate negotiation"],
-      related: ["market education", "pricing strategy"]
-    }
-  },
-  {
-    slug: "managing-escalation-clauses",
-    title: "What’s your approach to managing escalation clauses in a luxury deal?",
-    excerpt: "Clarity first, competition second. Setting terms upfront to turn potential confusion into a clean bidding war.",
-    neighborhood: "East Bay",
-    intent: "Seller",
-    updated: "2025-11-03",
-    question: "What’s your approach to managing escalation clauses in a luxury deal?",
-    answer: [
-      "Escalation clauses — where a buyer automatically increases their offer to outbid competitors — can be both a gift and a gamble.",
-      "I begin by clarifying terms upfront: maximum cap, increment size, and proof of funds. Transparency prevents confusion or resentment later.",
-      "For sellers, escalation clauses can create momentum but must be verified with real value. I cross-check comparable offers to ensure increases are legitimate.",
-      "Used correctly, they can simplify bidding wars. Used poorly, they sow mistrust."
-    ],
-    seo: {
-      keywords: ["escalation clause real estate", "bidding war strategy", "luxury home offers", "seller negotiation tips"],
-      related: ["offer management", "multiple offers"]
-    }
-  },
-  {
-    slug: "coach-sellers-emotional-negotiations",
-    title: "How do you coach sellers to stay rational in emotional negotiations?",
-    excerpt: "Acting as the anchor of logic. Normalizing feelings while shifting focus to data and strategic outcomes.",
-    neighborhood: "East Bay",
-    intent: "Seller",
-    updated: "2025-11-03",
-    question: "How do you coach sellers to stay rational in emotional negotiations?",
-    answer: [
-      "Even the calmest sellers can become emotional when real money and memories are involved. My role is to be the anchor of logic.",
-      "First, I normalize the feelings — it’s natural to react when your home’s value is challenged or a buyer nitpicks your design choices. Then I shift the focus to data: comps, inspection reports, and net proceeds.",
-      "I also reframe negotiations as strategy, not conflict. Every counteroffer is simply communication — not rejection. That perspective keeps sellers objective and forward-focused."
-    ],
-    seo: {
-      keywords: ["seller psychology", "emotional home selling", "real estate negotiation tips", "keeping sellers calm"],
-      related: ["emotional intelligence", "seller strategy"]
-    }
-  },
-  {
     slug: "relocation-buyers-east-bay-lifestyle",
     title: "How do you help relocation buyers fall in love with the East Bay lifestyle?",
-    excerpt: "Curating experiences beyond the MLS. Connecting buyers to the community rhythm—cafes, parks, and local culture.",
+    excerpt: "Show relocation buyers why East Bay neighborhoods offer charm, community, and value.",
     neighborhood: "East Bay",
     intent: "Buyer",
-    updated: "2025-11-03",
+    updated: "2026-04-18",
     question: "How do you help relocation buyers fall in love with the East Bay lifestyle?",
     answer: [
       "Selling the East Bay lifestyle is equal parts tour guide, storyteller, and connector.",
@@ -346,10 +61,10 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "buyers-valuing-architecture-finishes-location",
     title: "What are buyers valuing more: architecture, finishes, or location?",
-    excerpt: "Location still leads, but authentic architecture now outranks trendy finishes. Buyers want substance and story.",
+    excerpt: "Find out what today’s East Bay luxury buyers value most in high-end homes.",
     neighborhood: "East Bay",
     intent: "Market",
-    updated: "2025-11-03",
+    updated: "2026-04-18",
     question: "What are buyers valuing more: architecture, finishes, or location?",
     answer: [
       "In today’s East Bay luxury market, location still leads, but it’s no longer enough. The hierarchy now looks like this: Location, Architecture, then Finishes.",
@@ -363,1086 +78,440 @@ export const blogPosts: BlogPost[] = [
     }
   },
   {
-    slug: "affluent-buyers-discretion-privacy",
-    title: "What do affluent buyers expect in terms of discretion and privacy?",
-    excerpt: "Privacy is currency. Controlled access, confidential communication, and discreet property features are non-negotiable.",
-    neighborhood: "East Bay",
-    intent: "Market",
-    updated: "2025-11-03",
-    question: "What do affluent buyers expect in terms of discretion and privacy?",
-    answer: [
-      "In the East Bay luxury market, privacy is a form of currency. Affluent buyers don’t just seek beautiful homes — they seek control over visibility, access, and information flow.",
-      "Many clients operate in public or high-profile professions. They expect their agent to manage communication discreetly — from off-market previews to controlled showings. That means no casual 'coming soon' buzz without consent and no oversharing details about offers or motivation.",
-      "Privacy also extends to physical property features: gated entries, mature landscaping, and layered security systems now rank as desirable as quartzite countertops or spa baths.",
-      "I often coordinate private, appointment-only showings and maintain strict confidentiality during negotiations. Sellers who offer this elevated level of discretion — through limited marketing or private showings — attract more qualified, serious buyers."
-    ],
-    seo: {
-      keywords: ["luxury real estate privacy", "confidential home sales", "high profile real estate", "discreet home selling"],
-      related: ["confidential sales", "client service"]
-    }
-  },
-  {
     slug: "measure-success-pre-market-campaign",
     title: "How do you measure the success of a pre-market marketing campaign?",
-    excerpt: "Success is momentum before launch. Tracking agent engagement, digital metrics, and market chatter to build anticipation.",
+    excerpt: "The best luxury listings start strong. Learn what metrics define a winning pre-launch strategy.",
     neighborhood: "East Bay",
-    intent: "Seller",
-    updated: "2025-11-02",
+    intent: "Market",
+    updated: "2026-04-18",
     question: "How do you measure the success of a pre-market marketing campaign?",
     answer: [
-      "Pre-market campaigns—teasers, 'coming soon' emails, and agent previews—are the secret sauce in top-tier listings.",
-      "Success isn’t just measured in clicks or open-house attendance; it’s about momentum before launch.",
-      "I look for three indicators: Agent engagement (private inquiries), Digital analytics (strong click-through rates), and Market chatter (anticipation).",
-      "By the time a listing hits MLS, we should already have buyers emotionally pre-qualified."
+      "A successful pre-market campaign isn't just about throwing up a 'Coming Soon' sign. It's about precision targeting and measuring the right signals before the official launch.",
+      "We track direct inquiries from off-market networking, the engagement rate on private agent-to-agent emails, and the number of qualified showings requested before hitting the MLS.",
+      "If we generate strong early interest and private showings from vetted buyers, the campaign is working. If response is lukewarm, it gives us a crucial window to adjust pricing or presentation before accumulating 'Days on Market' publicly.",
+      "The ultimate success metric is launching with an offer already in hand or a packed opening weekend."
     ],
     seo: {
-      keywords: ["pre-market real estate strategy", "measuring marketing success", "coming soon listing strategy", "luxury home marketing"],
-      related: ["marketing strategy", "real estate analytics"]
+      keywords: ["pre-market real estate", "pocket listing strategy", "measuring marketing success", "luxury home marketing"],
+      related: ["off market listings", "real estate marketing metrics"]
     }
   },
   {
-    slug: "inventory-trends-homes-over-2-million",
+    slug: "inventory-trending-homes-over-2-million",
     title: "How is inventory trending for homes over $2 million?",
-    excerpt: "Tight inventory meets high demand. A selective, story-driven market where prepared sellers can capture the next wave.",
+    excerpt: "See how tight inventory and rising demand are shaping the East Bay’s $2M+ real estate market in 2025–2026.",
     neighborhood: "East Bay",
     intent: "Market",
-    updated: "2025-11-02",
+    updated: "2026-04-18",
     question: "How is inventory trending for homes over $2 million?",
     answer: [
-      "Luxury inventory across the East Bay remains tight — but it’s not just about how many homes are listed, it’s about who is listing.",
-      "In early 2025, the $2–3 million range saw a 15% drop in new listings year-over-year, as many potential sellers held onto low mortgage rates. Yet demand has rebounded faster than supply, particularly in Crocker Highlands, Piedmont, and Rockridge.",
-      "This imbalance is creating a selective, story-driven market. Homes with architectural distinction, turn-key finishes, or exceptional outdoor flow continue to sell quickly and near (or above) list.",
-      "As rates ease into 2026, we anticipate a pent-up seller wave—especially from long-term owners eyeing downsizing moves. That’s why staging, timing, and pricing precision will matter more than ever."
+      "The $2M+ tier in the East Bay is experiencing a distinct inventory squeeze. We are seeing consistently low active listing counts in premium neighborhoods like Piedmont and Crocker Highlands.",
+      "Sellers with locked-in low mortgage rates from previous years are reluctant to trade up, keeping generational inventory off the market.",
+      "Simultaneously, demand in this price point remains robust from buyers moving out of San Francisco or upgrading locally, leading to compressed days on market and frequent multiple-offer scenarios for turnkey properties.",
+      "For buyers, this means being prepared to act decisively. For sellers, it's a historically strong window to capture premium pricing if the home is prepared correctly."
     ],
     seo: {
-      keywords: ["luxury home inventory", "East Bay housing market trends", "selling home over 2 million", "Oakland luxury market"],
-      related: ["market inventory", "East Bay sellers"]
+      keywords: ["luxury home inventory", "East Bay $2M homes", "real estate market trends", "Piedmont real estate market"],
+      related: ["luxury real estate demand", "East Bay housing supply"]
     }
   },
   {
     slug: "seller-hesitation-pre-market-improvements",
     title: "How do you handle seller hesitation about pre-market improvements?",
-    excerpt: "Using data to show ROI. A tiered approach to updates (must-do vs. nice-to-have) maximizes value with minimal disruption.",
+    excerpt: "A practical, East Bay–specific breakdown for Oakland, Piedmont, Berkeley, and Alameda sellers and buyers.",
     neighborhood: "East Bay",
     intent: "Seller",
-    updated: "2025-10-31",
+    updated: "2026-04-18",
     question: "How do you handle seller hesitation about pre-market improvements?",
     answer: [
-      "Many homeowners worry that pre-sale improvements are wasted money—but in the Bay Area luxury segment, presentation is everything. My job is to show data, not opinion.",
-      "First, we review neighborhood comps: staged, turnkey homes consistently outperform 'as-is' listings by 8–12%. When sellers see those numbers, investment decisions become logical, not emotional.",
-      "Second, I recommend a tiered approach: Tier 1 (must-do: paint, lighting), Tier 2 (value-boost: minor refresh), Tier 3 (optional: larger remodels).",
-      "Finally, I emphasize control. By making repairs upfront, sellers avoid post-inspection renegotiations or buyer credits that can cost double later."
+      "It is completely normal for sellers to hesitate before spending money on a home they are leaving. I address this by focusing strictly on Return on Investment (ROI).",
+      "I don't recommend renovations for the sake of it. We only suggest strategic improvements—like fresh paint, refinished floors, and professional staging—that consistently return $2 to $3 for every $1 spent.",
+      "I provide sellers with side-by-side case studies of homes that sold 'as-is' versus homes that were prepared, showing the stark difference in final net proceeds.",
+      "By breaking down the data and taking on the project management of the improvements, we turn an overwhelming task into a clear, profitable business decision."
     ],
     seo: {
-      keywords: ["pre-sale home improvements", "selling home as-is vs renovated", "ROI on home updates", "preparing luxury home for sale"],
-      related: ["home prep", "seller tips"]
+      keywords: ["pre-listing home improvements", "ROI on home repairs", "selling a house as is", "home staging ROI"],
+      related: ["getting house ready to sell", "home improvement ROI"]
     }
   },
   {
-    slug: "percentage-luxury-buyers-outside-bay-area",
-    title: "What percentage of your luxury buyers come from outside the Bay Area?",
-    excerpt: "Building trust with sophisticated out-of-area buyers through transparency, efficiency, and data-backed advice.",
-    neighborhood: "East Bay",
-    intent: "Market",
-    updated: "2025-08-15",
-    question: "What percentage of your luxury buyers come from outside the Bay Area?",
-    answer: [
-      "High-net-worth buyers are used to being pitched—but they rarely feel genuinely advised. I build trust through transparency and efficiency.",
-      "That means showing I’ve done the homework before they ask. When I present properties, I highlight not just features but risk factors: inspection nuances, resale potential, and neighborhood trajectories.",
-      "Sophisticated clients respect candor over hype. I also respect their time—concise communication, data visualizations, and high-touch logistics (private showings, streamlined paperwork).",
-      "Consistency cements trust: delivering small promises (a follow-up, a data point) on time creates momentum for the big ones."
-    ],
-    seo: {
-      keywords: ["luxury buyers Bay Area", "relocation buyers East Bay", "trust in real estate", "high net worth client service"],
-      related: ["client relationships", "market insights"]
-    }
-  },
-  {
-    slug: "downsizers-vs-upgraders-activity",
+    slug: "downsizers-or-upgraders-driving-activity",
     title: "Are downsizers or upgraders driving more activity in your area this year?",
-    excerpt: "Downsizers unlocking equity and upgraders seeking better schools are creating a unique, overlapping market momentum.",
+    excerpt: "Learn why downsizers with decades of equity are shaping the East Bay luxury real estate market.",
     neighborhood: "East Bay",
     intent: "Market",
-    updated: "2025-08-11",
+    updated: "2026-04-18",
     question: "Are downsizers or upgraders driving more activity in your area this year?",
     answer: [
-      "Both are active, but downsizers are driving this market.",
-      "The typical East Bay luxury downsizer is 65+, has 20+ years of equity, and wants lower maintenance without sacrificing quality or location. They’re selling larger homes in Crocker Highlands or Piedmont and seeking turnkey properties in Alameda, Temescal, or LaMorInda.",
-      "These sellers often become buyers again — creating a full-circle transaction flow that keeps mid- to high-end inventory circulating.",
-      "Upgraders, meanwhile, are younger families moving within the East Bay. They’re leveraging equity from starter homes in Glenview or Maxwell Park to buy $2–$3M properties in better school districts."
+      "We are currently seeing a significant wave of activity driven by downsizers. These are long-term homeowners in neighborhoods like Piedmont and Crocker Highlands who have built substantial equity over decades.",
+      "Many are utilizing Prop 19 to transfer their low property tax base to smaller, more manageable properties—often single-level homes or luxury condos—within the East Bay or nearby coastal communities.",
+      "This movement is crucial because it is slowly unlocking the larger, legacy homes that upgrader families desperately want to buy.",
+      "However, upgraders still face friction due to high interest rates, making the downsizer demographic the more fluid and active participant in today's high-end market."
     ],
     seo: {
-      keywords: ["downsizers vs upgraders", "East Bay housing demographics", "who is buying homes Oakland", "real estate market drivers"],
-      related: ["downsizing trends", "real estate analytics"]
+      keywords: ["downsizing real estate", "Prop 19 California", "East Bay housing market", "empty nesters selling"],
+      related: ["luxury downsizing", "moving to smaller home"]
     }
   },
   {
-    slug: "local-micro-markets-heating-up-2026",
+    slug: "local-micro-markets-heating-up",
     title: "What local micro-markets are quietly heating up for 2026?",
-    excerpt: "Identifying momentum in Upper Rockridge, Adams Point, West End Alameda, and the Berkeley Hills before they peak.",
+    excerpt: "Discover the East Bay neighborhoods heating up for 2026 luxury buyers — from Upper Rockridge to Alameda’s West End.",
     neighborhood: "East Bay",
     intent: "Market",
-    updated: "2025-07-17",
-    question: "What local micro-markets are quietly heating up for 2026",
+    updated: "2026-04-18",
+    question: "What local micro-markets are quietly heating up for 2026?",
     answer: [
-      "The East Bay luxury market is never one monolith — it’s a tapestry of micro-markets that rise and cool at different rhythms. As we head into 2026, a few pockets are showing unmistakable momentum beneath the headlines.",
-      "Upper Rockridge has quietly regained traction among tech buyers who want architectural homes with views but quicker commutes to SF.",
-      "Adams Point and Cleveland Heights are surging thanks to hybrid work culture. Condos and smaller single-families with style and walkability are being rediscovered by San Francisco transplants.",
-      "West End Alameda is also experiencing a renaissance — with its Craftsman bungalows and ferry access, it’s hitting that perfect mix of community charm and urban convenience.",
-      "And Berkeley Hills, especially around Grizzly Peak, continues to attract buyers craving privacy and architectural pedigree."
+      "While marquee neighborhoods like Crocker Highlands always hold their value, we are watching specific micro-markets gather quiet momentum for 2026.",
+      "Upper Rockridge is seeing renewed interest from buyers wanting panoramic views while maintaining proximity to College Avenue commute options. Similarly, the Claremont pocket bordering Berkeley is attracting buyers priced out of prime Piedmont.",
+      "In Alameda, the West End—driven by new ferry infrastructure and waterfront development—is rapidly transitioning into a premium destination for buyers seeking coastal living with urban access.",
+      "These micro-markets offer a distinct blend of lifestyle improvements and slightly better relative value before they reach peak pricing."
     ],
     seo: {
-      keywords: ["hottest neighborhoods East Bay", "up and coming areas Oakland", "Upper Rockridge real estate", "investing in Alameda real estate"],
-      related: ["market trends", "neighborhood guides"]
+      keywords: ["up and coming East Bay neighborhoods", "Upper Rockridge real estate", "Alameda West End", "East Bay micro markets"],
+      related: ["best places to buy East Bay", "Oakland neighborhood trends"]
     }
   },
   {
-    slug: "tech-sector-recovery-impact-luxury-demand",
+    slug: "pricing-strategy-low-inventory",
+    title: "What’s your process for pricing strategy in low-inventory, high-demand zones?",
+    excerpt: "Learn how to price your East Bay luxury home for maximum demand and competition in tight markets.",
+    neighborhood: "East Bay",
+    intent: "Seller",
+    updated: "2026-04-18",
+    question: "What’s your process for pricing strategy in low-inventory, high-demand zones?",
+    answer: [
+      "Pricing a luxury home in the East Bay is both art and analytics. When inventory is tight, the right pricing strategy can mean the difference between a weekend frenzy and a stale listing.",
+      "My approach begins with real-time data, not lagging comps. I evaluate active listings and pending sales—what’s actually attracting offers today. Then, I layer in buyer psychology: people tend to shop in round-number price bands ($1.995M vs. $2.05M can change who sees your listing online).",
+      "We also factor emotional value—architectural pedigree, lot orientation, or custom craftsmanship can justify a premium even when comps don’t fully capture it.",
+      "Finally, I align pricing with momentum. In a low-inventory zone, I often price just below the aspirational mark to generate multiple offers and drive competition upward organically."
+    ],
+    seo: {
+      keywords: ["pricing home for sale", "low inventory pricing strategy", "Crocker Highlands home values", "strategic pricing real estate"],
+      related: ["East Bay market trends", "home selling tips"]
+    }
+  },
+  {
+    slug: "tech-sector-recovery-luxury-demand",
     title: "What impact is the tech sector recovery having on East Bay luxury demand?",
-    excerpt: "Tech confidence is back, driving demand for lifestyle-focused homes. Buyers are selective, seeking move-in readiness and resale value.",
+    excerpt: "Bay Area tech’s rebound is reigniting East Bay luxury demand. Here’s how IPOs and hybrid work are driving high-end housing.",
     neighborhood: "East Bay",
     intent: "Market",
-    updated: "2025-05-15",
+    updated: "2026-04-18",
     question: "What impact is the tech sector recovery having on East Bay luxury demand?",
     answer: [
-      "After two years of volatility, the Bay Area’s tech rebound is once again reshaping East Bay real estate. IPO activity, renewed hiring, and the hybrid-work reset are driving liquidity back into housing — especially the $2M–$4M range.",
-      "Buyers who paused in 2023 are back, and they’re prioritizing lifestyle over commute. They want views, outdoor space, and architecturally significant homes — all of which the East Bay delivers better than SF.",
-      "Crocker Highlands, Piedmont, Rockridge, and Berkeley Hills are benefiting most because they offer family-friendly layouts with fast access to urban amenities.",
-      "What’s different this cycle: buyers are more selective and financially savvy. They’re looking for move-in-ready homes and strong resale potential, not just prestige."
+      "The tech sector's stabilization and recent AI boom are having a direct, measurable impact on East Bay luxury real estate.",
+      "We are seeing a resurgence of buyers fueled by new liquidity events, RSUs, and confidence in the broader Bay Area economic engine. This wealth is actively seeking hard assets.",
+      "Crucially, the normalization of hybrid work means these buyers no longer need to live deep in Silicon Valley or San Francisco. They are choosing the East Bay for larger lots, better schools, and architectural character, while maintaining an easy 2-day-a-week commute.",
+      "This dynamic is putting specific upward pressure on turnkey properties over $2.5M in Piedmont, Berkeley Hills, and Crocker Highlands."
     ],
     seo: {
-      keywords: ["tech industry impact real estate", "Bay Area housing market forecast", "tech buyers East Bay", "luxury demand trends"],
-      related: ["economic trends", "housing demand"]
+      keywords: ["tech sector real estate impact", "AI wealth real estate", "Silicon Valley housing market", "East Bay luxury demand"],
+      related: ["tech worker home buying", "Bay Area housing trends"]
     }
   },
   {
     slug: "cosmetic-vs-strategic-upgrades",
     title: "How do you differentiate between cosmetic and strategic upgrades?",
-    excerpt: "Cosmetic fixes improve impressions; strategic upgrades fix friction. We focus on high-ROI changes that amplify livability.",
+    excerpt: "Discover which upgrades deliver ROI before selling your East Bay luxury home.",
     neighborhood: "East Bay",
     intent: "Seller",
-    updated: "2025-03-19",
+    updated: "2026-04-18",
     question: "How do you differentiate between cosmetic and strategic upgrades?",
     answer: [
-      "Not all improvements are equal. The smartest East Bay sellers focus on strategic upgrades—changes that directly influence perceived value and emotional connection.",
-      "Cosmetic upgrades (fresh paint, new lighting, updated hardware) improve first impressions but don’t change functionality. They’re quick and impactful for marketing.",
-      "Strategic upgrades, on the other hand, fix friction points. Think: creating indoor-outdoor flow with French doors, converting an unused basement to a media room, or adding a powder bath near entertaining areas.",
-      "When advising clients, I consider cost, disruption, and ROI. A $15K investment that removes a buyer objection (like dated kitchen counters) can yield $50K+ in additional value."
+      "Not all renovations are created equal. A cosmetic upgrade makes a house look nice; a strategic upgrade makes a house sell faster and for more money.",
+      "Strategic upgrades remove buyer objections. If a dark, closed-off kitchen is preventing buyers from emotionally connecting with the home, opening a wall or painting cabinets white is strategic.",
+      "Cosmetic upgrades, like installing highly specific designer tile or luxury appliances right before selling, often fail to recoup their cost because they cater to personal taste rather than universal appeal.",
+      "My rule is simple: we invest in upgrades that maximize light, neutralize the palette, and signal 'move-in ready' condition. Everything else we leave for the new owner."
     ],
     seo: {
-      keywords: ["home renovation ROI", "strategic home upgrades", "selling home cosmetic fixes", "value add renovations"],
-      related: ["home preparation", "seller tips"]
+      keywords: ["strategic home upgrades", "cosmetic vs strategic renovation", "ROI home improvements", "preparing house for sale"],
+      related: ["best home renovations for resale", "selling house ROI"]
+    }
+  },
+  {
+    slug: "affluent-buyer-preferences-post-2020",
+    title: "How are affluent buyers’ preferences changing post-2020?",
+    excerpt: "Post-2020, luxury buyers seek wellness, flexibility, and calm. See what’s in demand now.",
+    neighborhood: "East Bay",
+    intent: "Market",
+    updated: "2026-04-18",
+    question: "How are affluent buyers’ preferences changing post-2020?",
+    answer: [
+      "Since 2020, 'home' has become multi-purpose: office, gym, retreat, and social hub. Affluent buyers in the East Bay now prioritize flexibility and wellness as core luxuries.",
+      "They want private outdoor space, ADU potential, and layouts adaptable to evolving needs. Open concept still matters, but separation between living and work zones has regained importance.",
+      "Design preferences lean warm and natural—less gray, more texture. Eco-conscious materials and energy efficiency are increasingly on trend.",
+      "And the emotional layer? Buyers crave calm. The most successful listings feel grounded—lush landscaping, abundant light, and indoor-outdoor harmony."
+    ],
+    seo: {
+      keywords: ["post-pandemic home trends", "luxury home amenities", "East Bay buyer preferences", "wellness in design"],
+      related: ["home design trends", "luxury real estate demand"]
     }
   },
   {
     slug: "fire-insurance-constraints-buyer-psychology",
     title: "How are fire insurance constraints affecting buyer psychology?",
-    excerpt: "Insurance is a key decision factor. Proactive disclosure and working with brokers early builds trust and reduces buyer anxiety.",
+    excerpt: "Insurance limits and risk zones are shifting how East Bay buyers evaluate hillside homes. Learn how to prepare as a seller.",
     neighborhood: "East Bay",
     intent: "Market",
-    updated: "2025-01-14",
+    updated: "2026-04-18",
     question: "How are fire insurance constraints affecting buyer psychology?",
     answer: [
-      "Insurance is now one of the most under-discussed forces shaping East Bay real estate. With several carriers scaling back in California, fire-risk perception has become a key decision factor, especially in hillside areas.",
-      "Buyers are asking early about insurability and premiums — sometimes before touring. Properties within state-designated fire zones face extra scrutiny, even if they’ve mitigated risk.",
-      "For sellers, that means two things: Proactive disclosure/documentation and working with a knowledgeable insurance broker early.",
-      "The silver lining: the market is adapting. The FAIR Plan and select private carriers still provide coverage, and buyers’ focus has shifted toward value-to-premium ratio rather than avoidance."
+      "Fire insurance has shifted from an afterthought to a primary hurdle in East Bay real estate, particularly in hillside communities like Montclair and the Berkeley Hills.",
+      "Buyers are now asking about insurance viability and costs before they even make an offer. The fear of being dropped by a carrier or forced onto the expensive FAIR plan is causing hesitation.",
+      "Sellers must be proactive. Providing a current, transferable insurance quote or a documented history of recent policy renewals in the disclosure package provides immense relief to buyers.",
+      "Additionally, highlighting fire-hardening efforts—like cleared brush, boxed eaves, and updated roofing—shifts the narrative from risk to readiness."
     ],
     seo: {
-      keywords: ["fire insurance real estate California", "buying home in fire zone", "home insurance constraints", "California FAIR plan real estate"],
-      related: ["real estate risk", "home selling tips"]
+      keywords: ["California fire insurance real estate", "FAIR plan impact on housing", "Oakland hills fire insurance", "selling home in fire zone"],
+      related: ["wildfire risk real estate", "home insurance crisis"]
     }
   },
   {
     slug: "decluttering-depersonalization-luxury-listing",
     title: "What role does decluttering and depersonalization play in a luxury listing?",
-    excerpt: "It's not about erasing personality, but curating it. Creating space for buyers to imagine their own lives and routine.",
+    excerpt: "Learn why luxury buyers respond to curated simplicity when viewing East Bay homes.",
     neighborhood: "East Bay",
     intent: "Seller",
-    updated: "2025-11-06",
+    updated: "2026-04-18",
     question: "What role does decluttering and depersonalization play in a luxury listing?",
     answer: [
-      "Luxury buyers aren’t just purchasing square footage—they’re buying identity and possibility. Clutter and personal items interrupt that fantasy.",
-      "Depersonalizing a home creates space for imagination. I tell sellers: 'You want buyers picturing their art, their gatherings, their routines.'",
-      "But in the East Bay, it’s not about stripping personality—it’s about curating it. Keep a few well-styled moments that hint at lifestyle: a bar tray, a record player, or coffee-table books that reflect local culture.",
-      "Decluttering isn’t just prep—it’s marketing psychology. A calm, open environment sells both space and serenity."
+      "In a luxury listing, space is the ultimate amenity. Clutter and deeply personal items eat up visual space and break the buyer's fantasy.",
+      "When a buyer walks through a $3M home, they aren't just buying shelter; they are trying on a lifestyle. Family photos, excessive knick-knacks, and overflowing closets remind them that they are in someone else's house.",
+      "Decluttering and depersonalization act as a reset button. It creates a blank canvas that allows the architecture, the light, and the staging to speak.",
+      "We aim for 'curated simplicity'—enough decor to feel warm and lived-in, but sparse enough that the buyer can project their own life into the rooms."
     ],
     seo: {
-      keywords: ["home staging tips", "decluttering for sale", "luxury home presentation", "depersonalizing home for sale"],
-      related: ["staging", "home prep"]
+      keywords: ["decluttering house to sell", "depersonalizing home for sale", "luxury home staging tips", "preparing home for market"],
+      related: ["home staging secrets", "minimalist staging"]
     }
   },
   {
-    slug: "uncover-high-net-worth-buyer-motivation",
-    title: "How to Uncover a High-Net-Worth Buyer’s True Motivation",
-    excerpt: "Listening for lifestyle clues and 'why' behind the 'what.' Tailoring the narrative to fulfill their deepest intent.",
+    slug: "oakland-hillside-fire-zones-mortgage-insurance",
+    title: "How Oakland's Hillside Fire Zones Affect Your Mortgage and Insurance",
+    excerpt: "Buying in the Oakland hills? Here's what fire zone designation actually means for your loan, your insurance, and your due diligence.",
+    neighborhood: "Oakland",
+    intent: "Buyer",
+    updated: "2026-04-18",
+    question: "How do Oakland's Hillside Fire Zones affect obtaining a mortgage and insurance?",
+    answer: [
+      "Purchasing a home in the Oakland Hills requires navigating strict fire zone regulations that directly impact your financing.",
+      "Most traditional insurance carriers have pulled back from writing new policies in high fire-risk areas. Buyers almost universally must secure a California FAIR Plan policy for fire coverage, supplemented by a 'Difference in Conditions' (DIC) policy for liability and water damage.",
+      "This dual-policy structure is significantly more expensive. Lenders factor these higher insurance premiums into your debt-to-income (DTI) ratio during underwriting. If you are tightly qualified, the increased insurance cost can derail your loan approval.",
+      "We guide buyers to get hard insurance quotes during the contingency period, not after, ensuring the home remains affordable and financeable."
+    ],
+    seo: {
+      keywords: ["Oakland hills fire zone", "FAIR plan mortgage", "buying in fire zone California", "Oakland hills insurance"],
+      related: ["wildfire insurance costs", "mortgage underwriting insurance"]
+    }
+  },
+  {
+    slug: "the-case-for-alameda",
+    title: "The Case for Alameda: Why Buyers Who Almost Bought in Oakland Ended Up Happier",
+    excerpt: "Alameda keeps surprising buyers who discover it late. Here's why it deserves to be on your list earlier.",
     neighborhood: "East Bay",
     intent: "Buyer",
-    updated: "2025-10-10",
-    question: "How to Uncover a High-Net-Worth Buyer’s True Motivation",
+    updated: "2026-04-18",
+    question: "Why do so many Oakland buyers eventually choose Alameda?",
     answer: [
-      "Luxury buyers rarely say their deepest motivation out loud. My approach is part detective, part listener.",
-      "In initial conversations, I ask lifestyle-oriented questions: 'What do you want to feel when you come home?' or 'What’s missing in your current space?' Those answers reveal priorities—privacy, prestige, convenience, or legacy.",
-      "Body language and tone are also clues. A buyer who lights up about outdoor dining probably values entertaining. One who talks schools or multi-gen living has family-centered motivations.",
-      "Once I identify the 'why,' I tailor the property narrative accordingly. Every showing and follow-up reinforces that core desire."
+      "Alameda is often the 'dark horse' in an East Bay home search. Buyers start looking in Oakland for character and commute, then discover Alameda offers both with a significantly different daily rhythm.",
+      "The appeal lies in its distinct island culture: slower speed limits, highly rated public schools, and a profound sense of community safety. It feels like a small coastal town, yet it's literally minutes from downtown Oakland and a scenic ferry ride to San Francisco.",
+      "Architecturally, it boasts some of the best-preserved Victorian homes in the Bay Area alongside mid-century properties.",
+      "For buyers exhausted by bidding wars in Rockridge or Crocker Highlands, Alameda often provides slightly more square footage and a surprisingly tranquil alternative without sacrificing urban access."
     ],
     seo: {
-      keywords: ["luxury buyer psychology", "understanding high net worth clients", "real estate sales psychology", "identifying buyer motivation"],
-      related: ["buyer psychology", "client service"]
+      keywords: ["living in Alameda CA", "Alameda vs Oakland", "moving to Alameda", "Alameda real estate"],
+      related: ["East Bay island living", "Alameda ferry commute"]
     }
   },
-  // New Bulk Articles
   {
-    slug: "home-buying-process-steps",
-    title: "What is the home buying process?",
-    excerpt: "The home buying process involves multiple steps: financial preparation, house hunting, making an offer, and closing.",
+    slug: "berkeley-hills-vs-oakland-hills",
+    title: "Berkeley Hills vs. Oakland Hills: What the Price Difference Buys You",
+    excerpt: "The Berkeley Hills premium is real — but so is what you get on the Oakland side. A clear-eyed comparison.",
     neighborhood: "East Bay",
     intent: "Buyer",
-    updated: "2026-02-04",
-    question: "What is the home buying process?",
+    updated: "2026-04-18",
+    question: "What is the real difference between buying in the Berkeley Hills versus the Oakland Hills?",
     answer: [
-      "The home buying process typically involves multiple steps: starting with financial preparation, such as getting pre-approved for a mortgage, followed by house hunting, making an offer, and navigating inspections and appraisals.",
-      "Once an offer is accepted, you’ll move toward closing, which finalizes the sale. It’s essential to familiarize yourself with each step to ensure a smooth experience.",
-      "Engaging a knowledgeable real estate agent can streamline this process, especially in competitive markets like Rockridge and Piedmont."
+      "Both areas offer spectacular Bay views, privacy, and architectural significance, but the Berkeley Hills consistently command a pricing premium over the Oakland Hills (Montclair, Piedmont Pines).",
+      "The Berkeley premium is driven by immediate proximity to UC Berkeley, a historically tighter inventory, and a highly walkable 'village' culture in pockets like North Berkeley and Elmwood at the base of the hills.",
+      "The Oakland Hills, conversely, offer more house for the money. Buyers there often get larger lots, more square footage, and somewhat easier access to Highway 13 and 24 for South Bay or Walnut Creek commutes.",
+      "The choice usually hinges on whether you prioritize the specific academic/cultural gravity of Berkeley or the relative value and expansive nature of the Oakland Hills."
     ],
     seo: {
-      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
-      related: ["home buying guide", "first time home buyer steps"]
+      keywords: ["Berkeley Hills vs Oakland Hills", "Montclair vs Berkeley", "East Bay hills real estate", "Berkeley Hills premium"],
+      related: ["living in Berkeley Hills", "Oakland Hills homes"]
     }
   },
   {
-    slug: "how-much-can-i-afford",
-    title: "How much can I afford?",
-    excerpt: "Determining affordability involves assessing income, savings, debts, and credit score. Lenders recommend housing costs not exceed 28-30% of income.",
+    slug: "what-to-expect-crocker-highlands-piedmont-open-house",
+    title: "What to Expect at a Crocker Highlands or Piedmont Open House",
+    excerpt: "Open houses in Crocker Highlands and Piedmont are not casual browsing. Here's how to show up prepared.",
     neighborhood: "East Bay",
     intent: "Buyer",
-    updated: "2026-02-04",
-    question: "How much can I afford?",
+    updated: "2026-04-18",
+    question: "How should a buyer prepare for an open house in Crocker Highlands or Piedmont?",
     answer: [
-      "Determining how much you can afford involves an assessment of your financial situation, including income, savings, debts, and credit score. Lenders typically recommend that your monthly housing costs not exceed 28-30% of your gross monthly income.",
-      "Utilize mortgage calculators to estimate monthly payments based on different price points and interest rates. Additionally, consider other costs associated with homeownership, such as property taxes, insurance, and maintenance, to ensure a comprehensive understanding of your budget."
+      "In highly competitive markets like Crocker Highlands and Piedmont, an open house is less about casual browsing and more about strategic positioning.",
+      "Expect a busy environment. These homes often attract dozens of groups in a single weekend. The listing agent is watching to see who is serious. Treat the open house as an interview—for the home and for yourself as a buyer.",
+      "Don't ask the listing agent for a discount or point out flaws; it signals you aren't ready to compete. Instead, ask about the seller's preferred timeline or if there are preemptive offers.",
+      "Most importantly, have your own agent reach out to the listing agent *before* you attend to establish credibility and gather intel."
     ],
     seo: {
-      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
-      related: ["mortgage calculator", "home affordability"]
+      keywords: ["open house strategy", "buying in Crocker Highlands", "Piedmont real estate market", "how to act at open house"],
+      related: ["East Bay open houses", "competitive real estate markets"]
     }
   },
   {
-    slug: "home-inspection-checklist",
-    title: "What should I look for in a home inspection?",
-    excerpt: "A home inspection helps identify potential issues like roofing, plumbing, and electrical. Attend the inspection to ask questions.",
+    slug: "what-127-percent-sold-to-list-means-for-buyers",
+    title: "What a 127% Sold-to-List Ratio Actually Means for Buyers",
+    excerpt: "When a home sells for 127% of its list price, what does that number actually tell you?",
     neighborhood: "East Bay",
     intent: "Buyer",
-    updated: "2026-02-04",
-    question: "What should I look for in a home inspection?",
+    updated: "2026-04-18",
+    question: "What does it mean when homes consistently sell far above the asking price?",
     answer: [
-      "A home inspection is a critical step in the buying process, helping you identify potential issues before finalizing your purchase. Pay close attention to major systems such as roofing, plumbing, electrical, and HVAC.",
-      "Look for signs of water damage, structural integrity, and pests. A thorough inspection can uncover hidden problems that might require costly repairs. Ensure you attend the inspection, allowing you to ask questions and gain a better understanding of the property’s condition from the inspector."
+      "In the East Bay, a massive sold-to-list ratio (like a home listed at $1.5M selling for $1.9M) is rarely a surprise to professionals; it is a deliberate marketing strategy.",
+      "List prices here are often used as 'event pricing'—set intentionally low to guarantee multiple offers and a bidding war. A 127% ratio doesn't mean the buyer overpaid by 27%; it usually means the home was priced 25% below its actual market value.",
+      "For buyers, this means you cannot shop based on list price alone. If your absolute maximum budget is $1.5M, you should likely be looking at homes listed around $1.2M to $1.3M.",
+      "We rely on recent comparable sales, not list prices, to tell buyers what a home is actually worth before they write an offer."
     ],
     seo: {
-      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
-      related: ["home inspection tips", "buying process"]
+      keywords: ["sold to list ratio", "East Bay pricing strategy", "bidding wars real estate", "list price vs sale price"],
+      related: ["how to make an offer", "understanding real estate pricing"]
     }
   },
   {
-    slug: "choosing-right-neighborhood",
-    title: "How do I choose the right neighborhood?",
-    excerpt: "Select a neighborhood by considering schools, safety, commute, and amenities. Visit at different times to gauge the vibe.",
+    slug: "how-to-read-east-bay-disclosure-package",
+    title: "How to Read an East Bay Disclosure Package",
+    excerpt: "Disclosure packages in the East Bay can run 200+ pages. Here's what actually matters.",
     neighborhood: "East Bay",
     intent: "Buyer",
-    updated: "2026-02-04",
-    question: "How do I choose the right neighborhood?",
+    updated: "2026-04-18",
+    question: "What are the most important things to look for in a 200-page East Bay disclosure package?",
     answer: [
-      "Selecting the right neighborhood involves considering various factors, including school quality, safety, commute times, and nearby amenities such as parks, restaurants, and shopping.",
-      "Research local real estate trends to understand property values in different areas. Visit neighborhoods at various times of day to gauge the community vibe and assess noise levels, traffic, and overall ambiance. Engaging a local real estate agent can provide insights into neighborhoods that align with your lifestyle and preferences."
+      "East Bay disclosure packages are notoriously thick because sellers typically do all inspections upfront. While it looks overwhelming, you only need to focus on a few key documents first.",
+      "Start with the Seller Property Questionnaire (SPQ) and the Transfer Disclosure Statement (TDS). These are handwritten by the seller and detail everything they know has ever gone wrong with the house.",
+      "Next, read the Section 1 findings in the Pest/Termite Report (these are active issues) and the summary of the General Home Inspection. Look specifically for foundation, roof, and water intrusion issues.",
+      "Finally, check the Sewer Lateral and Sidewalk compliance certificates. In cities like Oakland and Berkeley, non-compliance means you will bear the cost of fixing them after closing."
     ],
     seo: {
-      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
-      related: ["neighborhood guide", "relocation tips"]
+      keywords: ["real estate disclosures", "reading a disclosure package", "TDS and SPQ", "East Bay home inspections"],
+      related: ["home buying due diligence", "what to look for in disclosures"]
     }
   },
   {
-    slug: "what-are-closing-costs",
-    title: "What are closing costs?",
-    excerpt: "Closing costs are fees incurred during finalization, typically 2-5% of purchase price, including title insurance and taxes.",
-    neighborhood: "East Bay",
-    intent: "Buyer",
-    updated: "2026-02-04",
-    question: "What are closing costs?",
-    answer: [
-      "Closing costs are fees incurred during the finalization of a real estate transaction, typically ranging from 2% to 5% of the purchase price. Common closing costs include title insurance, appraisal fees, attorney fees, and property taxes.",
-      "It’s essential to budget for these expenses in addition to your down payment. Your lender should provide a detailed estimate of closing costs early in the process, helping you prepare financially for the closing day."
-    ],
-    seo: {
-      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
-      related: ["closing costs breakdown", "buying budget"]
-    }
-  },
-  {
-    slug: "mortgage-pre-approval-explained",
-    title: "How does mortgage pre-approval work?",
-    excerpt: "Pre-approval involves a lender reviewing your finances to determine lending limits. It strengthens your offer position.",
-    neighborhood: "East Bay",
-    intent: "Buyer",
-    updated: "2026-02-04",
-    question: "How does mortgage pre-approval work?",
-    answer: [
-      "Mortgage pre-approval involves a lender reviewing your financial information to determine how much they’re willing to lend you. This process typically requires documentation such as tax returns, pay stubs, and bank statements.",
-      "Obtaining pre-approval not only gives you a clear understanding of your budget but also strengthens your position when making an offer on a home, signaling to sellers that you are a serious buyer."
-    ],
-    seo: {
-      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
-      related: ["mortgage pre-approval", "financing"]
-    }
-  },
-  {
-    slug: "buyer-vs-seller-agent",
-    title: "What’s the difference between a buyer’s agent and a seller’s agent?",
-    excerpt: "A buyer’s agent represents the buyer's interests, while a seller’s agent focuses on marketing and negotiating for the seller.",
-    neighborhood: "East Bay",
-    intent: "Buyer",
-    updated: "2026-02-04",
-    question: "What’s the difference between a buyer’s agent and a seller’s agent?",
-    answer: [
-      "A buyer’s agent represents the interests of the buyer, helping to find suitable properties, negotiate offers, and navigate the buying process. In contrast, a seller’s agent represents the seller, focusing on marketing the property and negotiating the sale.",
-      "Working with a dedicated buyer’s agent ensures that your interests are prioritized throughout the transaction, allowing for a smoother experience."
-    ],
-    seo: {
-      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
-      related: ["real estate agents", "representation"]
-    }
-  },
-  {
-    slug: "making-competitive-offer",
-    title: "How can I make a competitive offer?",
-    excerpt: "Research comparable sales, consider escalation clauses, be flexible with contingencies, and write a personal letter.",
-    neighborhood: "East Bay",
-    intent: "Buyer",
-    updated: "2026-02-04",
-    question: "How can I make a competitive offer?",
-    answer: [
-      "In a competitive market, making a strong offer is crucial. Start by researching comparable sales to determine a fair price. Consider including an escalation clause, which automatically increases your offer if there are competing bids.",
-      "Be flexible with contingencies, and consider writing a personal letter to the seller to express your connection to the home. Demonstrating your seriousness and commitment can help your offer stand out in a competitive landscape."
-    ],
-    seo: {
-      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
-      related: ["winning offers", "bidding strategies"]
-    }
-  },
-  {
-    slug: "real-estate-contingencies-explained",
-    title: "What are contingencies in a real estate contract?",
-    excerpt: "Contingencies are conditions that must be met for a sale to proceed, such as financing, inspection, and appraisal clauses.",
-    neighborhood: "East Bay",
-    intent: "Buyer",
-    updated: "2026-02-04",
-    question: "What are contingencies in a real estate contract?",
-    answer: [
-      "Contingencies are conditions that must be met for the sale to proceed. Common contingencies include financing, inspection, and appraisal contingencies.",
-      "These clauses protect buyers by allowing them to back out of the contract if certain conditions aren’t met. Understanding the implications of contingencies is essential, as they can affect your negotiating power and the overall timeline of the transaction."
-    ],
-    seo: {
-      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
-      related: ["contract terms", "real estate legal"]
-    }
-  },
-  {
-    slug: "timeline-to-buy-home",
-    title: "How long does it take to buy a home?",
-    excerpt: "The timeline varies, but typically takes a few weeks to several months. Closing usually takes 30-60 days after offer acceptance.",
-    neighborhood: "East Bay",
-    intent: "Buyer",
-    updated: "2026-02-04",
-    question: "How long does it take to buy a home?",
-    answer: [
-      "The timeline for buying a home can vary based on various factors, including market conditions and financing. Generally, it can take anywhere from a few weeks to several months from the initial search to closing.",
-      "The average time it takes to close on a home after an offer is accepted is typically 30-60 days. Engaging a responsive real estate agent can help expedite the process by ensuring timely communication and organization."
-    ],
-    seo: {
-      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
-      related: ["buying timeline", "closing process"]
-    }
-  },
-  {
-    slug: "home-buying-wish-list",
-    title: "What should I include in my home wish list?",
-    excerpt: "Consider essentials like bedrooms and bathrooms, lifestyle preferences, and prioritize must-haves versus nice-to-haves.",
-    neighborhood: "East Bay",
-    intent: "Buyer",
-    updated: "2026-02-04",
-    question: "What should I include in my home wish list?",
-    answer: [
-      "When creating a wish list, consider essential features such as the number of bedrooms and bathrooms, outdoor space, and proximity to schools or work.",
-      "Think about lifestyle preferences—do you want a modern kitchen, a home office, or a large backyard? Prioritize your must-haves versus nice-to-haves, allowing you to focus your search and make informed decisions as you explore potential homes."
-    ],
-    seo: {
-      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
-      related: ["home search", "buyer priorities"]
-    }
-  },
-  {
-    slug: "finding-right-real-estate-agent",
-    title: "How do I find the right real estate agent?",
-    excerpt: "Research candidates with experience, positive reviews, and a solid track record. Interview them to assess communication and rapport.",
-    neighborhood: "East Bay",
-    intent: "Buyer",
-    updated: "2026-02-04",
-    question: "How do I find the right real estate agent?",
-    answer: [
-      "Finding the right real estate agent involves researching candidates with experience in your desired market. Look for agents with positive reviews and a solid track record in luxury properties.",
-      "Schedule interviews to assess their communication style, market knowledge, and willingness to understand your needs. Personal rapport is vital; you want an agent who you feel comfortable collaborating with throughout the buying process."
-    ],
-    seo: {
-      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
-      related: ["agent selection", "hiring a realtor"]
-    }
-  },
-  {
-    slug: "importance-of-home-warranty",
-    title: "What is the importance of a home warranty?",
-    excerpt: "A home warranty covers major systems and appliances, protecting against unexpected repair costs, especially for older homes.",
-    neighborhood: "East Bay",
-    intent: "Buyer",
-    updated: "2026-02-04",
-    question: "What is the importance of a home warranty?",
-    answer: [
-      "A home warranty provides coverage for major systems and appliances, offering protection against unexpected repair costs. This can be particularly beneficial for first-time buyers or those purchasing older homes.",
-      "Home warranties typically cover HVAC systems, plumbing, and electrical systems, but it’s important to read the fine print to understand what is included. A warranty can provide peace of mind and protect your investment."
-    ],
-    seo: {
-      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
-      related: ["home warranty", "buyer protection"]
-    }
-  },
-  {
-    slug: "benefits-of-buyers-market",
-    title: "What are the benefits of a buyer’s market?",
-    excerpt: "In a buyer’s market, more homes are for sale than buyers, leading to lower prices and increased negotiating power.",
-    neighborhood: "East Bay",
-    intent: "Buyer",
-    updated: "2026-02-04",
-    question: "What are the benefits of a buyer’s market?",
-    answer: [
-      "In a buyer’s market, there are more homes for sale than buyers, often leading to lower prices and increased negotiating power for buyers. You may have the opportunity to negotiate favorable terms, such as asking for the seller to cover closing costs or making requests for repairs.",
-      "Understanding local market dynamics can provide you with a strategic advantage when making offers in a buyer’s market."
-    ],
-    seo: {
-      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
-      related: ["market conditions", "negotiation strategy"]
-    }
-  },
-  {
-    slug: "handling-bidding-wars",
-    title: "How do I handle bidding wars?",
-    excerpt: "Stay calm and strategic. Set a budget, make a strong initial offer, and consider flexibility with terms like closing date.",
-    neighborhood: "East Bay",
-    intent: "Buyer",
-    updated: "2026-02-04",
-    question: "How do I handle bidding wars?",
-    answer: [
-      "Bidding wars can be stressful, but staying calm and strategic is essential. Set a budget and stick to it, avoiding the temptation to overextend financially.",
-      "Be prepared to make a strong initial offer and consider including an escalation clause to remain competitive. Additionally, be flexible with terms, such as the closing date, to make your offer more appealing. Engaging a buyer’s agent experienced in competitive markets can provide valuable insights and strategies."
-    ],
-    seo: {
-      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
-      related: ["bidding wars", "competitive offers"]
-    }
-  },
-  {
-    slug: "different-types-of-mortgages",
-    title: "What are the different types of mortgages?",
-    excerpt: "Common types include fixed-rate, adjustable-rate (ARM), FHA, and VA loans. Each has pros and cons for different situations.",
-    neighborhood: "East Bay",
-    intent: "Buyer",
-    updated: "2026-02-04",
-    question: "What are the different types of mortgages?",
-    answer: [
-      "Common mortgage types include fixed-rate, adjustable-rate (ARM), FHA, and VA loans. Fixed-rate mortgages offer stable payments over a set term, while ARMs have variable rates that can fluctuate based on market conditions.",
-      "FHA loans cater to buyers with lower credit scores or smaller down payments, while VA loans are available to eligible veterans and active-duty military personnel. Understanding the advantages and disadvantages of each type can help you choose the best option for your financial situation."
-    ],
-    seo: {
-      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
-      related: ["mortgage types", "loan options"]
-    }
-  },
-  {
-    slug: "buying-a-fixer-upper",
-    title: "Should I buy a fixer-upper?",
-    excerpt: "Fixer-uppers can be rewarding if you have time and budget for renovations. Assess your skills and resources realistically.",
-    neighborhood: "East Bay",
-    intent: "Buyer",
-    updated: "2026-02-04",
-    question: "Should I buy a fixer-upper?",
-    answer: [
-      "Buying a fixer-upper can be a rewarding investment if you’re willing to put in the time and effort for renovations. Consider the potential for increased equity and customization, but be realistic about the costs and timeline involved.",
-      "Assess your own skills and resources—if you’re handy, a fixer-upper may be a great opportunity; if not, you might want to factor in the cost of hiring professionals for renovations. Ensure you conduct a thorough inspection to understand the extent of the work needed."
-    ],
-    seo: {
-      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
-      related: ["renovation", "fixer-upper investment"]
-    }
-  },
-  {
-    slug: "what-is-earnest-money",
-    title: "What is earnest money?",
-    excerpt: "Earnest money is a deposit (1-3%) demonstrating serious intent. It's held in escrow and applied to down payment or closing costs.",
-    neighborhood: "East Bay",
-    intent: "Buyer",
-    updated: "2026-02-04",
-    question: "What is earnest money?",
-    answer: [
-      "Earnest money is a deposit made to demonstrate your serious intent to purchase a property. Typically between 1-3% of the purchase price, this money is held in escrow and applied to your down payment or closing costs if the sale goes through.",
-      "If you back out of the deal for a valid reason, you may get the earnest money back; however, if you withdraw without cause, the seller may keep it. Understanding the implications of earnest money is crucial for ensuring a smooth transaction."
-    ],
-    seo: {
-      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
-      related: ["escrow", "contract deposits"]
-    }
-  },
-  {
-    slug: "improve-credit-score-buying-home",
-    title: "How can I improve my credit score before buying?",
-    excerpt: "Improve your score by paying down debts, making timely payments, and avoiding new credit applications before buying.",
-    neighborhood: "East Bay",
-    intent: "Buyer",
-    updated: "2026-02-04",
-    question: "How can I improve my credit score before buying?",
-    answer: [
-      "Improving your credit score before applying for a mortgage can lead to better loan terms and interest rates. Start by paying down existing debts and ensuring you make all payments on time.",
-      "Avoid applying for new credit cards or loans in the months leading up to your home purchase, as this can negatively impact your score. Review your credit report for errors, and consider consulting a financial advisor for personalized strategies to boost your credit."
-    ],
-    seo: {
-      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
-      related: ["credit repair", "financial preparation"]
-    }
-  },
-  {
-    slug: "home-insurance-basics",
-    title: "What should I know about home insurance?",
-    excerpt: "Home insurance covers damages to property and belongings. Lenders require proof of insurance before closing.",
-    neighborhood: "East Bay",
-    intent: "Buyer",
-    updated: "2026-02-04",
-    question: "What should I know about home insurance?",
-    answer: [
-      "Home insurance protects your property and belongings, covering damages from events like fire, theft, or natural disasters. It’s essential to understand what is covered in your policy and consider additional coverage for unique needs, such as flood insurance if you’re in a flood-prone area.",
-      "Shop around for quotes from different insurers and read reviews to find a reputable provider. Your lender will typically require proof of insurance before closing, so factor this into your budget."
-    ],
-    seo: {
-      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
-      related: ["property insurance", "coverage types"]
-    }
-  },
-  {
-    slug: "negotiating-repairs-after-inspection",
-    title: "How do I negotiate repairs after a home inspection?",
-    excerpt: "Negotiate repairs based on critical findings. Consider asking for a credit at closing rather than specific repairs.",
-    neighborhood: "East Bay",
-    intent: "Buyer",
-    updated: "2026-02-04",
-    question: "How do I negotiate repairs after a home inspection?",
-    answer: [
-      "After a home inspection, you may negotiate repairs with the seller based on the findings. Start by discussing the most critical repairs that need to be addressed, such as safety concerns or major system failures.",
-      "Be prepared to compromise—rather than asking for all repairs to be made, consider negotiating for a credit at closing or reduced sale price instead. Having your real estate agent assist in these negotiations can provide valuable insights and help facilitate a positive outcome."
-    ],
-    seo: {
-      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
-      related: ["repair negotiation", "post-inspection strategy"]
-    }
-  },
-  {
-    slug: "what-happens-at-closing",
-    title: "What happens during closing?",
-    excerpt: "Closing involves signing legal documents, exchanging funds, and transferring ownership. Be prepared to pay closing costs.",
-    neighborhood: "East Bay",
-    intent: "Buyer",
-    updated: "2026-02-04",
-    question: "What happens during closing?",
-    answer: [
-      "Closing is the final step in the home buying process, where legal documents are signed, funds are exchanged, and ownership is transferred. You’ll review and sign documents, including the mortgage agreement, title deed, and closing disclosure.",
-      "Be prepared to pay closing costs at this time. Your lender will typically provide a closing disclosure three days before closing, detailing all costs associated with the loan. Ensuring you understand all documents and fees can help you feel more comfortable during this critical step."
-    ],
-    seo: {
-      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
-      related: ["closing day", "final walkthrough"]
-    }
-  },
-  {
-    slug: "determining-fair-property-price",
-    title: "How do I know if a property is fairly priced?",
-    excerpt: "Research comparable homes and ask your agent for a Comparative Market Analysis (CMA). Trust data and your agent's expertise.",
-    neighborhood: "East Bay",
-    intent: "Buyer",
-    updated: "2026-02-04",
-    question: "How do I know if a property is fairly priced?",
-    answer: [
-      "To determine if a property is fairly priced, research comparable homes in the area that have sold recently. Look at factors such as size, condition, and amenities.",
-      "Your real estate agent can provide a Comparative Market Analysis (CMA) to help you evaluate whether the asking price aligns with market trends. Additionally, consider the home’s unique features and any renovations that may justify a higher price. Trust your instincts, but also rely on data and your agent’s expertise."
-    ],
-    seo: {
-      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
-      related: ["property valuation", "market analysis"]
-    }
-  },
-  {
-    slug: "tax-benefits-of-homeownership",
-    title: "What are the tax benefits of homeownership?",
-    excerpt: "Benefits include deducting mortgage interest and property taxes. Capital gains exclusions apply when selling a primary residence.",
-    neighborhood: "East Bay",
-    intent: "Buyer",
-    updated: "2026-02-04",
-    question: "What are the tax benefits of homeownership?",
-    answer: [
-      "Homeownership offers several tax benefits, including the ability to deduct mortgage interest and property taxes from your taxable income. For many homeowners, this can lead to significant savings.",
-      "If you sell your primary residence for a profit, you may also qualify for capital gains tax exclusions, up to $250,000 for single filers and $500,000 for married couples, provided you’ve lived in the home for at least two of the last five years. Consulting a tax professional can help you maximize your benefits and understand your specific situation."
-    ],
-    seo: {
-      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
-      related: ["tax deductions", "homeowner tax tips"]
-    }
-  },
-  {
-    slug: "checklist-after-moving-in",
-    title: "What should I do after moving in?",
-    excerpt: "Change locks, set up utilities, explore the neighborhood, and plan renovations to make the space your own.",
-    neighborhood: "East Bay",
-    intent: "Buyer",
-    updated: "2026-02-04",
-    question: "What should I do after moving in?",
-    answer: [
-      "After moving into your new home, start by changing the locks for security. Set up utilities, including electricity, water, and internet.",
-      "Familiarize yourself with the neighborhood—explore local shops, parks, and community amenities. Consider hosting a small gathering to meet your neighbors and introduce yourself to the community. Additionally, take time to plan any renovations or improvements you may want to make to personalize your space, ensuring that you feel comfortable and at home."
-    ],
-    seo: {
-      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
-      related: ["moving checklist", "new homeowner guide"]
-    }
-  },
-  // New Bulk Seller Articles
-  {
-    slug: "determine-listing-price",
-    title: "How do I determine the right listing price for my home?",
-    excerpt: "Start with a Comparative Market Analysis (CMA) and consider location, condition, and market trends. Consult an expert agent.",
+    slug: "prop-19-playbook-east-bay-homeowners",
+    title: "The Prop 19 Playbook for Long-Term East Bay Homeowners",
+    excerpt: "Prop 19 changed the calculus for long-term California homeowners thinking about selling.",
     neighborhood: "East Bay",
     intent: "Seller",
-    updated: "2026-02-04",
-    question: "How do I determine the right listing price for my home?",
+    updated: "2026-04-18",
+    question: "How does Proposition 19 affect long-term homeowners in the East Bay who want to move?",
     answer: [
-      "Pricing your home correctly is crucial for attracting potential buyers. Start with a Comparative Market Analysis (CMA), which evaluates similar homes in your area that have sold recently.",
-      "Factors to consider include location, square footage, condition, and unique features of your home. It’s also wise to monitor market trends—if homes are selling quickly, you might price slightly higher. Conversely, if the market is slow, consider pricing competitively.",
-      "Consulting a knowledgeable real estate agent with experience in your specific neighborhood, such as Rockridge or Crocker Highlands, can provide invaluable insights and help you set a price that maximizes your return while appealing to buyers."
+      "Proposition 19 is a game-changer for East Bay homeowners over 55. It allows you to sell your primary residence and transfer your current, usually very low, property tax base to a new home anywhere in California.",
+      "Previously, you were restricted by county lines and the new home had to be equal or lesser value. Now, you can move to any county, and even buy a more expensive home (with a blended tax adjustment).",
+      "This unlocks massive mobility for empty-nesters in Crocker Highlands or Piedmont who felt 'trapped' by their low tax base. You can now sell your large family home and downsize—or move to wine country—without a crippling tax penalty.",
+      "We work closely with estate planners and tax professionals to help clients model exactly what their new tax burden will be before they list."
     ],
     seo: {
-      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
-      related: ["pricing strategy", "home valuation"]
+      keywords: ["Prop 19 California", "transfer property tax base", "downsizing in California", "selling home over 55"],
+      related: ["Prop 19 rules", "California real estate tax laws"]
     }
   },
   {
-    slug: "renovations-increase-value",
-    title: "What renovations will increase my home’s value?",
-    excerpt: "Focus on kitchen and bathroom remodels for the best ROI. Enhance curb appeal and consider energy-efficient upgrades.",
+    slug: "crocker-highlands-vs-piedmont",
+    title: "Crocker Highlands vs. Piedmont: The Honest Comparison",
+    excerpt: "Schools, price, architecture, taxes, and lifestyle — a clear-eyed comparison.",
     neighborhood: "East Bay",
-    intent: "Seller",
-    updated: "2026-02-04",
-    question: "What renovations will increase my home’s value?",
+    intent: "Buyer",
+    updated: "2026-04-18",
+    question: "How do Crocker Highlands and Piedmont really compare for homebuyers?",
     answer: [
-      "Not all renovations yield the same return on investment. Focus on kitchen and bathroom remodels, as these areas typically attract the most attention from buyers. Upgrades like modern appliances, high-quality countertops, and updated fixtures can significantly enhance appeal.",
-      "Additionally, consider enhancing curb appeal with landscaping or a fresh coat of paint. Energy-efficient upgrades, like new windows or HVAC systems, can also attract buyers who are environmentally conscious. It’s essential to align your renovations with the expectations of buyers in the luxury market, as they often look for high-end finishes and smart home features."
+      "Crocker Highlands (in Oakland) and the City of Piedmont sit side-by-side and share similar 1920s architecture, but they operate as entirely different municipalities.",
+      "The biggest distinction is schools and taxes. Piedmont has its own highly acclaimed, independent school district and its own police/fire departments. Consequently, Piedmont homes command a premium, and property transfer taxes are distinct.",
+      "Crocker Highlands feeds into Crocker Highlands Elementary (a highly rated Oakland public school) but utilizes Oakland's middle and high schools. Buyers here often get slightly more house for their money and benefit from incredible walkability to the Lakeshore commercial district.",
+      "Ultimately, it comes down to whether paying the 'Piedmont premium' for the school district and city services outweighs the walkability and relative value of Crocker Highlands."
     ],
     seo: {
-      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
-      related: ["home renovations", "ROI on home improvements"]
+      keywords: ["Crocker Highlands vs Piedmont", "Piedmont schools", "Oakland vs Piedmont", "East Bay luxury neighborhoods"],
+      related: ["moving to Piedmont CA", "living in Crocker Highlands"]
     }
   },
   {
-    slug: "time-to-sell-home",
-    title: "How long will it take to sell my home?",
-    excerpt: "Selling time varies by market, but typically takes 30-90 days in luxury areas. Marketing strategies can expedite the process.",
-    neighborhood: "East Bay",
-    intent: "Seller",
-    updated: "2026-02-04",
-    question: "How long will it take to sell my home?",
+    slug: "grand-lake-vs-rockridge",
+    title: "Grand Lake vs. Rockridge: Which Neighborhood Fits Your Life?",
+    excerpt: "Two of Oakland's most walkable, most sought-after neighborhoods — compared honestly.",
+    neighborhood: "Oakland",
+    intent: "Buyer",
+    updated: "2026-04-18",
+    question: "Which is a better fit: Grand Lake or Rockridge?",
     answer: [
-      "The time it takes to sell a home can vary widely based on market conditions, pricing strategies, and the home’s location and condition. In luxury markets like Piedmont, homes can take longer to sell due to the higher price points and more discerning buyers.",
-      "On average, homes in these areas may take anywhere from 30 to 90 days to sell, but it could be longer in a slow market. Working with a skilled real estate agent can help you implement effective marketing strategies to expedite the sale, such as staging, professional photography, and targeted online advertising to reach the right audience."
+      "Grand Lake and Rockridge are Oakland’s premier walkable neighborhoods, but they cater to slightly different lifestyles.",
+      "Rockridge is anchored by College Avenue, featuring BART access, high-end dining, and a slightly more manicured, suburban feel. It's often the first stop for San Francisco expats, which drives its pricing premium.",
+      "Grand Lake surrounds Lake Merritt and the Grand/Lakeshore avenues. It feels more vibrant, dense, and distinctly 'Oakland.' It boasts the historic Grand Lake Theater, the legendary Saturday farmers' market, and unparalleled access to the lake itself.",
+      "If you need BART and prefer a quieter residential feel, Rockridge wins. If you want energy, lake access, and a slightly lower price-per-square-foot, Grand Lake is the choice."
     ],
     seo: {
-      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
-      related: ["days on market", "selling timeline"]
+      keywords: ["Grand Lake vs Rockridge", "Rockridge Oakland", "Grand Lake Oakland", "most walkable Oakland neighborhoods"],
+      related: ["living in Rockridge", "Oakland neighborhood comparison"]
     }
   },
   {
-    slug: "seller-disclosures",
-    title: "What should I disclose to potential buyers?",
-    excerpt: "Disclose known issues like past flooding or repairs. Transparency builds trust and avoids legal disputes.",
-    neighborhood: "East Bay",
-    intent: "Seller",
-    updated: "2026-02-04",
-    question: "What should I disclose to potential buyers?",
+    slug: "what-does-1-5m-buy-in-oakland",
+    title: "What Does $1.5M Actually Buy in Oakland Right Now?",
+    excerpt: "A neighborhood-by-neighborhood breakdown of what $1.5M buys in Oakland in 2026.",
+    neighborhood: "Oakland",
+    intent: "Market",
+    updated: "2026-04-18",
+    question: "What kind of home can you buy for $1.5 million in Oakland today?",
     answer: [
-      "Transparency is key when it comes to disclosures. Sellers are legally required to disclose known issues that could affect the property’s value or livability, such as past flooding, plumbing issues, or any repairs conducted.",
-      "Providing this information upfront can build trust with potential buyers and mitigate the risk of legal disputes later. Additionally, consider sharing details about the home’s history, neighborhood amenities, and any upgrades or renovations that have been completed, as these can enhance the property's appeal."
+      "A budget of $1.5M is a strong pivot point in the Oakland market, but how far it goes depends entirely on the zip code.",
+      "In premium areas like Lower Rockridge or Crocker Highlands, $1.5M typically buys a beautifully updated 2-bedroom or a smaller 3-bedroom home (around 1,500 sq ft) on a modest lot, often with fierce competition.",
+      "In the Oakland Hills (Montclair, Redwood Heights), that same $1.5M buys a larger 3-to-4 bedroom home (2,000+ sq ft) with views and privacy, though you trade away walkability and take on fire insurance considerations.",
+      "In emerging neighborhoods like Maxwell Park or Oakmore, $1.5M makes you a highly competitive buyer for the best fully-renovated, turnkey properties in the area."
     ],
     seo: {
-      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
-      related: ["real estate disclosures", "seller obligations"]
+      keywords: ["What does 1.5M buy in Oakland", "Oakland home prices", "Oakland real estate market 2026", "budgeting for Oakland home"],
+      related: ["Oakland house hunting", "Oakland price per square foot"]
     }
   },
   {
-    slug: "prepare-home-for-showings",
-    title: "How can I prepare my home for showings?",
-    excerpt: "Deep clean, declutter, depersonalize, and stage your home. Highlight key features and ensure good lighting.",
+    slug: "what-ai-wealth-wave-means-for-east-bay-buyers-sellers",
+    title: "What the AI Wealth Wave Actually Means for East Bay Buyers and Sellers",
+    excerpt: "Deferred demand, AI migration, and rate sensitivity are reshaping the East Bay housing market.",
     neighborhood: "East Bay",
-    intent: "Seller",
-    updated: "2026-02-04",
-    question: "How can I prepare my home for showings?",
+    intent: "Market",
+    updated: "2026-04-18",
+    question: "How is the AI boom affecting the East Bay housing market?",
     answer: [
-      "First impressions matter. Start by deep cleaning your home and decluttering to create a more spacious feel. Depersonalizing your space is essential; remove family photos and personal items so buyers can envision themselves living there.",
-      "Staging can significantly enhance the home’s appeal—consider hiring a professional stager who understands the luxury market. Highlight key features of your home, such as fireplaces or outdoor spaces, and ensure that your home is well-lit and inviting during showings. If possible, schedule showings during the day to take advantage of natural light."
+      "The explosion of AI wealth in San Francisco and the Silicon Valley is sending a direct ripple effect across the bridge into the East Bay.",
+      "We are seeing a new class of well-capitalized buyers who are untethered from daily commutes but want the space, schools, and character the East Bay provides. This 'AI wealth wave' is heavily targeting turnkey luxury properties.",
+      "For sellers in Piedmont, Berkeley, and Crocker Highlands, this means properties presented flawlessly are commanding massive premiums, as these buyers value their time and abhor major renovations.",
+      "For local buyers relying on traditional financing, it means competition is stiffening at the top of the market, reinforcing the need for aggressive, clean offer strategies."
     ],
     seo: {
-      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
-      related: ["home staging", "showing tips"]
+      keywords: ["AI wealth real estate", "tech boom housing market", "San Francisco migration East Bay", "East Bay luxury housing demand"],
+      related: ["tech money real estate", "Bay Area housing market trends"]
     }
   },
   {
-    slug: "what-is-sellers-market",
-    title: "What is a seller’s market?",
-    excerpt: "A seller’s market is when demand exceeds supply, leading to higher prices and bidding wars. Use this to your advantage.",
+    slug: "how-pricing-works-east-bay-list-price-strategy",
+    title: "How Pricing Actually Works in the East Bay — and Why the List Price Isn't What You Think",
+    excerpt: "In the East Bay, the list price is a marketing tool, not a market assessment.",
     neighborhood: "East Bay",
     intent: "Seller",
-    updated: "2026-02-04",
-    question: "What is a seller’s market?",
+    updated: "2026-04-18",
+    question: "Why do East Bay homes sell for so much more than their list price?",
     answer: [
-      "A seller’s market occurs when demand for homes exceeds supply, often resulting in higher prices and quicker sales. In such a market, buyers may compete for limited listings, leading to bidding wars.",
-      "As a seller, this can work in your favor, allowing you to negotiate better terms and potentially sell above your asking price. Understanding local market conditions is crucial—stay informed about inventory levels, average days on the market, and recent sales in your area, as these factors influence your selling strategy."
+      "To understand East Bay real estate, you must unlearn everything about list prices. Here, the list price is not what the seller hopes to get; it is an algorithmic marketing tool designed to maximize eyeballs.",
+      "Agents intentionally price homes 15% to 25% below their true value to trigger Zillow and Redfin alerts for a massive pool of buyers. This strategy generates packed open houses, creates a sense of urgency, and results in bidding wars.",
+      "If a seller prices a home 'transparently' (at the actual price they want), buyers assume something is wrong because it isn't generating a frenzy.",
+      "Our job is to educate sellers on this strategy to maximize their net, and to protect buyers by anchoring them to recent comparable sales rather than the artificial list price."
     ],
     seo: {
-      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
-      related: ["market trends", "seller advantage"]
-    }
-  },
-  {
-    slug: "negotiate-offers-effectively",
-    title: "How do I negotiate offers effectively?",
-    excerpt: "Review offers carefully, considering price and terms. Counter-offer strategically and maintain communication with your agent.",
-    neighborhood: "East Bay",
-    intent: "Seller",
-    updated: "2026-02-04",
-    question: "How do I negotiate offers effectively?",
-    answer: [
-      "Effective negotiation requires a clear strategy. Review each offer carefully, considering not only the price but also the buyer’s financial qualifications and contingencies.",
-      "Be prepared to counter-offer, and consider what terms are most important to you—perhaps a quicker closing date or fewer contingencies. Maintaining open lines of communication with your real estate agent is essential, as they can provide insights into the motivations of potential buyers and help you craft a response that aligns with your objectives. Additionally, consider the emotional aspect; if you feel a personal connection to the buyer’s offer, it might influence your decision."
-    ],
-    seo: {
-      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
-      related: ["negotiation tips", "counter offers"]
-    }
-  },
-  {
-    slug: "staging-home-benefits",
-    title: "Should I stage my home?",
-    excerpt: "Yes, staging creates an emotional connection and highlights best features. Staged homes often sell faster and for more.",
-    neighborhood: "East Bay",
-    intent: "Seller",
-    updated: "2026-02-04",
-    question: "Should I stage my home?",
-    answer: [
-      "Yes, staging can make a significant difference in how buyers perceive your home. In the luxury market, buyers are looking for properties that feel inviting and well-maintained.",
-      "Professional staging can highlight the best features of your home and create an emotional connection with potential buyers. Staged homes often sell faster and at a higher price point than those that are not staged. Consider hiring a staging professional who has experience with luxury properties to ensure that your home appeals to your target demographic."
-    ],
-    seo: {
-      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
-      related: ["home staging", "selling tips"]
-    }
-  },
-  {
-    slug: "common-selling-pitfalls",
-    title: "What are the common pitfalls in selling a home?",
-    excerpt: "Avoid overpricing, neglecting repairs, and poor marketing. Work with a knowledgeable agent to navigate the process.",
-    neighborhood: "East Bay",
-    intent: "Seller",
-    updated: "2026-02-04",
-    question: "What are the common pitfalls in selling a home?",
-    answer: [
-      "Common pitfalls include overpricing your home, neglecting necessary repairs, and poor marketing strategies. Overpricing can lead to prolonged listings and potential price reductions, while neglecting repairs may result in lower offers or failed inspections.",
-      "Additionally, inadequate marketing can prevent your home from reaching the right audience. To avoid these pitfalls, work closely with a knowledgeable real estate agent who can guide you through the selling process and help you implement a comprehensive marketing plan tailored to the luxury market."
-    ],
-    seo: {
-      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
-      related: ["selling mistakes", "real estate advice"]
-    }
-  },
-  {
-    slug: "choosing-listing-agent",
-    title: "How do I choose the right listing agent?",
-    excerpt: "Look for a proven track record, effective marketing, and personal rapport. Check references and past successes.",
-    neighborhood: "East Bay",
-    intent: "Seller",
-    updated: "2026-02-04",
-    question: "How do I choose the right listing agent?",
-    answer: [
-      "Selecting the right listing agent is critical to a successful sale. Look for an agent with a proven track record in your specific neighborhood and the luxury market, as they will have a better understanding of local trends and buyer expectations.",
-      "Assess their marketing strategies and ensure they utilize high-quality photography, virtual tours, and targeted online advertising. Personal rapport is also essential; you want an agent who communicates effectively and understands your needs and goals. Don’t hesitate to ask for references or examples of their past successes."
-    ],
-    seo: {
-      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
-      related: ["hiring a realtor", "listing agent"]
-    }
-  },
-  {
-    slug: "seller-closing-costs",
-    title: "What are the closing costs for sellers?",
-    excerpt: "Seller closing costs include commissions, transfer taxes, and title insurance. Budget for these expenses upfront.",
-    neighborhood: "East Bay",
-    intent: "Seller",
-    updated: "2026-02-04",
-    question: "What are the closing costs for sellers?",
-    answer: [
-      "Closing costs can vary but typically include agent commissions (often 5-6% of the sale price), transfer taxes, title insurance, and any outstanding property taxes. It’s important to budget for these costs, as they can add up to a significant amount.",
-      "Understanding these expenses upfront can help you plan your finances and avoid surprises during the closing process. Your real estate agent should provide a detailed breakdown of expected closing costs based on your specific situation."
-    ],
-    seo: {
-      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
-      related: ["closing costs", "seller expenses"]
-    }
-  },
-  {
-    slug: "handling-multiple-offers-seller",
-    title: "How do I handle multiple offers?",
-    excerpt: "Review all offers carefully. Consider counter-offering or asking for 'highest and best' to maximize your sale.",
-    neighborhood: "East Bay",
-    intent: "Seller",
-    updated: "2026-02-04",
-    question: "How do I handle multiple offers?",
-    answer: [
-      "Handling multiple offers can be both exciting and challenging. Start by reviewing each offer carefully, considering not just the price but also contingencies, financing, and the buyer's qualifications.",
-      "Consider making a counter-offer to one or more buyers, and if necessary, ask for “highest and best” offers to encourage competitive bidding. Keep open communication with your real estate agent throughout the process, as they can help you navigate negotiations and determine the best course of action based on your goals."
-    ],
-    seo: {
-      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
-      related: ["multiple offers", "bidding wars"]
-    }
-  },
-  {
-    slug: "documents-for-selling",
-    title: "What documents do I need to prepare for selling?",
-    excerpt: "Gather deeds, disclosures, warranties, and repair records. Having these ready builds buyer confidence.",
-    neighborhood: "East Bay",
-    intent: "Seller",
-    updated: "2026-02-04",
-    question: "What documents do I need to prepare for selling?",
-    answer: [
-      "Essential documents include the property deed, disclosure statements, and any warranties or guarantees related to appliances or systems in the home. It’s also helpful to have any repair records, previous inspection reports, and documentation regarding any renovations or upgrades you’ve made.",
-      "Having these documents readily available can streamline the selling process and instill confidence in potential buyers."
-    ],
-    seo: {
-      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
-      related: ["selling documents", "paperwork"]
-    }
-  },
-  {
-    slug: "marketing-luxury-home",
-    title: "How do I market my luxury home?",
-    excerpt: "Use high-quality media, targeted online ads, and exclusive events. Tailor the approach to affluent buyers.",
-    neighborhood: "East Bay",
-    intent: "Seller",
-    updated: "2026-02-04",
-    question: "How do I market my luxury home?",
-    answer: [
-      "Marketing a luxury home requires a tailored approach. Utilize high-quality photography and videography to showcase your property’s best features, and consider creating virtual tours for online viewers.",
-      "Engage in targeted online advertising through platforms like Facebook and Instagram, and leverage real estate websites that attract affluent buyers. Networking within local luxury markets and hosting exclusive open houses can also drive interest. Collaborating with a marketing professional experienced in luxury real estate can enhance your strategy and reach the right audience."
-    ],
-    seo: {
-      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
-      related: ["luxury marketing", "selling strategy"]
-    }
-  },
-  {
-    slug: "contingencies-affect-sale",
-    title: "What are contingencies, and how do they affect my sale?",
-    excerpt: "Contingencies protect buyers but limit seller flexibility. Understand financing, inspection, and appraisal clauses.",
-    neighborhood: "East Bay",
-    intent: "Seller",
-    updated: "2026-02-04",
-    question: "What are contingencies, and how do they affect my sale?",
-    answer: [
-      "Contingencies are conditions that must be met for the sale to proceed, such as financing, inspection, or appraisal contingencies. These clauses protect buyers but can impact the seller’s flexibility during negotiations.",
-      "Be prepared to discuss potential contingencies with interested buyers and consider which ones you’re willing to accommodate. Understanding how these contingencies affect your selling timeline and negotiations is crucial for a smooth transaction."
-    ],
-    seo: {
-      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
-      related: ["real estate contingencies", "contract terms"]
-    }
-  },
-  {
-    slug: "sell-before-buying",
-    title: "Should I sell my home before buying a new one?",
-    excerpt: "Selling first offers financial clarity but may require temporary housing. Selling second offers convenience but financial risk.",
-    neighborhood: "East Bay",
-    intent: "Seller",
-    updated: "2026-02-04",
-    question: "Should I sell my home before buying a new one?",
-    answer: [
-      "Selling your home before buying a new one can provide financial clarity and strengthen your negotiating position. However, it may require temporary housing if you find a buyer before securing a new home.",
-      "Assess your financial situation and market conditions—if homes are selling quickly, it might be advantageous to sell first. Alternatively, if you find a home you love, consider exploring bridge loans or other financing options to facilitate a smoother transition."
-    ],
-    seo: {
-      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
-      related: ["timing the market", "bridge loans"]
-    }
-  },
-  {
-    slug: "smooth-closing-process",
-    title: "How do I ensure a smooth closing process?",
-    excerpt: "Stay organized, review documents, and communicate openly. Address issues early to avoid delays.",
-    neighborhood: "East Bay",
-    intent: "Seller",
-    updated: "2026-02-04",
-    question: "How do I ensure a smooth closing process?",
-    answer: [
-      "To ensure a smooth closing process, stay organized and responsive to requests from your agent, lender, and title company. Review all documents carefully before signing, and be prepared to provide any necessary information promptly.",
-      "Address any potential issues early, such as title problems or outstanding repairs, to avoid delays. Maintaining open communication with all parties involved can help facilitate a seamless closing experience."
-    ],
-    seo: {
-      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
-      related: ["closing tips", "transaction management"]
-    }
-  },
-  {
-    slug: "tax-implications-selling",
-    title: "What are the tax implications of selling my home?",
-    excerpt: "Capital gains tax may apply, but exemptions exist ($250k/$500k). Consult a tax professional for details.",
-    neighborhood: "East Bay",
-    intent: "Seller",
-    updated: "2026-02-04",
-    question: "What are the tax implications of selling my home?",
-    answer: [
-      "When selling a home, capital gains tax may apply if you sell for a profit. The IRS allows for certain exemptions, such as the $250,000 exclusion for single filers and $500,000 for married couples filing jointly, provided you’ve lived in the home for at least two of the past five years.",
-      "Consult a tax professional to understand your specific situation, potential deductions, and any tax implications related to the sale."
-    ],
-    seo: {
-      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
-      related: ["capital gains tax", "real estate taxes"]
-    }
-  },
-  {
-    slug: "sell-home-as-is",
-    title: "Can I sell my home as-is?",
-    excerpt: "Yes, but it may limit buyers and lower price. Disclose issues and price competitively.",
-    neighborhood: "East Bay",
-    intent: "Seller",
-    updated: "2026-02-04",
-    question: "Can I sell my home as-is?",
-    answer: [
-      "Yes, selling as-is is an option, but it may limit your buyer pool and affect your selling price. While some buyers may be looking for renovation projects, many prefer move-in ready homes.",
-      "If you choose to sell as-is, disclose any known issues and consider pricing the home competitively to attract offers. Working with an experienced agent can help you navigate the challenges of an as-is sale."
-    ],
-    seo: {
-      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
-      related: ["selling as-is", "fixer upper"]
-    }
-  },
-  {
-    slug: "role-of-curb-appeal",
-    title: "What role does curb appeal play in selling my home?",
-    excerpt: "Curb appeal creates the first impression. Landscaping, paint, and lighting are key, especially in luxury markets.",
-    neighborhood: "East Bay",
-    intent: "Seller",
-    updated: "2026-02-04",
-    question: "What role does curb appeal play in selling my home?",
-    answer: [
-      "Curb appeal is crucial as it forms the first impression for potential buyers. Enhancing your home’s exterior can significantly impact interest levels. Simple improvements such as landscaping, fresh paint, and clean walkways can make a substantial difference.",
-      "Consider upgrading outdoor lighting and ensuring the front door looks inviting. In luxury markets, buyers often expect high standards for curb appeal, so investing in these improvements can pay off during showings."
-    ],
-    seo: {
-      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
-      related: ["curb appeal", "home exterior"]
-    }
-  },
-  {
-    slug: "market-trends-selling-strategy",
-    title: "How do market trends affect my selling strategy?",
-    excerpt: "Market trends dictate pricing and marketing. Adjust your strategy based on inventory and competition.",
-    neighborhood: "East Bay",
-    intent: "Seller",
-    updated: "2026-02-04",
-    question: "How do market trends affect my selling strategy?",
-    answer: [
-      "Understanding local market trends is essential for developing an effective selling strategy. Factors like inventory levels, average days on the market, and recent sales data can inform your pricing and marketing decisions.",
-      "If the market is competitive, you may want to price slightly below market value to attract more buyers. Conversely, in a slower market, pricing competitively and highlighting unique features can help differentiate your home from others. Staying informed about trends in luxury markets, such as those in Piedmont, can help you make data-driven decisions."
-    ],
-    seo: {
-      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
-      related: ["market analysis", "selling strategy"]
-    }
-  },
-  {
-    slug: "what-happens-inspection",
-    title: "What happens during the home inspection?",
-    excerpt: "Inspectors check major systems. Be ready for negotiations on repairs or credits after the report.",
-    neighborhood: "East Bay",
-    intent: "Seller",
-    updated: "2026-02-04",
-    question: "What happens during the home inspection?",
-    answer: [
-      "A home inspection involves a professional examining your property to identify any potential issues. Inspectors evaluate major systems, including plumbing, electrical, roofing, and HVAC.",
-      "After the inspection, you’ll receive a detailed report outlining any findings. Be prepared for potential negotiations regarding repairs or credits based on the inspection results. Understanding common inspection concerns in your area can help you address them proactively before listing."
-    ],
-    seo: {
-      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
-      related: ["home inspection", "repair negotiation"]
-    }
-  },
-  {
-    slug: "present-during-showings",
-    title: "Should I be present during showings?",
-    excerpt: "It's best to leave during showings so buyers feel comfortable. Ensure the home is clean and ready.",
-    neighborhood: "East Bay",
-    intent: "Seller",
-    updated: "2026-02-04",
-    question: "Should I be present during showings?",
-    answer: [
-      "It’s generally best to allow buyers to explore your home without your presence. This creates a more comfortable environment for them to envision themselves in the space.",
-      "It’s important to allow buyers to discuss their thoughts openly with their agents. Consider scheduling showings when you’re not home, but ensure your home is clean and well-prepared to make a positive impression."
-    ],
-    seo: {
-      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
-      related: ["showings", "selling etiquette"]
-    }
-  },
-  {
-    slug: "benefits-of-agent",
-    title: "What are the benefits of using a real estate agent?",
-    excerpt: "Agents provide expertise, negotiation skills, and marketing resources, making the process smoother and more successful.",
-    neighborhood: "East Bay",
-    intent: "Seller",
-    updated: "2026-02-04",
-    question: "What are the benefits of using a real estate agent?",
-    answer: [
-      "A skilled real estate agent provides expertise, negotiation skills, and marketing resources that can significantly enhance your selling experience. They can help you navigate the complexities of the selling process, from pricing and staging to negotiations and closing.",
-      "Agents have access to market data, allowing them to position your home effectively within the luxury market. Additionally, they can handle the paperwork and ensure compliance with local regulations, making the process smoother and less stressful for you."
-    ],
-    seo: {
-      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
-      related: ["real estate agent", "selling benefits"]
-    }
-  },
-  {
-    slug: "best-time-to-sell",
-    title: "What is the best time to sell my home?",
-    excerpt: "Spring and summer are popular, but luxury markets may differ. Consult your agent for the best timing.",
-    neighborhood: "East Bay",
-    intent: "Seller",
-    updated: "2026-02-04",
-    question: "What is the best time to sell my home?",
-    answer: [
-      "The best time to sell a home often depends on local market conditions. Spring and summer typically see increased buyer activity, as families prefer to move during school breaks.",
-      "However, luxury markets can have unique trends; for example, affluent buyers may be more active in the fall or winter months. Consult with your real estate agent to analyze current market conditions and determine the optimal time to list your home for sale."
-    ],
-    seo: {
-      keywords: ["Real Estate", "Home Buying", "Home Selling", "East Bay", "Luxury Market"],
-      related: ["market timing", "selling season"]
+      keywords: ["East Bay pricing strategy", "list price vs sale price", "why homes sell over asking", "transparent pricing real estate"],
+      related: ["bidding wars", "real estate marketing strategies"]
     }
   }
 ];
